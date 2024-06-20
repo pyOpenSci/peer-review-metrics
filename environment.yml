@@ -1,0 +1,13 @@
+name: pyos-myst
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - jupyterlab_code_formatter
+  - jupyterlab_myst
+  - black
+  - isort
+  - pip
+  # - pip:
+  #   - jupyterlab_code_formatter[isort]
