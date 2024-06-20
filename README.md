@@ -46,13 +46,49 @@ If we use juyter then we want to ensure
 
 jupyterlab_myst is installed to be able to use eval statements
 
-pip install 
 
-* jupyterlab-code-formatter
-* jupyterlab_myst
+## Environment 
 
-pip install black isort
+use the environment.yml file 
+
+`>> myst `
+
+you will get:
+
+```
+Welcome to the MyST Markdown CLI!! 🎉 🚀
+
+myst init walks you through creating a myst.yml file.
+
+You can use myst to:
+
+ - create interactive websites from markdown and Jupyter Notebooks 📈
+ - build & export professional PDFs and Word documents 📄
+
+Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
 
-pyos-myst
+✅ Project already initialized with config file: myst.yml
+✅ Site already initialized with config file: myst.yml
 
+? Would you like to run myst start now? (Y/n) y
+```
+
+
+```
+📖 Built README.md in 32 ms.
+📖 Built 01-paper.md in 33 ms.
+📖 Built 02-notebook.ipynb in 32 ms.
+📖 Built 03-leah.ipynb in 32 ms.
+📚 Built 4 pages for project in 147 ms.
+
+
+        ✨✨✨  Starting Book Theme  ✨✨✨
+
+
+
+🔌 Server started on port 3000!  🥳 🎉
+
+
+        👉  http://localhost:3000  👈
+```
