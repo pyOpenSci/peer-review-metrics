@@ -1,30 +1,16 @@
-# MyST Quickstart
-
-[![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools)
-
-This repository contains the files used in the [quickstart guide](https://myst.tools/docs/mystjs/quickstart), and can be used to follow that guide, before trying MyST with your own content.
-
-> **Note** This is **not** a good example of an actual myst project! The repositories purpose is to be a simple markdown + notebook repository that can be transformed throughout a tutorial.
-
-The goals of the [quickstart guide](https://myst.tools/docs/mystjs/quickstart) are:
-
-1. Create a `myst` site, using the standard template
-2. Improve the frontmatter, to add authors, affiliations and other metadata
-3. Export the paper as a PDF, Word document, and LaTeX files
-4. Integrate a Jupyter Notebook output into our paper, to improve reproducibility
-5. Publish a website of with our work 🚀
-
-## Improving Frontmatter and MyST Site
-
-![](./images/frontmatter-after.png)
-
-## Export as a PDF
-
-![](./images/export-pdf.png)
+# pyOpenSci peer review metrics 
 
 
+This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed 
+tool that makes it easier for scientists to create fully reproducible (and interactive)
+workflows and reports that are easily shared. 
 
-Create environment
+## How to use 
+
+To work with this repository do the following:
+
+First, create an fresh environment.
+
 mamba create -n pyos-myst python=3.11
 mamba activate pyos-myst 
 
@@ -46,7 +32,11 @@ If we use juyter then we want to ensure
 
 jupyterlab_myst is installed to be able to use eval statements
 
+`myst start --execute`
+to run and execute code. 
 
+
+To run - jupyterlab_myst
 ## Environment 
 
 use the environment.yml file 
@@ -77,8 +67,6 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
 ```
 📖 Built README.md in 32 ms.
-📖 Built 01-paper.md in 33 ms.
-📖 Built 02-notebook.ipynb in 32 ms.
 📖 Built 03-leah.ipynb in 32 ms.
 📚 Built 4 pages for project in 147 ms.
 

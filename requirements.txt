@@ -1,0 +1,8 @@
+'nodejs>=20,<21'
+mystmd
+# if you want to use jupyter lab to edit notebooks
+jupyterlab_myst
+
+# Linting  - we have jupyter plugins installed
+black 
+isort 
