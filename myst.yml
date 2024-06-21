@@ -6,7 +6,7 @@ project:
   # description:
   keywords: []
   authors: []
-  github: https://github.com/executablebooks/mystmd-quickstart
+  github: https://github.com/pyopensci/peer-review-metrics
   # bibliography: []
 site:
   template: book-theme
@@ -16,6 +16,6 @@ site:
   #   logo: site_logo.png
   nav: []
   actions:
-    - title: Learn More
-      url: https://mystmd.org/guide
+    - title: About pyOpenSci peer review
+      url: https://www.pyopensci.org/about-peer-review/index.html
   domains: []
