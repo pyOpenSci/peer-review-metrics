@@ -1,5 +1,5 @@
 ---
-title: Current review status -- pyOpenSci
+title: Text myst markdown file running code
 subtitle: pyOpenSci Peer Review Summary Status
 author:
   - name: Leah Wasser
@@ -12,5 +12,16 @@ date: 2024/06/19
 ---
 
 
-This is a test markdown file to test code output. 
+This is a test markdown file to test code output.
 
+:::{code-cell}
+:python:
+
+print("hello")
+:::
+
+:::{code-cell}
+:python:
+
+print("hello")
+:::

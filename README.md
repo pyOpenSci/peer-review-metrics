@@ -1,48 +1,61 @@
-# About pyOpenSci peer review metrics 
+# README: About pyOpenSci peer review metrics
 
-This is the about.md file 
-
-This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed 
+This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed
 tool that makes it easier for scientists to create fully reproducible (and interactive)
-workflows and reports that are easily shared. 
+workflows and reports that are easily shared.
 
-## How to use 
+## How to use this repository
 
 To work with this repository do the following:
 
-First, create an fresh environment.
+First, create & activate a fresh Python environment.
 
+```bash
 mamba create -n pyos-myst python=3.11
-mamba activate pyos-myst 
+mamba activate pyos-myst
+```
 
-# Install node
-mamba install -c conda-forge 'nodejs>=20,<21'
-# install myst 
-mamba install mystmd -c conda-forge
+## 2. Install nodejs
 
-Run `myst` - to create a live server
+Next, install `nodejs` & `mystmd`.
 
-myst build --execute to execute code
+```bash
+mamba install -c conda-forge 'nodejs>=20,<21' mystmd
+```
 
+## Local preview
 
-## When i tried to use md files to executive code (which is preferred) it couldn't find the kernel 
+Finally preview this locally:
+
+Run `myst` to create a run a local live server  that will update as you
+update your code / workflows.
+
+To build the html files and run code use:
+
+`myst build --execute to execute code`
+
+To build a local server that runs and executes code:
+`myst start --execute`
+
+## When i tried to use md files to executive code (which is preferred) it couldn't find the kernel
+
 🪐 Jupyter server did not start
-Unable to instantiate connection to Jupyter Server 
+Unable to instantiate connection to Jupyter Server
 
-If we use juyter then we want to ensure 
+If we use juyter then we want to ensure
 
 jupyterlab_myst is installed to be able to use eval statements
 
 `myst start --execute`
-to run and execute code. 
-
+to run and execute code.
 
 To run - jupyterlab_myst
-## Environment 
 
-use the environment.yml file 
+## Environment
 
-`>> myst `
+use the environment.yml file
+
+`>> myst`
 
 you will get:
 
@@ -64,7 +77,6 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
 ? Would you like to run myst start now? (Y/n) y
 ```
-
 
 ```
 📖 Built README.md in 32 ms.
