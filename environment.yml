@@ -9,5 +9,6 @@ dependencies:
   - black
   - isort
   - pip
+  - mystmd
   # - pip:
   #   - jupyterlab_code_formatter[isort]
