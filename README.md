@@ -32,7 +32,7 @@ update your code / workflows.
 
 To build the html files and run code use:
 
-`myst build --execute to execute code`
+`myst build --execute` to execute code`
 
 To build a local server that runs and executes code:
 `myst start --execute`
