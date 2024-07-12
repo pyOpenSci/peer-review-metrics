@@ -11,7 +11,7 @@ To work with this repository do the following:
 First, create & activate a fresh Python environment.
 
 ```bash
-mamba create -n pyos-myst python=3.11
+mamba env create -f environment.yml
 mamba activate pyos-myst
 ```
 

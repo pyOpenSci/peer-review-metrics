@@ -33,19 +33,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      - uses: mamba-org/setup-micromamba@v1
-        with:
-          micromamba-version: '1.5.6-0' # any version from https://github.com/mamba-org/micromamba-releases
-          environment-file: environment.yml
-          init-shell: bash
-          cache-environment: true
-          post-cleanup: 'all'
-      - name: Build HTML Assets
+      - name: Install MyST Markdown
         run: |
-          conda init
-          conda activate pyos-myst
-          conda list
-          myst build --html --execute
+          # npm install -g mystmd
+          pip install -r requirements.txt
+          pip list
+      - name: Build HTML Assets
+        run: myst build --html --execute
         shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

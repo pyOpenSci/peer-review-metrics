@@ -8,3 +8,12 @@ pyarrow
 # Linting  - we have jupyter plugins installed
 black 
 isort 
+mystmd
+jupyterlab
+jupyterlab_code_formatter
+jupyterlab-myst
+black
+isort
+pip
+pandas
+altair
