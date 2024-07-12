@@ -39,6 +39,8 @@ jobs:
           pip install -r requirements.txt
           pip list
       - name: Build HTML Assets
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: myst build --html --execute
         shell: bash
       - name: Upload artifact
