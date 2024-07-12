@@ -1,4 +1,3 @@
-'nodejs>=20,<21'
 mystmd
 # if you want to use jupyter lab to edit notebooks
 jupyterlab_myst
@@ -8,7 +7,6 @@ pyarrow
 # Linting  - we have jupyter plugins installed
 black 
 isort 
-mystmd
 jupyterlab
 jupyterlab_code_formatter
 jupyterlab-myst
