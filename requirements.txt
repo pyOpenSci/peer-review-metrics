@@ -3,7 +3,7 @@ mystmd
 jupyterlab_myst
 # to support efficient pandas string behaviors
 pyarrow
-
+pyosmeta
 # Linting  - we have jupyter plugins installed
 black 
 isort 
