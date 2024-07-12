@@ -44,6 +44,7 @@ jobs:
           post-cleanup: 'all'
       - name: Build HTML Assets
         run: |
+          conda init
           conda activate pyos-myst
           conda list
           myst build --html --execute
