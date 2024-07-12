@@ -43,7 +43,7 @@ jobs:
       - name: Build HTML Assets
         run: |
           #conda init
-          #conda activate pyos-myst
+          conda activate pyos-myst
           conda list
           myst build --html --execute
         shell: bash
