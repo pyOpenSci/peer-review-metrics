@@ -19,8 +19,16 @@ mamba activate pyos-myst
 
 Next, install `nodejs` & `mystmd`.
 
+On Mac and most platforms:
+
 ```bash
 mamba install -c conda-forge 'nodejs>=20,<21' mystmd
+```
+
+On Windows:
+
+```bash
+mamba install -c conda-forge "nodejs>=20,<21" mystmd
 ```
 
 ## Local preview
