@@ -1,0 +1,23 @@
+import nox
+
+nox.options.reuse_existing_virtualenvs = True
+
+build_serve = ["start", "--execute"]
+
+build_execute = ["build", "--execute"]
+
+
+@nox.session
+def build_html(session):
+    session.install("-r", "requirements.txt")
+    cmd = ["myst"]
+    cmd.extend(build_execute + session.posargs)
+    session.run(*cmd)
+
+
+@nox.session
+def serve(session):
+    session.install("-r", "requirements.txt")
+    cmd = ["myst"]
+    cmd.extend(build_serve + session.posargs)
+    session.run(*cmd)
