@@ -93,3 +93,33 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
         👉  http://localhost:3000  👈
 ```
+
+## Build using Nox
+
+You can use nox to build the dashboard locally. Nox will
+create an environment for you with all needed dependencies.
+
+To start, install [nox](https://nox.thea.codes/en/stable/):
+
+Using `pip`:
+
+`python -m pip install nox`
+
+or [`pipx` for global install](https://pipx.pypa.io/stable/):
+
+`pipx install nox`
+
+### Build a static html website
+
+To build the html version of the dashboard use
+
+`nox -s build`
+
+### Build a live local server dashboard
+
+To build the dashboard as a local server that will update
+as you update the files use:
+
+`nox -s serve`
+
+One a mac you can use `ctrl + d` to stop a live server.

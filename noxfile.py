@@ -8,7 +8,7 @@ build_execute = ["build", "--execute"]
 
 
 @nox.session
-def build_html(session):
+def html(session):
     session.install("-r", "requirements.txt")
     cmd = ["myst"]
     cmd.extend(build_execute + session.posargs)
