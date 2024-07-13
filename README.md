@@ -1,21 +1,35 @@
 # README: About pyOpenSci peer review metrics
 
-This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed
-tool that makes it easier for scientists to create fully reproducible (and interactive)
-workflows and reports that are easily shared.
+This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
 
 ## How to use this repository
 
 To work with this repository do the following:
 
-First, create & activate a fresh Python environment.
+### 1. Create & activate a fresh Python environment.
 
 ```bash
 mamba env create -f environment.yml
 mamba activate pyos-myst
 ```
 
-## 2. Install nodejs
+### 2. Create a .env file
+
+Copy the .env-default file in this repository, and rename it to ".env". This is the file in which you'll paste your GitHub access token.
+
+### 3. Configure your GitHub access token
+
+This dashboard leverages pyOpenSci's package [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) to obtain contributor and peer review metadata. To use this package, the user needs to supply a GitHub access token, which can be obtained from their GitHub account. Click on your profile image and navigate to "Settings", and then "Developer Settings".
+
+![Image of GitHub Developer Settings page](images/developer_settings.png "Developer Settings page")
+<br/><br/>
+Create a new fine-grained personal access token, adding a name, expiration, description, and ensure the "Repository Access" is set to "Public Repositories (read-only)". No other configuration needed. At the bottom of the page, click "Generate token". 
+
+![Image of personal access token](images/token.png "Token configuration page")
+<br/><br/>
+Once the token has been generated, copy the token string and paste it into the ".env" file next to `GITHUB_TOKEN=`. You are now configured to work with the information harvested using `pyosMeta`.
+
+### 4. Install nodejs
 
 Next, install `nodejs` & `mystmd`.
 
@@ -23,11 +37,11 @@ Next, install `nodejs` & `mystmd`.
 mamba install -c conda-forge 'nodejs>=20,<21' mystmd
 ```
 
-## Local preview
+### 5. Local preview
 
 Finally preview this locally:
 
-Run `myst` to create a run a local live server  that will update as you
+Run `myst` to create and run a local live server that will update as you
 update your code / workflows.
 
 To build the html files and run code use:
