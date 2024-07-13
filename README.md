@@ -34,6 +34,14 @@ On Windows:
 mamba install -c conda-forge "nodejs>=20,<21" mystmd
 ```
 
+## 3. Install required packages
+
+Inside of the pyos-myst environment, install required packages.
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Local preview
 
 Finally preview this locally:
