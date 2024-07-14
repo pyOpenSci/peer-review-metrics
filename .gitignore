@@ -6,3 +6,8 @@ __pycache__/
 
 _build/*
 .ipynb_checkpoints/*
+*.pickle
+package-lock.json
+package.json
+.vscode/
+node_modules/*
