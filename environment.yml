@@ -11,8 +11,8 @@ dependencies:
   - pip
   - mystmd
   - pyarrow
-  - pyosmeta
   - pandas
   - altair
-  # - pip:
+  - pip:
+    - pyosmeta
   #   - jupyterlab_code_formatter[isort]
