@@ -34,7 +34,7 @@ Once the token has been generated, copy the token string and paste it into the "
 Next, install `nodejs` & `mystmd`.
 
 ```bash
-mamba install -c conda-forge 'nodejs>=20,<21' mystmd
+mamba install -c conda-forge "nodejs>=20,<21" mystmd
 ```
 
 ### 5. Local preview
