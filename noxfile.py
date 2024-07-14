@@ -4,7 +4,7 @@ nox.options.reuse_existing_virtualenvs = True
 
 build_serve = ["start", "--execute"]
 
-build_execute = ["build", "--execute"]
+build_execute = ["build", "--html", "--execute"]
 
 
 @nox.session
