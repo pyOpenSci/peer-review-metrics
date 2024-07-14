@@ -32,22 +32,7 @@ Create a new fine-grained personal access token, adding a name, expiration, desc
 <br/><br/>
 Once the token has been generated, copy the token string and paste it into the ".env" file next to `GITHUB_TOKEN=`. You are now configured to work with the information harvested using `pyosMeta`.
 
-### 4. Install nodejs
-
-```bash
-mamba install -c conda-forge "nodejs>=20,<21" mystmd
-```
-
-## 3. Install required packages
-
-Inside of the pyos-myst environment, install required packages.
-
-```bash
-mamba install -c conda-forge "nodejs>=20,<21" mystmd
-pip install -r requirements.txt
-```
-
-### 5. Local preview
+### 4. Local preview
 
 Finally preview this locally:
 
