@@ -1,4 +1,7 @@
 # README: About pyOpenSci peer review metrics
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
 
@@ -31,10 +34,17 @@ Once the token has been generated, copy the token string and paste it into the "
 
 ### 4. Install nodejs
 
-Next, install `nodejs` & `mystmd`.
+```bash
+mamba install -c conda-forge "nodejs>=20,<21" mystmd
+```
+
+## 3. Install required packages
+
+Inside of the pyos-myst environment, install required packages.
 
 ```bash
 mamba install -c conda-forge "nodejs>=20,<21" mystmd
+pip install -r requirements.txt
 ```
 
 ### 5. Local preview
@@ -107,3 +117,56 @@ Learn more about this CLI and MyST Markdown at: https://mystmd.org
 
         👉  http://localhost:3000  👈
 ```
+
+## Build using Nox
+
+You can use nox to build the dashboard locally. Nox will
+create an environment for you with all needed dependencies.
+
+To start, install [nox](https://nox.thea.codes/en/stable/):
+
+Using `pip`:
+
+`python -m pip install nox`
+
+or [`pipx` for global install](https://pipx.pypa.io/stable/):
+
+`pipx install nox`
+
+### Build a static html website
+
+To build the html version of the dashboard use
+
+`nox -s build`
+
+### Build a live local server dashboard
+
+To build the dashboard as a local server that will update
+as you update the files use:
+
+`nox -s serve`
+
+One a mac you can use `ctrl + d` to stop a live server.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kaiyamag"><img src="https://avatars.githubusercontent.com/u/98053751?v=4?s=100" width="100px;" alt="kaiyamag"/><br /><sub><b>kaiyamag</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=kaiyamag" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Akaiyamag" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ehinman"><img src="https://avatars.githubusercontent.com/u/121896266?v=4?s=100" width="100px;" alt="Elise Hinman"/><br /><sub><b>Elise Hinman</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=ehinman" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Aehinman" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
