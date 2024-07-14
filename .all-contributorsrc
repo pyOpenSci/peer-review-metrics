@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "kaiyamag",
+      "name": "kaiyamag",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98053751?v=4",
+      "profile": "https://github.com/kaiyamag",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "peer-review-metrics",
+  "projectOwner": "pyOpenSci"
+}
