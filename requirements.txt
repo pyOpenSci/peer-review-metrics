@@ -5,13 +5,11 @@ jupyterlab_myst
 pyarrow
 pyosmeta
 # Linting  - we have jupyter plugins installed
-black 
-isort 
+black
+isort
 jupyterlab
 jupyterlab_code_formatter
 jupyterlab-myst
-black
-isort
 pip
 pandas
 altair
