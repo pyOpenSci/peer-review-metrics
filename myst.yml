@@ -4,7 +4,7 @@ project:
   github: https://github.com/pyopensci/peer-review-metrics
   keywords:
     - software peer review
-    - pyOpenSci
+    - pyOpenSci    
 site:
   nav:
     # top-level nav
