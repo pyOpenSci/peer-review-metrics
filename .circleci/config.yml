@@ -15,10 +15,6 @@ jobs:
             pip install -r requirements.txt
             pip list
       - run:
-          name: setup Node.js environment
-          command: |
-            npm install  # Install Node.js dependencies if needed
-      - run:
           name: Build website HTML
           command: nox -s html
 
