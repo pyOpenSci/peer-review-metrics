@@ -17,9 +17,9 @@ site:
   nav:
     # top-level nav
     - title: Current review data
-      url: /current-reviews-data
+      url: /peer-review-metrics/current-reviews-data
     - title: All time review data
-      url: /pyOpenSci-peer-review-stats
+      url: /peer-review-metrics/pyOpenSci-peer-review-stats
     - title: Contributing
       url: /README
   template: book-theme
