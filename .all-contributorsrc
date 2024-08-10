@@ -36,6 +36,16 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "fwkoch",
+      "name": "Franklin Koch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9453731?v=4",
+      "profile": "https://github.com/fwkoch",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
