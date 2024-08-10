@@ -3,11 +3,11 @@ version: 2.1
 jobs:
   build-website:  # Renamed the job to build-website
     docker:
-      - image: cimg/python:3.11  # Primary image with Python
-      - image: cimg/node:22.0    # Secondary image with Node.js 22.x
-
+      - image: cimg/python:3.11-node
     steps:
       - checkout
+      - run: python --version
+      - run: node --version
       - run:
           name: setup environment
           command: |
@@ -17,7 +17,6 @@ jobs:
       - run:
           name: setup Node.js environment
           command: |
-            node -v  # Verify Node.js version
             npm install  # Install Node.js dependencies if needed
       - run:
           name: Build website HTML
