@@ -8,14 +8,23 @@ project:
   authors: []
   github: https://github.com/pyopensci/peer-review-metrics
   # bibliography: []
+
 site:
+  nav:
+    # top-level nav
+    - title: Current review data
+      file: current-reviews-data.ipynb
+    - title: All time review data
+      file: pyOpenSci-peer-review-stats.ipynb
+    - title: Contributing
+      file: README.md
   template: book-theme
-  # title:
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
-  nav: []
-  actions:
-    - title: About pyOpenSci peer review
-      url: https://www.pyopensci.org/about-peer-review/index.html
+  title: pyOpenSci peer review metrics
+  options:
+    favicon: images/favicon.ico
+    logo: images/logo.png
+  # nav: []
+  # actions:
+  #   - title: About pyOpenSci peer review
+  #     url: https://www.pyopensci.org/about-peer-review/index.html
   domains: []
