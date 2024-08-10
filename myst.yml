@@ -13,11 +13,11 @@ site:
   nav:
     # top-level nav
     - title: Current review data
-      file: current-reviews-data.ipynb
+      url: /current-reviews-data
     - title: All time review data
-      file: pyOpenSci-peer-review-stats.ipynb
+      url: /pyOpenSci-peer-review-stats
     - title: Contributing
-      file: README.md
+      url: /README
   template: book-theme
   title: pyOpenSci peer review metrics
   options:
