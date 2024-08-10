@@ -1,6 +1,6 @@
 # README: About pyOpenSci peer review metrics
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
@@ -146,6 +146,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kaiyamag"><img src="https://avatars.githubusercontent.com/u/98053751?v=4?s=100" width="100px;" alt="kaiyamag"/><br /><sub><b>kaiyamag</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=kaiyamag" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Akaiyamag" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ehinman"><img src="https://avatars.githubusercontent.com/u/121896266?v=4?s=100" width="100px;" alt="Elise Hinman"/><br /><sub><b>Elise Hinman</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=ehinman" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Aehinman" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.santisoler.com"><img src="https://avatars.githubusercontent.com/u/11541317?v=4?s=100" width="100px;" alt="Santiago Soler"/><br /><sub><b>Santiago Soler</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=santisoler" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Asantisoler" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fwkoch"><img src="https://avatars.githubusercontent.com/u/9453731?v=4?s=100" width="100px;" alt="Franklin Koch"/><br /><sub><b>Franklin Koch</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=fwkoch" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Afwkoch" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
