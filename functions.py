@@ -6,7 +6,69 @@ repo
 
 from datetime import datetime
 
+import altair as alt
+from IPython.display import HTML, display
 
+
+
+
+def load_poppins_font():
+    """Load the Poppins font from Google Fonts."""
+    display(HTML('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">'))
+
+def poppins_theme():
+    """Define the custom Poppins theme for Altair."""
+    return {
+        'config': {
+            'title': {
+                'fontSize': 20,
+                'font': 'Poppins',
+                'anchor': 'start',
+                'color': 'black',
+                'anchor': 'middle', # centered
+                'fontWeight': 400,
+                'dy': -20,
+                'dx': 10
+            },
+            'axis': {
+                'labelFontSize': 12,
+                'titleFontSize': 14,
+                'titleFont': 'Poppins',
+                'labelFont': 'Poppins',
+                'labelFontSize': 14, 
+            },
+            'axisX': {  # Configuration specifically for the x-axis
+                'labelAngle': 0},
+            'legend': {
+                'labelFontSize': 12,
+                'titleFontSize': 14,
+                'titleFont': 'Poppins',
+                'labelFont': 'Poppins'
+            },
+            'bar': {
+                'color': 'purple',
+                'fill': 'purple'
+            },
+            'line': {
+                'color': 'purple'
+            },
+            'view': {
+                'height': 300,
+                'width': 600,  # Default chart width
+                'padding': {"top": 190, "left": 10, "right": 10, "bottom": 90}
+            }
+        }
+    }
+
+def register_and_enable_poppins_theme():
+    """Register and enable the Poppins theme in Altair."""
+    alt.themes.register('poppins_theme', poppins_theme)
+    alt.themes.enable('poppins_theme')
+
+
+
+
+# TODO: delete this?
 def parse_single_issue(issue) -> dict:
     """
     Parse a single issue from the GitHub API response.
