@@ -11,6 +11,8 @@ isort
 jupyterlab
 jupyterlab_code_formatter
 jupyterlab-myst
+# To support opening md files as notebooks
+jupytext
 pip
 pandas
 altair
