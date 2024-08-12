@@ -5,7 +5,7 @@ __pycache__/
 
 
 _build/*
-.ipynb_checkpoints/*
+**/.ipynb_checkpoints/*
 *.pickle
 package-lock.json
 package.json
