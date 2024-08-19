@@ -26,7 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install git+https://github.com/your-username/pyosmeta.git
+          pip install git+https://github.com/pyopensci/pyosmeta.git
           python scripts/get-prs.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
