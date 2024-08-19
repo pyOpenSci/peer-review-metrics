@@ -4,7 +4,7 @@ nox
 jupyterlab_myst
 # to support efficient pandas string behaviors
 pyarrow
-pyosmeta
+git+https://github.com/pyopensci/pyosmeta.git
 # Linting  - we have jupyter plugins installed
 black
 isort
