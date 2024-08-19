@@ -1,4 +1,4 @@
-name: Update Contribs & reviewers
+name: Update issue, pr and contrib metadata file for current year
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
           author: Leah <leah@pyopensci.org>
           base: main
           branch: contribs
-          commit-message: "Update: Contributor & review file update"
+          commit-message: "Update: issue, pr and contrib metadata file for current year"
           delete-branch: true
           title: Update contributor and review data
         env:
