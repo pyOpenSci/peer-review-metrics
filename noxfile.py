@@ -18,6 +18,7 @@ def html(session):
 @nox.session
 def serve(session):
     session.install("-r", "requirements.txt")
+    session.install("-e", "./metrics-theme")
     cmd = ["myst"]
     cmd.extend(build_serve + session.posargs)
     session.run(*cmd)
