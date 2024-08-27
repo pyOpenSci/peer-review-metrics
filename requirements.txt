@@ -1,5 +1,4 @@
-# mystmd
-git+https://github.com/jupyter-book/mystmd.git
+mystmd
 nox
 # if you want to use jupyter lab to edit notebooks
 jupyterlab_myst
