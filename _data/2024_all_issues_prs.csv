@@ -1,4 +1,6 @@
 title,item_opened_by,current_status,labels,created_by,location,contrib_type,repo,type
+Fix mirror of the `prettier` npm package for pre-commit,2024-08-28 06:55:36,open,,tkoyama010,Japan,contributor,python-package-guide,issues
+Change update translation sessions in nox,2024-08-27 18:07:38,open,translations,flpm,"New York, NY",contributor,python-package-guide,issues
 [ci] Ensure i18n up to date,2024-08-26 18:53:03,open,,sneakers-the-rat,,contributor,python-package-guide,issues
 Language Selector :),2024-08-23 10:49:40,open,,sneakers-the-rat,,contributor,python-package-guide,issues
 maint: ungoofy the header at intermediate widths,2024-08-23 06:30:49,open,maintenance,sneakers-the-rat,,contributor,python-package-guide,issues
@@ -227,6 +229,8 @@ Contributing.md file comments to consider...,2022-11-01 22:24:23,closed,,lwasser
 extend theme to add fonts,2022-10-26 17:58:33,closed,,lwasser,United States,staff,python-package-guide,issues
 Python package guide update - Create Tutorial:  - submit to CONDA FORGE using grayskull,2021-08-19 17:13:24,closed,,lwasser,United States,staff,python-package-guide,issues
 Add: tutorial on how to setup a Python testing envt using hatch to our tutorials,2019-06-03 15:29:49,open,"help wanted, sprintable",lwasser,United States,staff,python-package-guide,issues
+Fix mirror of the `prettier` npm package for pre-commit,2024-08-28 06:55:36,open,,tkoyama010,Japan,contributor,python-package-guide,pulls
+Change update translation sessions in nox,2024-08-27 18:07:38,open,translations,flpm,"New York, NY",contributor,python-package-guide,pulls
 [ci] Ensure i18n up to date,2024-08-26 18:53:03,open,,sneakers-the-rat,,contributor,python-package-guide,pulls
 Language Selector :),2024-08-23 10:49:40,open,,sneakers-the-rat,,contributor,python-package-guide,pulls
 maint: ungoofy the header at intermediate widths,2024-08-23 06:30:49,open,maintenance,sneakers-the-rat,,contributor,python-package-guide,pulls
@@ -615,7 +619,7 @@ Enabled search and added a preface/intro,2019-01-30 17:29:53,closed,,kysolvik,,c
 Added a disclaimer to the intro page,2019-01-25 23:19:49,closed,,kysolvik,,contributor,software-peer-review,pulls
 Added Initial content,2019-01-25 23:08:49,closed,,kysolvik,,contributor,software-peer-review,pulls
 Adding jupyter book,2019-01-15 16:54:50,closed,,choldgraf,California,contributor,software-peer-review,pulls
-Add: after_date flag to pyosmeta,2024-08-27 16:34:26,open,,lwasser,United States,staff,pyosMeta,issues
+Add: after_date flag to pyosmeta,2024-08-27 16:34:26,closed,,lwasser,United States,staff,pyosMeta,issues
 feat: Add after date to api call ,2024-08-18 00:53:36,closed,,lwasser,United States,staff,pyosMeta,issues
 Add: additional repos to parse contributors,2024-08-15 22:32:53,closed,,lwasser,United States,staff,pyosMeta,issues
 Release 1.3.5,2024-08-15 20:52:46,closed,,lwasser,United States,staff,pyosMeta,issues
@@ -732,7 +736,7 @@ Update repo for maintainability,2023-12-16 19:20:30,closed,"maintenance, refacto
 Make sure code recognizes a third reviewer if they exist. ,2023-12-14 23:31:28,closed,enhancement,lwasser,United States,staff,pyosMeta,issues
 Enh: Order packages by oldest to newest??,2023-08-20 18:54:19,open,enhancement,lwasser,United States,staff,pyosMeta,issues
 ✨ Add github action that moves peer review issues  issues as the label on the review is updated across our peer review project board. ,2023-01-31 00:51:19,closed,"help wanted, priority, sprintable",lwasser,United States,staff,pyosMeta,issues
-Add: after_date flag to pyosmeta,2024-08-27 16:34:25,open,,lwasser,United States,staff,pyosMeta,pulls
+Add: after_date flag to pyosmeta,2024-08-27 16:34:25,closed,,lwasser,United States,staff,pyosMeta,pulls
 feat: Add after date to api call ,2024-08-18 00:53:36,closed,,lwasser,United States,staff,pyosMeta,pulls
 Add: additional repos to parse contributors,2024-08-15 22:32:53,closed,,lwasser,United States,staff,pyosMeta,pulls
 Release 1.3.5,2024-08-15 20:52:46,closed,,lwasser,United States,staff,pyosMeta,pulls
@@ -1577,6 +1581,7 @@ add submit issue / PR as default,2019-06-20 21:08:22,closed,,lwasser,United Stat
 [WIP] Updating the issue template to be more specific about readme requirements and usability items ,2019-06-20 20:57:26,closed,,lwasser,United States,staff,software-submission,pulls
 Avoid tagging a user account.,2019-06-03 12:29:45,closed,,ocefpaf,"Florianópolis, SC",contributor,software-submission,pulls
 adding link to templates to the issue submission,2019-05-30 20:25:27,closed,,lwasser,United States,staff,software-submission,pulls
+feat: Update stats for contributor issue and prs,2024-08-27 19:22:45,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Improve the editor's load plots,2024-08-27 14:16:06,open,,santisoler,"British Columbia, Canada",contributor,peer-review-metrics,issues
 "add: updated pr, issue & contrib metadata for pyOS",2024-08-19 00:50:33,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 add: ci build to parse all issues and prs and contribs,2024-08-19 00:36:07,closed,,lwasser,United States,staff,peer-review-metrics,issues
@@ -1616,6 +1621,7 @@ fix: use package name with hyphens,2024-07-11 21:56:02,closed,,lwasser,United St
 Fix: deploy should exec code,2024-07-11 21:45:51,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Add: Current review dashboard,2024-06-06 16:41:54,closed,,lwasser,United States,staff,peer-review-metrics,issues
 ✨ Use devstats to collect metadata about our packages - start with calculating pony factor,2023-07-03 20:43:00,open,enhancement,lwasser,United States,staff,peer-review-metrics,issues
+feat: Update stats for contributor issue and prs,2024-08-27 19:22:45,closed,,lwasser,United States,staff,peer-review-metrics,pulls
 Improve the editor's load plots,2024-08-27 14:16:06,open,,santisoler,"British Columbia, Canada",contributor,peer-review-metrics,pulls
 "add: updated pr, issue & contrib metadata for pyOS",2024-08-19 00:50:33,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 add: ci build to parse all issues and prs and contribs,2024-08-19 00:36:07,closed,,lwasser,United States,staff,peer-review-metrics,pulls
