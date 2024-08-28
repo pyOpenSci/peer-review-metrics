@@ -9,7 +9,6 @@ project:
     - pyosmetrics_pkg/*
     - _law_tests/*
     - pyOpenSci-stats.md
-    - README.md
 
 site:
   nav:
