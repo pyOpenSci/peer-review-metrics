@@ -17,11 +17,11 @@ site:
     - title: Peer review data
       children:
         - title: Historical data
-          url: /metrics/peer-review/historical-peer-review-stats
+          url: /historical-peer-review-stats
         - title: Peer review data
-          url: /metrics/peer-review/current-reviews-data
+          url: /current-reviews-data
     - title: Contributor data
-      url: /metrics/contributors/contributor-pr-issues
+      url: /contributor-pr-issues
     - title: Contributing
       url: /README
   template: book-theme
