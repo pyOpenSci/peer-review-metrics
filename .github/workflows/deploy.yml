@@ -49,7 +49,10 @@ jobs:
   # Only deploy on pyopensci owned repo / when pushed to main branch
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' && github.repository_owner == 'pyOpenSci'
+    if: |
+      github.ref == 'refs/heads/main' &&
+      github.repository_owner == 'pyOpenSci' &&
+      github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
