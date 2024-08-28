@@ -19,6 +19,8 @@ site:
       children:
         - title: Historical data
           url: /metrics/peer-review/historical-peer-review-stats
+        - title: Peer review data
+          url: /metrics/peer-review/current-reviews-data
     - title: Contributor data
       url: /metrics/contributors/contributor-pr-issues
     - title: Contributing
@@ -28,3 +30,4 @@ site:
     logo: images/logo.png
     logo-text: pyOpenSci logo
     favicon: images/favicon.ico
+    hide_toc: true
