@@ -15,7 +15,6 @@ site:
   nav:
     # top-level nav - these links don't work if you use the path to the file.
     - title: Peer review data
-      url: /metrics/peer-review/current-reviews-data
       children:
         - title: Historical data
           url: /metrics/peer-review/historical-peer-review-stats
