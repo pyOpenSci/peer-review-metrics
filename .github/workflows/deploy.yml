@@ -1,5 +1,6 @@
 name: MyST GitHub Pages Deploy
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0' # Run every Sunday @ midnight (UTC)
   pull_request:
