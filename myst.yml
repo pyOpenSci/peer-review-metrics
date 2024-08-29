@@ -28,4 +28,4 @@ site:
     logo: images/logo.png
     logo-text: pyOpenSci logo
     favicon: images/favicon.ico
-    hide_toc: false
+    hide_toc: true
