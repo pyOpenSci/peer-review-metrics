@@ -1,6 +1,6 @@
 # README: About pyOpenSci peer review metrics
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is a dashboard created using mystmd [![Made with MyST](https://img.shields.io/badge/made%20with-myst-orange)](https://myst.tools). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
@@ -103,6 +103,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fwkoch"><img src="https://avatars.githubusercontent.com/u/9453731?v=4?s=100" width="100px;" alt="Franklin Koch"/><br /><sub><b>Franklin Koch</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=fwkoch" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Afwkoch" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/agoose77"><img src="https://avatars.githubusercontent.com/u/1248413?v=4?s=100" width="100px;" alt="Angus Hollands"/><br /><sub><b>Angus Hollands</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=agoose77" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Aagoose77" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://batalex.github.io"><img src="https://avatars.githubusercontent.com/u/11004857?v=4?s=100" width="100px;" alt="Alex Batisse"/><br /><sub><b>Alex Batisse</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=batalex" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Abatalex" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://hachyderm.io/web/@willingc"><img src="https://avatars.githubusercontent.com/u/2680980?v=4?s=100" width="100px;" alt="Carol Willing"/><br /><sub><b>Carol Willing</b></sub></a><br /><a href="https://github.com/pyOpenSci/peer-review-metrics/commits?author=willingc" title="Code">💻</a> <a href="https://github.com/pyOpenSci/peer-review-metrics/pulls?q=is%3Apr+reviewed-by%3Awillingc" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
