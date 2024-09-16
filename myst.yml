@@ -16,16 +16,16 @@ site:
     - title: Peer review data
       children:
         - title: Historical data
-          url: /historical-peer-review-stats
+          url: /peer-review-metrics/historical-peer-review-stats
         - title: Peer review data
-          url: /current-reviews-data
+          url: /peer-review-metrics/current-reviews-data
     - title: Contributor data
-      url: /contributor-pr-issues
+      url: /peer-review-metrics/contributor-pr-issues
     - title: Contributing
-      url: /README
+      url: /peer-review-metrics/README
   template: book-theme
   options:
-    logo: images/logo.png
+    logo: /peer-review-metrics/images/logo.png
     logo-text: pyOpenSci logo
-    favicon: images/favicon.ico
+    favicon: /peer-review-metrics/images/favicon.ico
     hide_toc: false
