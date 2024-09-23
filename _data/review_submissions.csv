@@ -9,12 +9,12 @@
 7,Fluidimage,2024-05-30 12:53:48+00:00,,['0/seeking-editor'],seeking editor
 8,astrodata,2024-05-13 23:48:03+00:00,,"['4/reviews-in-awaiting-changes', 'astropy']",under-review
 9,QuadratiK,2024-05-13 21:23:44+00:00,,['4/reviews-in-awaiting-changes'],under-review
-10,PyPartMC,2024-05-03 18:22:59+00:00,,['1/editor-assigned'],under-review
+10,PyPartMC,2024-05-03 18:22:59+00:00,,"['2/seeking-reviewers', '1/editor-assigned']",under-review
 11,Dolphot-LC,2024-05-01 02:37:44+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",on hold
 12,ANDES,2024-04-22 15:24:10+00:00,,"['0/pre-review-checks', 'New Submission!', 'on-hold']",on hold
 13,CyNetDiff,2024-04-22 03:28:38+00:00,,['1/editor-assigned'],under-review
 14,AMS,2024-04-22 01:37:56+00:00,,['3/reviewers-assigned'],under-review
-15,pooltool,2024-04-15 21:44:43+00:00,,['5/awaiting-reviewer-response'],under-review
+15,pooltool,2024-04-15 21:44:43+00:00,,['6/pyOS-approved'],pyos-accepted
 16,CovPlan,2024-03-25 17:06:21+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'New Submission!']",on hold
 17,martini,2024-03-06 17:08:29+00:00,2024-07-01 15:58:14+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",joss-accepted
 18,ZodiPy,2024-02-24 12:28:07+00:00,2024-05-13 17:38:26+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",joss-accepted

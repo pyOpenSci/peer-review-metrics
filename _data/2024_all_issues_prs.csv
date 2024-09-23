@@ -1,4 +1,6 @@
 title,item_opened_by,current_status,labels,created_by,location,contrib_type,repo,type
+docs: fix mistakes on mentions to how dependencies are defined in pyproject.toml,2024-09-21 17:51:01,open,,flpm,"New York, NY",contributor,python-package-guide,issues
+docs: fix typo in documentation from Github to GitHub,2024-09-20 23:42:21,closed,documentation,tkoyama010,Japan,contributor,python-package-guide,issues
 docs: Small clarification to avoid confusion,2024-09-14 19:24:22,closed,,flpm,"New York, NY",contributor,python-package-guide,issues
 Automatically generated release notes,2024-09-10 07:13:46,open,documentation,tkoyama010,Japan,contributor,python-package-guide,issues
 docs: fix wrong word in section about conda repositories,2024-09-07 18:39:20,closed,documentation,flpm,"New York, NY",contributor,python-package-guide,issues
@@ -46,7 +48,7 @@ docs: translate to Spanish python-package-version.md file,2024-07-14 18:05:03,op
 docs: translating to Spanish the code-style-linting-format.md file,2024-07-14 18:04:51,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
 docs: translating to Spanish complex-python-package-builds.md,2024-07-14 18:04:36,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
 docs: translate to Spanish declare-dependencies.md,2024-07-14 18:04:20,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
-docs: translate to Spanish intro.md of package-structure-code,2024-07-14 18:03:19,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
+docs: translate to Spanish intro.md of package-structure-code,2024-07-14 18:03:19,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
 docs: translate to Spanish publish-python-package-pypi-conda.md,2024-07-14 18:03:08,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
 docs: translate to Spanish python-package-build-tools.md,2024-07-14 18:02:51,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
 docs: translate to Spanish python-package-distribution-files-sdist-wheel.md file,2024-07-14 18:02:22,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,issues
@@ -96,12 +98,12 @@ Add: hatch plus meson-python python package example to guidebook,2024-05-20 19:2
 [UX] Improve confusing split navigation,2024-05-20 18:53:45,open,"pyconus-24, UX",zackw,"Pittsburgh, PA",contributor,python-package-guide,issues
 [UX] Clarification: hatch --version throws error on Windows OS,2024-05-20 18:37:18,open,"pyconus-24, UX",sn3hay,,contributor,python-package-guide,issues
 Fixing Table of Contents/ Nav,2024-05-20 18:25:20,closed,"sprintable, pyconus-24",BSuperbad,,contributor,python-package-guide,issues
-[UX] Clarification: 'pipx' command not found - Installation required in Windows OS,2024-05-20 18:09:42,open,"pyconus-24, UX",sn3hay,,contributor,python-package-guide,issues
+[UX] Clarification: 'pipx' command not found - Installation required in Windows OS,2024-05-20 18:09:42,closed,"pyconus-24, UX",sn3hay,,contributor,python-package-guide,issues
 "Section Navigation: Move ""Using Hatch to Migrate setup.py to a pyproject.toml"" to a different part of the nav",2024-05-20 18:06:29,closed,pyconus-24,BSuperbad,,contributor,python-package-guide,issues
 Potential Addition to Step 5: Activating Environment - More Info ,2024-05-20 18:01:30,open,pyconus-24,BSuperbad,,contributor,python-package-guide,issues
 update version from 0.1.0 to 0.1,2024-05-20 18:01:05,closed,pyconus-24,pb-413,Pittsburgh PA,contributor,python-package-guide,issues
 TODO - How to update your package name / prevent name overlap by adding your github to the package name,2024-05-20 16:21:12,open,pyconus-24,pb-413,Pittsburgh PA,contributor,python-package-guide,issues
-pipx --global Installation Issue,2024-05-20 15:50:44,open,"good first issue, sprintable, pyconus-24",BSuperbad,,contributor,python-package-guide,issues
+pipx --global Installation Issue,2024-05-20 15:50:44,closed,"good first issue, sprintable, pyconus-24",BSuperbad,,contributor,python-package-guide,issues
 use literalinclude in code-style-linting-format,2024-05-20 15:50:32,closed,"sprintable, pyconus-24",ucodery,,contributor,python-package-guide,issues
 "Reference Virtual Environments Documentation, Internal or External",2024-05-20 15:28:16,open,pyconus-24,pb-413,Pittsburgh PA,contributor,python-package-guide,issues
 "Typo - Initial version code recommended is inconsistent (Major and Minor versus Major, Minor, and Patch?) - installable-code.md",2024-05-20 15:18:27,open,pyconus-24,pb-413,Pittsburgh PA,contributor,python-package-guide,issues
@@ -235,6 +237,8 @@ Contributing.md file comments to consider...,2022-11-01 22:24:23,closed,,lwasser
 extend theme to add fonts,2022-10-26 17:58:33,closed,,lwasser,United States,staff,python-package-guide,issues
 Python package guide update - Create Tutorial:  - submit to CONDA FORGE using grayskull,2021-08-19 17:13:24,closed,,lwasser,United States,staff,python-package-guide,issues
 Add: tutorial on how to setup a Python testing envt using hatch to our tutorials,2019-06-03 15:29:49,open,"help wanted, sprintable",lwasser,United States,staff,python-package-guide,issues
+docs: fix mistakes on mentions to how dependencies are defined in pyproject.toml,2024-09-21 17:51:01,open,,flpm,"New York, NY",contributor,python-package-guide,pulls
+docs: fix typo in documentation from Github to GitHub,2024-09-20 23:42:21,closed,documentation,tkoyama010,Japan,contributor,python-package-guide,pulls
 docs: Small clarification to avoid confusion,2024-09-14 19:24:22,closed,,flpm,"New York, NY",contributor,python-package-guide,pulls
 docs: fix wrong word in section about conda repositories,2024-09-07 18:39:20,closed,documentation,flpm,"New York, NY",contributor,python-package-guide,pulls
 docs: fix format of Spanish documentation.po file,2024-09-07 18:37:19,closed,documentation,flpm,"New York, NY",contributor,python-package-guide,pulls
@@ -274,7 +278,7 @@ docs: translate to Spanish python-package-version.md file,2024-07-14 18:05:03,op
 docs: translating to Spanish the code-style-linting-format.md file,2024-07-14 18:04:51,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
 docs: translating to Spanish complex-python-package-builds.md,2024-07-14 18:04:36,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
 docs: translate to Spanish declare-dependencies.md,2024-07-14 18:04:20,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
-docs: translate to Spanish intro.md of package-structure-code,2024-07-14 18:03:19,open,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
+docs: translate to Spanish intro.md of package-structure-code,2024-07-14 18:03:19,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
 docs: translate to Spanish publish-python-package-pypi-conda.md,2024-07-14 18:03:08,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
 docs: translate to Spanish python-package-build-tools.md,2024-07-14 18:02:51,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
 docs: translate to Spanish python-package-distribution-files-sdist-wheel.md file,2024-07-14 18:02:22,closed,"translations, lang-ES",RobPasMue,"Leganés, Madrid",contributor,python-package-guide,pulls
@@ -853,7 +857,11 @@ Fixed authentication to GitHub API.,2023-04-22 19:59:34,closed,,austinlg96,,cont
 Fix: code cleanup and more bug fixes,2023-04-22 19:02:44,closed,,lwasser,United States,staff,pyosMeta,pulls
 Update: redo of issues API,2023-03-07 19:58:41,closed,,lwasser,United States,staff,pyosMeta,pulls
 Add: parse contributors script to update contribs,2023-03-01 00:06:07,closed,,lwasser,United States,staff,pyosMeta,pulls
-Update contributor and review data,2024-09-15 00:32:30,open,,github-actions[bot],,contributor,pyopensci.github.io,issues
+DO NOT MERGE intentional breaks,2024-09-19 21:53:33,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
+Add github image ID for new editors,2024-09-19 06:27:06,closed,,cmarmo,,contributor,pyopensci.github.io,issues
+Update contributor and review data,2024-09-17 20:57:08,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Add new editors for third 2024 trimester,2024-09-16 19:09:45,closed,,cmarmo,,contributor,pyopensci.github.io,issues
+Update contributor and review data,2024-09-15 00:32:30,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 UPDATES: synced information on FF event page with information on Eventbrite,2024-09-11 22:24:28,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
 build(deps): bump peter-evans/create-pull-request from 6 to 7 in /.github/workflows in the actions group,2024-09-09 06:27:49,closed,dependencies,dependabot[bot],,contributor,pyopensci.github.io,issues
 feat(css): upgrade responsive styles throughout,2024-09-09 00:19:47,closed,,lwasser,United States,staff,pyopensci.github.io,issues
@@ -1027,16 +1035,30 @@ Feature - [needs more info for people to help]: add review meta to package cards
 ✨ Website: Fix mobile css styles for website navigation - search and drop down (css / SASS),2023-06-22 14:56:36,closed,"enhancement, help wanted, sprintable, feature:theme",lwasser,United States,staff,pyopensci.github.io,issues
 FEAT: Community package listing pages for astropy + SunPy,2023-06-22 14:48:45,open,,lwasser,United States,staff,pyopensci.github.io,issues
 "✨ Add an ""Our Purpose"" section on the website's landing page",2023-04-22 21:53:00,closed,"enhancement, help wanted, good first issue, :sparkles: community feedback welcome :sparkles:, sprintable, feature:content",ForgottenProgramme,"Berlin, Germany",contributor,pyopensci.github.io,issues
+Fix: isotope grid on mobile,2023-04-19 15:18:12,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Fix: pynteny spelling,2023-04-13 22:47:57,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Add: pradyun to advisory council,2023-04-05 23:49:22,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Blog: add flit blog / overview,2023-04-04 20:38:55,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Tutorial[new]: intro to python typing,2023-04-04 20:35:16,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Notes for a website update,2023-03-28 23:36:39,open,feature:theme,sneakers-the-rat,,contributor,pyopensci.github.io,issues
+Add: inessa to advisory council,2023-03-21 23:54:49,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Fix mobile styles,2023-03-18 00:51:30,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Add: update get involved page,2023-01-31 01:26:23,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+"Fix: Update contributors, broken links and css fix ✨ ",2023-01-18 00:42:44,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Fix: redirect pages in new peer review guide layout,2023-01-18 00:41:50,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+ADD: redirect for coc,2022-11-22 20:55:25,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 ✨  Add issue templates for new issues to website repository,2022-11-10 16:31:04,closed,"enhancement, help wanted, good first issue, sprintable, feature:automation",NickleDave,Charm City,contributor,pyopensci.github.io,issues
+INFRA: fix and cleanup community grid,2022-11-08 23:22:11,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Add .circleci/config.yml,2022-10-24 22:04:36,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 BLOG: why metrics matter and package health,2022-10-24 15:12:10,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 BLOG: python package health and some style updates,2022-10-18 21:05:45,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Add Dropdowns to pyos website,2022-10-10 22:32:03,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Categories and tags,2022-10-03 18:29:56,open,"enhancement, :sparkles: community feedback welcome :sparkles:, feature:theme",lwasser,United States,staff,pyopensci.github.io,issues
-Update contributor and review data,2024-09-15 00:32:30,open,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+DO NOT MERGE intentional breaks,2024-09-19 21:53:33,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
+Add github image ID for new editors,2024-09-19 06:27:06,closed,,cmarmo,,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2024-09-17 20:57:08,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Add new editors for third 2024 trimester,2024-09-16 19:09:45,closed,,cmarmo,,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2024-09-15 00:32:30,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
 UPDATES: synced information on FF event page with information on Eventbrite,2024-09-11 22:24:28,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
 build(deps): bump peter-evans/create-pull-request from 6 to 7 in /.github/workflows in the actions group,2024-09-09 06:27:49,closed,dependencies,dependabot[bot],,contributor,pyopensci.github.io,pulls
 feat(css): upgrade responsive styles throughout,2024-09-09 00:19:47,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
@@ -1293,8 +1315,8 @@ Add xclim package details,2023-04-12 17:54:52,closed,,Zeitsperre,"Montreal, Cana
 Add Agustina information in contributors.yml file,2023-04-11 23:37:05,closed,,aguspesce,"British Columbia, Canada",contributor,pyopensci.github.io,pulls
 Add crowsetta docs + citation links to packages.yml,2023-04-06 15:46:55,closed,,NickleDave,Charm City,contributor,pyopensci.github.io,pulls
 Add: pradyun to advisory council,2023-04-05 23:49:22,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
-Blog: add flit blog / overview,2023-04-04 20:38:55,open,,lwasser,United States,staff,pyopensci.github.io,pulls
-Tutorial[new]: intro to python typing,2023-04-04 20:35:16,open,,lwasser,United States,staff,pyopensci.github.io,pulls
+Blog: add flit blog / overview,2023-04-04 20:38:55,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
+Tutorial[new]: intro to python typing,2023-04-04 20:35:16,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
 Add crowsetta in packages and in contributors,2023-03-29 13:14:12,closed,,NickleDave,Charm City,contributor,pyopensci.github.io,pulls
 Update contributors.yml,2023-03-29 01:22:19,closed,,rhine3,"Pittsburgh, PA, USA",contributor,pyopensci.github.io,pulls
 Fix: header typo,2023-03-23 19:36:25,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
@@ -1399,18 +1421,22 @@ Add a package listing page to the website,2019-09-17 20:19:12,closed,,lwasser,Un
 fixing formatting,2019-08-28 22:53:51,closed,,choldgraf,California,contributor,pyopensci.github.io,pulls
 adding custom types,2019-08-28 22:44:41,closed,,choldgraf,California,contributor,pyopensci.github.io,pulls
 Fix Github link site footer,2019-03-19 00:34:57,closed,,leouieda,"São Paulo, Brazil",contributor,pyopensci.github.io,pulls
-added a PR checklist to the GitHub pull requests section,2024-09-04 21:09:06,open,,kierisi,"Chicago, IL",staff,handbook,issues
+add link to htmlproofer in external comms,2024-09-19 22:24:50,open,enhancement,kierisi,"Chicago, IL",staff,handbook,issues
+Added content to CI section on htmlproofer,2024-09-19 22:03:26,open,,kierisi,"Chicago, IL",staff,handbook,issues
+Corrected: External comms updated,2024-09-19 20:49:29,open,,kierisi,"Chicago, IL",staff,handbook,issues
+Corrected PR: added the PR checklist,2024-09-19 15:43:32,open,,kierisi,"Chicago, IL",staff,handbook,issues
+feat(content): add PR checklist to the GitHub PR section,2024-09-04 21:09:06,closed,,kierisi,"Chicago, IL",staff,handbook,issues
 IMAGE: contributor workflow approval,2024-08-28 23:15:45,closed,,kierisi,"Chicago, IL",staff,handbook,issues
 add: ec notes to the handbook for 2024,2024-08-22 21:18:26,closed,,lwasser,United States,staff,handbook,issues
-IMAGE: failing CI,2024-08-22 20:47:06,open,,kierisi,"Chicago, IL",staff,handbook,issues
-TEST for screenshots - do not review or merge,2024-08-22 20:20:56,open,,jesse-test,,contributor,handbook,issues
+IMAGE: failing CI,2024-08-22 20:47:06,closed,,kierisi,"Chicago, IL",staff,handbook,issues
+TEST for screenshots - do not review or merge,2024-08-22 20:20:56,closed,,jesse-test,,contributor,handbook,issues
 adding 2024-05-13 EC meeting notes,2024-08-22 16:17:07,closed,,tracykteal,,contributor,handbook,issues
 Improve navigation via topic boxes and top-of-page links,2024-08-21 13:43:01,open,,kcranston,"Ottawa, ON",contributor,handbook,issues
 fix: make precommit happy with spelling,2024-08-20 22:57:24,closed,,lwasser,United States,staff,handbook,issues
-IMAGE: add CI image (or GIF) showing failed CI,2024-08-15 17:30:56,open,,kierisi,"Chicago, IL",staff,handbook,issues
+IMAGE: add CI image (or GIF) showing failed CI,2024-08-15 17:30:56,closed,,kierisi,"Chicago, IL",staff,handbook,issues
 IMAGE: add a CI image for new contributors,2024-08-15 17:29:00,closed,,kierisi,"Chicago, IL",staff,handbook,issues
 content request: add list of labels,2024-08-13 19:41:00,open,,kierisi,"Chicago, IL",staff,handbook,issues
-[ENTRY] External communications page,2024-08-13 15:26:23,open,,kierisi,"Chicago, IL",staff,handbook,issues
+feat(content): Add external communications page,2024-08-13 15:26:23,closed,,kierisi,"Chicago, IL",staff,handbook,issues
 add: readme for exec council notes,2024-08-12 22:16:55,closed,,lwasser,United States,staff,handbook,issues
 feat: Add more info around org values,2024-08-12 20:37:38,open,,lwasser,United States,staff,handbook,issues
 feat: Internal documentation storage,2024-08-07 19:05:50,closed,,kierisi,"Chicago, IL",staff,handbook,issues
@@ -1440,14 +1466,17 @@ Give @kierisi write access for this repo,2024-04-01 20:46:26,closed,,willingc,Sa
 Fix: ci run htmlproofer lst,2024-04-01 18:28:34,closed,,lwasser,United States,staff,handbook,issues
 Fix: Update theme and structure to align with other books,2024-03-29 22:32:31,closed,,lwasser,United States,staff,handbook,issues
 UPDATE: docs-live text,2024-03-27 14:41:10,closed,,kierisi,"Chicago, IL",staff,handbook,issues
-added a PR checklist to the GitHub pull requests section,2024-09-04 21:09:06,open,,kierisi,"Chicago, IL",staff,handbook,pulls
+Added content to CI section on htmlproofer,2024-09-19 22:03:26,open,,kierisi,"Chicago, IL",staff,handbook,pulls
+Corrected: External comms updated,2024-09-19 20:49:29,open,,kierisi,"Chicago, IL",staff,handbook,pulls
+Corrected PR: added the PR checklist,2024-09-19 15:43:32,open,,kierisi,"Chicago, IL",staff,handbook,pulls
+feat(content): add PR checklist to the GitHub PR section,2024-09-04 21:09:06,closed,,kierisi,"Chicago, IL",staff,handbook,pulls
 IMAGE: contributor workflow approval,2024-08-28 23:15:45,closed,,kierisi,"Chicago, IL",staff,handbook,pulls
 add: ec notes to the handbook for 2024,2024-08-22 21:18:26,closed,,lwasser,United States,staff,handbook,pulls
-IMAGE: failing CI,2024-08-22 20:47:06,open,,kierisi,"Chicago, IL",staff,handbook,pulls
-TEST for screenshots - do not review or merge,2024-08-22 20:20:56,open,,jesse-test,,contributor,handbook,pulls
+IMAGE: failing CI,2024-08-22 20:47:06,closed,,kierisi,"Chicago, IL",staff,handbook,pulls
+TEST for screenshots - do not review or merge,2024-08-22 20:20:56,closed,,jesse-test,,contributor,handbook,pulls
 adding 2024-05-13 EC meeting notes,2024-08-22 16:17:07,closed,,tracykteal,,contributor,handbook,pulls
 fix: make precommit happy with spelling,2024-08-20 22:57:24,closed,,lwasser,United States,staff,handbook,pulls
-[ENTRY] External communications page,2024-08-13 15:26:23,open,,kierisi,"Chicago, IL",staff,handbook,pulls
+feat(content): Add external communications page,2024-08-13 15:26:23,closed,,kierisi,"Chicago, IL",staff,handbook,pulls
 add: readme for exec council notes,2024-08-12 22:16:55,closed,,lwasser,United States,staff,handbook,pulls
 feat: Add more info around org values,2024-08-12 20:37:38,open,,lwasser,United States,staff,handbook,pulls
 feat: Internal documentation storage,2024-08-07 19:05:50,closed,,kierisi,"Chicago, IL",staff,handbook,pulls
@@ -1525,13 +1554,13 @@ Fix: update the CoC link,2024-05-22 22:54:08,closed,,FFY00,Portugal,contributor,
 ci: add action to update the project column of issues based on label assignment,2024-05-22 22:35:47,closed,,FFY00,Portugal,contributor,software-submission,issues
 astrodata,2024-05-13 23:48:03,open,"4/reviews-in-awaiting-changes, astropy",teald,"Riverside, CA",contributor,software-submission,issues
 QuadratiK Submission,2024-05-13 21:23:44,open,4/reviews-in-awaiting-changes,rmj3197,"Buffalo, New York, USA",contributor,software-submission,issues
-PyPartMC,2024-05-03 18:22:59,open,1/editor-assigned,slayoo,"Kraków, Poland",contributor,software-submission,issues
+PyPartMC,2024-05-03 18:22:59,open,"2/seeking-reviewers, 1/editor-assigned",slayoo,"Kraków, Poland",contributor,software-submission,issues
 text update in issue template,2024-05-03 16:24:10,closed,,slayoo,"Kraków, Poland",contributor,software-submission,issues
 Dolphot-LC Software Submission,2024-05-01 02:37:44,open,"0/pre-review-checks, ⌛ pending-maintainer-response",whit5224,,contributor,software-submission,issues
 Submission for ANDES,2024-04-22 15:24:10,open,"0/pre-review-checks, New Submission!, on-hold",jinningwang,"Knoxville, Tennessee, USA",contributor,software-submission,issues
 CyNetDiff Submission,2024-04-22 03:28:38,open,1/editor-assigned,eliotwrobson,"Urbana, IL",contributor,software-submission,issues
 Submission for AMS,2024-04-22 01:37:56,open,3/reviewers-assigned,jinningwang,"Knoxville, Tennessee, USA",contributor,software-submission,issues
-Pooltool Submission,2024-04-15 21:44:43,open,5/awaiting-reviewer-response,ekiefl,,contributor,software-submission,issues
+Pooltool Submission,2024-04-15 21:44:43,open,6/pyOS-approved,ekiefl,,contributor,software-submission,issues
 Pooltool Pre-submission Inquiry,2024-04-01 21:53:52,closed,presubmission,ekiefl,,contributor,software-submission,issues
 CovPlan,2024-03-25 17:06:21,open,"0/pre-review-checks, ⌛ pending-maintainer-response, New Submission!",sanjeevrs2000,,contributor,software-submission,issues
 Presubmission Inquiry for AMS,2024-03-17 16:28:40,closed,presubmission,jinningwang,"Knoxville, Tennessee, USA",contributor,software-submission,issues
@@ -1613,7 +1642,9 @@ add submit issue / PR as default,2019-06-20 21:08:22,closed,,lwasser,United Stat
 [WIP] Updating the issue template to be more specific about readme requirements and usability items ,2019-06-20 20:57:26,closed,,lwasser,United States,staff,software-submission,pulls
 Avoid tagging a user account.,2019-06-03 12:29:45,closed,,ocefpaf,"Florianópolis, SC",contributor,software-submission,pulls
 adding link to templates to the issue submission,2019-05-30 20:25:27,closed,,lwasser,United States,staff,software-submission,pulls
-Update contributor and review data,2024-09-02 05:07:07,open,,github-actions[bot],,contributor,peer-review-metrics,issues
+fix: image url update,2024-09-16 19:42:31,closed,,lwasser,United States,staff,peer-review-metrics,issues
+fix(urls): update header and favicon url,2024-09-16 19:36:59,closed,,lwasser,United States,staff,peer-review-metrics,issues
+Update contributor and review data,2024-09-02 05:07:07,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 fix: cleanup bar plot,2024-08-30 01:02:56,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Update contributor and review data,2024-08-29 22:02:00,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 fix: use data files vs hitting the api in the notebook,2024-08-29 20:13:13,closed,,lwasser,United States,staff,peer-review-metrics,issues
@@ -1662,7 +1693,9 @@ fix: use package name with hyphens,2024-07-11 21:56:02,closed,,lwasser,United St
 Fix: deploy should exec code,2024-07-11 21:45:51,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Add: Current review dashboard,2024-06-06 16:41:54,closed,,lwasser,United States,staff,peer-review-metrics,issues
 ✨ Use devstats to collect metadata about our packages - start with calculating pony factor,2023-07-03 20:43:00,open,enhancement,lwasser,United States,staff,peer-review-metrics,issues
-Update contributor and review data,2024-09-02 05:07:07,open,,github-actions[bot],,contributor,peer-review-metrics,pulls
+fix: image url update,2024-09-16 19:42:31,closed,,lwasser,United States,staff,peer-review-metrics,pulls
+fix(urls): update header and favicon url,2024-09-16 19:36:59,closed,,lwasser,United States,staff,peer-review-metrics,pulls
+Update contributor and review data,2024-09-02 05:07:07,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 fix: cleanup bar plot,2024-08-30 01:02:56,closed,,lwasser,United States,staff,peer-review-metrics,pulls
 Update contributor and review data,2024-08-29 22:02:00,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 fix: use data files vs hitting the api in the notebook,2024-08-29 20:13:13,closed,,lwasser,United States,staff,peer-review-metrics,pulls
