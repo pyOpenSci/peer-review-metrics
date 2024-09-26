@@ -19,6 +19,8 @@ site:
           url: /peer-review-metrics/historical-peer-review-stats
         - title: Peer review data
           url: /peer-review-metrics/current-reviews-data
+        - title: Review Timelines
+          url: /peer-review-metrics/review-timing
     - title: Contributor data
       url: /peer-review-metrics/contributor-pr-issues
     - title: Contributing
