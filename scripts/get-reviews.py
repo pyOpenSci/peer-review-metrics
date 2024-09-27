@@ -14,7 +14,6 @@ from pyosmeta import ProcessIssues
 from pyosmeta.github_api import GitHubAPI
 
 pd.options.mode.chained_assignment = None
-pd.options.future.infer_string = True
 
 
 def get_reviews(org, repo, labels):
@@ -180,6 +179,10 @@ def get_last_comment_date(issue_num):
 
     else:
         print("No comments found on the issue.")
+        comment_series = pd.Series(
+            [None, None],
+            index=["last_comment_date", "last_comment_user"],
+        )
     return comment_series
 
 
