@@ -3,20 +3,20 @@
 1,FElupe,2024-09-14 22:37:44+00:00,,['1/editor-assigned'],212,under-review,2024-09-23T17:05:43Z,cmarmo
 2,Solar Data Tools,2024-08-17 06:30:02+00:00,,['2/seeking-reviewers'],210,under-review,2024-09-16T16:34:42Z,bmeyers
 3,THzTools,2024-08-01 11:54:53+00:00,,['0/seeking-editor'],209,seeking editor,2024-09-12T06:33:24Z,cmarmo
-4,BlackMarblePy,2024-07-18 14:15:11+00:00,,['1/editor-assigned'],207,under-review,2024-09-03T18:34:52Z,g4brielvs
+4,BlackMarblePy,2024-07-18 14:15:11+00:00,,"['2/seeking-reviewers', '1/editor-assigned']",207,under-review,2024-09-03T18:34:52Z,g4brielvs
 5,MontePy,2024-07-01 21:04:05+00:00,,['3/reviewers-assigned'],205,under-review,2024-09-23T17:32:40Z,kellyrowland
 6,Great Tables,2024-06-14 19:55:59+00:00,,['1/editor-assigned'],202,under-review,2024-08-10T13:12:04Z,Batalex
-7,Stingray,2024-06-14 12:59:47+00:00,,"['3/reviewers-assigned', 'astropy']",201,under-review,2024-09-20T15:40:35Z,taldcroft
+7,Stingray,2024-06-14 12:59:47+00:00,,"['5/awaiting-reviewer-response', 'astropy']",201,under-review,2024-09-28T00:56:41Z,hamogu
 8,Fluidimage,2024-05-30 12:53:48+00:00,,['0/seeking-editor'],194,seeking editor,2024-08-13T21:19:45Z,cmarmo
-9,astrodata,2024-05-13 23:48:03+00:00,,"['4/reviews-in-awaiting-changes', 'astropy']",181,under-review,2024-07-22T18:43:26Z,teald
-10,QuadratiK,2024-05-13 21:23:44+00:00,,['4/reviews-in-awaiting-changes'],180,under-review,2024-09-26T19:31:30Z,rmj3197
+9,astrodata,2024-05-13 23:48:03+00:00,,"['5/awaiting-reviewer-response', 'astropy']",181,under-review,2024-09-28T00:50:15Z,hamogu
+10,QuadratiK,2024-05-13 21:23:44+00:00,,['4/reviews-in-awaiting-changes'],180,under-review,2024-09-28T19:17:57Z,ab93
 11,PyPartMC,2024-05-03 18:22:59+00:00,,"['2/seeking-reviewers', '1/editor-assigned']",179,under-review,2024-09-17T02:15:55Z,russbiggs
 12,Dolphot-LC,2024-05-01 02:37:44+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",177,on hold,2024-07-05T19:27:38Z,cmarmo
-13,ANDES,2024-04-22 15:24:10+00:00,,"['0/pre-review-checks', 'New Submission!', 'on-hold']",176,on hold,2024-07-01T19:36:36Z,cmarmo
+13,ANDES,2024-04-22 15:24:10+00:00,,"['0/pre-review-checks', 'on-hold']",176,on hold,2024-07-01T19:36:36Z,cmarmo
 14,CyNetDiff,2024-04-22 03:28:38+00:00,,['1/editor-assigned'],175,under-review,2024-07-04T17:44:22Z,eliotwrobson
 15,AMS,2024-04-22 01:37:56+00:00,,['3/reviewers-assigned'],174,under-review,2024-07-24T12:59:25Z,NimaSarajpoor
-16,pooltool,2024-04-15 21:44:43+00:00,,['6/pyOS-approved'],173,pyos-accepted,2024-08-07T10:20:16Z,sebastianotronto
-17,CovPlan,2024-03-25 17:06:21+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'New Submission!']",170,on hold,2024-05-25T08:18:39Z,Batalex
+16,pooltool,2024-04-15 21:44:43+00:00,,"['6/pyOS-approved', '9/joss-approved']",173,joss-accepted,2024-08-07T10:20:16Z,sebastianotronto
+17,CovPlan,2024-03-25 17:06:21+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",170,on hold,2024-05-25T08:18:39Z,Batalex
 18,martini,2024-03-06 17:08:29+00:00,2024-07-01 15:58:14+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",164,joss-accepted,2024-06-04T15:03:59Z,kyleaoman
 19,ZodiPy,2024-02-24 12:28:07+00:00,2024-05-13 17:38:26+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",161,joss-accepted,2024-05-13T17:38:26Z,dhomeier
 20,plot_phylo,2024-02-22 11:55:59+00:00,,['4/reviews-in-awaiting-changes'],160,under-review,2024-08-30T17:49:00Z,KatyBrown
