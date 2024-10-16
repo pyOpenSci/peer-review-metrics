@@ -1,5 +1,6 @@
 title,item_opened_by,current_status,labels,created_by,location,contrib_type,repo,type
-Consider removing the reuse_existing_virtualenvs parameter from noxfile.py,2024-10-12 16:57:17,open,,flpm,"New York, NY",contributor,python-package-guide,issues
+Remove option to reuse virtual-env for nox sessions,2024-10-15 15:48:19,closed,,flpm,"New York, NY",contributor,python-package-guide,issues
+Consider removing the reuse_existing_virtualenvs parameter from noxfile.py,2024-10-12 16:57:17,closed,,flpm,"New York, NY",contributor,python-package-guide,issues
 Update links in publish-python-package-pypi-conda.md,2024-10-07 18:29:56,closed,maintenance,willingc,San Diego,contributor,python-package-guide,issues
 Rewrite table using MyST as recommended in #189,2024-10-07 17:54:43,open,,willingc,San Diego,contributor,python-package-guide,issues
 Reorg license sections as recommended in #189 ,2024-10-07 17:50:34,open,documentation,willingc,San Diego,contributor,python-package-guide,issues
@@ -243,6 +244,7 @@ Contributing.md file comments to consider...,2022-11-01 22:24:23,closed,,lwasser
 extend theme to add fonts,2022-10-26 17:58:33,closed,,lwasser,United States,staff,python-package-guide,issues
 Python package guide update - Create Tutorial:  - submit to CONDA FORGE using grayskull,2021-08-19 17:13:24,closed,,lwasser,United States,staff,python-package-guide,issues
 Add: tutorial on how to setup a Python testing envt using hatch to our tutorials,2019-06-03 15:29:49,open,"help wanted, sprintable",lwasser,United States,staff,python-package-guide,issues
+Remove option to reuse virtual-env for nox sessions,2024-10-15 15:48:19,closed,,flpm,"New York, NY",contributor,python-package-guide,pulls
 Update links in publish-python-package-pypi-conda.md,2024-10-07 18:29:56,closed,maintenance,willingc,San Diego,contributor,python-package-guide,pulls
 chore: bump pydata-sphinx-theme from 0.15.2 to 0.15.4 in the pip group,2024-10-03 00:14:19,closed,maintenance,dependabot[bot],,contributor,python-package-guide,pulls
 chore: bump the actions group with 2 updates,2024-10-03 00:14:10,closed,maintenance,dependabot[bot],,contributor,python-package-guide,pulls
@@ -871,7 +873,11 @@ Fixed authentication to GitHub API.,2023-04-22 19:59:34,closed,,austinlg96,,cont
 Fix: code cleanup and more bug fixes,2023-04-22 19:02:44,closed,,lwasser,United States,staff,pyosMeta,pulls
 Update: redo of issues API,2023-03-07 19:58:41,closed,,lwasser,United States,staff,pyosMeta,pulls
 Add: parse contributors script to update contribs,2023-03-01 00:06:07,closed,,lwasser,United States,staff,pyosMeta,pulls
-feat(blog): add blog post on sustainability. ,2024-10-10 16:11:02,open,,lwasser,United States,staff,pyopensci.github.io,issues
+add: how to submit a package for review,2024-10-15 21:40:45,open,,lwasser,United States,staff,pyopensci.github.io,issues
+Fix: edits,2024-10-15 21:35:55,closed,,lwasser,United States,staff,pyopensci.github.io,issues
+Update contributor and review data,2024-10-15 00:30:29,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+build(deps): bump lycheeverse/lychee-action from 1.10.0 to 2.0.1 in /.github/workflows in the actions group,2024-10-14 06:24:53,closed,dependencies,dependabot[bot],,contributor,pyopensci.github.io,issues
+feat(blog): add blog post on sustainability. ,2024-10-10 16:11:02,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 feat(blog): inessa numfocus award,2024-10-10 16:01:33,open,,lwasser,United States,staff,pyopensci.github.io,issues
 feat(sponsor): add sponsor page to top nav,2024-10-08 21:14:18,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 updated scholarship info,2024-10-04 21:19:46,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
@@ -941,7 +947,7 @@ MNT: Use dependabot to auto update workflow dependencies,2024-07-01 17:46:11,clo
 [BLOG] pyOS SciPy workshop post,2024-06-25 23:15:56,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
 Fix Tutorial listing on Learn page,2024-06-25 20:05:35,closed,,g4brielvs,,contributor,pyopensci.github.io,issues
 BLOG: pyOS guide to scipy,2024-06-21 00:38:01,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
-PAGE: how to submit a package to pyOS,2024-06-21 00:28:54,open,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
+PAGE: how to submit a package to pyOS,2024-06-21 00:28:54,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
 feat(blog): pycon sprints & how pyos leads sprints 2024,2024-06-20 23:07:43,closed,feature:content,lwasser,United States,staff,pyopensci.github.io,issues
 BLOG: pyOpenSci guide to SciPy,2024-06-20 22:17:21,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
 NEW PAGE: how to submit a package to pyOpenSci,2024-06-20 21:46:49,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,issues
@@ -1037,7 +1043,7 @@ FIX:SMALL TYPO not on all caps :),2024-02-01 17:02:35,closed,,lwasser,United Sta
 Fix: images are too big,2024-02-01 02:25:05,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Update contributor and review data,2024-02-01 00:25:25,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 Update contributor and review data,2024-01-30 00:01:11,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
-Archive nbless,2024-01-17 00:26:27,open,feature:content,lwasser,United States,staff,pyopensci.github.io,issues
+Create archive process and then Archive nbless,2024-01-17 00:26:27,open,feature:content,lwasser,United States,staff,pyopensci.github.io,issues
 Update contributor and review data,2024-01-15 00:26:42,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 Enh: Add infrastructure to support a new packaging page,2024-01-05 20:57:47,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Website: Add packaging section,2024-01-05 19:13:28,closed,,lwasser,United States,staff,pyopensci.github.io,issues
@@ -1079,7 +1085,11 @@ BLOG: why metrics matter and package health,2022-10-24 15:12:10,closed,,lwasser,
 BLOG: python package health and some style updates,2022-10-18 21:05:45,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Add Dropdowns to pyos website,2022-10-10 22:32:03,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Categories and tags,2022-10-03 18:29:56,open,"enhancement, :sparkles: community feedback welcome :sparkles:, feature:theme",lwasser,United States,staff,pyopensci.github.io,issues
-feat(blog): add blog post on sustainability. ,2024-10-10 16:11:02,open,,lwasser,United States,staff,pyopensci.github.io,pulls
+add: how to submit a package for review,2024-10-15 21:40:45,open,,lwasser,United States,staff,pyopensci.github.io,pulls
+Fix: edits,2024-10-15 21:35:55,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
+Update contributor and review data,2024-10-15 00:30:29,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+build(deps): bump lycheeverse/lychee-action from 1.10.0 to 2.0.1 in /.github/workflows in the actions group,2024-10-14 06:24:53,closed,dependencies,dependabot[bot],,contributor,pyopensci.github.io,pulls
+feat(blog): add blog post on sustainability. ,2024-10-10 16:11:02,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
 feat(blog): inessa numfocus award,2024-10-10 16:01:33,open,,lwasser,United States,staff,pyopensci.github.io,pulls
 feat(sponsor): add sponsor page to top nav,2024-10-08 21:14:18,closed,,lwasser,United States,staff,pyopensci.github.io,pulls
 updated scholarship info,2024-10-04 21:19:46,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
@@ -1139,7 +1149,7 @@ MNT: Use dependabot to auto update workflow dependencies,2024-07-01 17:46:11,clo
 [BLOG] pyOS SciPy workshop post,2024-06-25 23:15:56,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
 Fix Tutorial listing on Learn page,2024-06-25 20:05:35,closed,,g4brielvs,,contributor,pyopensci.github.io,pulls
 BLOG: pyOS guide to scipy,2024-06-21 00:38:01,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
-PAGE: how to submit a package to pyOS,2024-06-21 00:28:54,open,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
+PAGE: how to submit a package to pyOS,2024-06-21 00:28:54,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
 feat(blog): pycon sprints & how pyos leads sprints 2024,2024-06-20 23:07:42,closed,feature:content,lwasser,United States,staff,pyopensci.github.io,pulls
 BLOG: pyOpenSci guide to SciPy,2024-06-20 22:17:21,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
 NEW PAGE: how to submit a package to pyOpenSci,2024-06-20 21:46:49,closed,,kierisi,"Chicago, IL",staff,pyopensci.github.io,pulls
@@ -1691,6 +1701,7 @@ add submit issue / PR as default,2019-06-20 21:08:22,closed,,lwasser,United Stat
 [WIP] Updating the issue template to be more specific about readme requirements and usability items ,2019-06-20 20:57:26,closed,,lwasser,United States,staff,software-submission,pulls
 Avoid tagging a user account.,2019-06-03 12:29:45,closed,,ocefpaf,"Florianópolis, SC",contributor,software-submission,pulls
 adding link to templates to the issue submission,2019-05-30 20:25:27,closed,,lwasser,United States,staff,software-submission,pulls
+Update contributor and review data,2024-10-14 05:08:16,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 Update contributor and review data,2024-10-02 05:08:49,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 feat(review time): calculate average reviewer time for each review,2024-09-30 20:01:12,open,,lwasser,United States,staff,peer-review-metrics,issues
 Update contributor and review data,2024-09-30 05:09:09,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
@@ -1750,6 +1761,7 @@ fix: use package name with hyphens,2024-07-11 21:56:02,closed,,lwasser,United St
 Fix: deploy should exec code,2024-07-11 21:45:51,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Add: Current review dashboard,2024-06-06 16:41:54,closed,,lwasser,United States,staff,peer-review-metrics,issues
 ✨ Use devstats to collect metadata about our packages - start with calculating pony factor,2023-07-03 20:43:00,open,enhancement,lwasser,United States,staff,peer-review-metrics,issues
+Update contributor and review data,2024-10-14 05:08:16,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 Update contributor and review data,2024-10-02 05:08:49,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 Update contributor and review data,2024-09-30 05:09:09,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 feat(data): update .py script to return review last comment date,2024-09-27 01:41:18,closed,,lwasser,United States,staff,peer-review-metrics,pulls
