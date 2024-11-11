@@ -1,54 +1,55 @@
 ,package_name,date_opened,date_closed,labels,issue_num,status,last_comment_date,last_comment_user
-0,FElupe,2024-09-03 08:16:35+00:00,2024-09-15 19:32:40+00:00,['presubmission'],211,presubmission,2024-09-08T19:44:04Z,adtzlr
-1,Solar Data Tools,2024-06-28 23:12:55+00:00,2024-08-19 20:43:06+00:00,['presubmission'],204,presubmission,2024-07-03T21:29:13Z,pluflou
-2,MontePy,2024-06-17 18:07:13+00:00,2024-07-01 21:19:03+00:00,['presubmission'],203,presubmission,2024-07-01T20:42:34Z,MicahGale
-3,Stingray,2024-06-01 19:58:40+00:00,2024-06-22 08:12:21+00:00,['presubmission'],195,presubmission,2024-06-22T08:12:21Z,Batalex
-4,gentropy,2024-05-24 14:41:14+00:00,2024-09-30 16:38:12+00:00,['presubmission'],190,presubmission,2024-09-30T16:38:12Z,cmarmo
-5,GALAssify,2024-05-24 10:37:47+00:00,2024-09-30 09:25:07+00:00,['presubmission'],189,presubmission,2024-09-30T09:25:07Z,cmarmo
-6,property-utils,2024-05-24 10:00:23+00:00,2024-05-28 19:20:05+00:00,['presubmission'],188,presubmission,2024-05-28T19:20:05Z,Batalex
-7,Great Tables,2024-05-23 20:25:47+00:00,2024-06-22 07:36:11+00:00,['presubmission'],184,presubmission,2024-06-22T07:36:11Z,Batalex
-8,pooltool,2024-04-01 21:53:52+00:00,2024-04-20 12:03:09+00:00,['presubmission'],171,presubmission,2024-04-20T12:03:09Z,Batalex
-9,AMS,2024-03-17 16:28:40+00:00,2024-04-24 17:40:15+00:00,['presubmission'],169,presubmission,2024-04-24T17:40:15Z,Batalex
-10,QuadratiK,2024-03-13 19:17:55+00:00,2024-05-13 20:48:12+00:00,['presubmission'],168,presubmission,2024-05-13T20:48:12Z,rmj3197
-11,CyNetDiff,2024-03-10 10:15:26+00:00,2024-04-24 17:41:04+00:00,['presubmission'],165,presubmission,2024-04-24T17:41:04Z,Batalex
-12,xnemogcm,2024-01-04 15:21:56+00:00,2024-01-06 10:32:21+00:00,['presubmission'],154,presubmission,2024-01-06T10:32:22Z,rcaneill
-13,WasteAndMaterialFootprint,2023-12-30 17:23:18+00:00,2024-07-02 18:54:06+00:00,"['presubmission', '⌛ pending-maintainer-response', 'on-hold']",151,presubmission,2024-07-09T05:51:58Z,Stew-McD
-14,SLEPLET,2023-11-08 14:48:41+00:00,2023-11-15 15:07:57+00:00,"['presubmission', 'Submission Requested']",148,presubmission,2023-11-15T15:07:57Z,NickleDave
-15,Fast Dash,2023-10-20 09:13:39+00:00,2023-10-31 14:20:47+00:00,['presubmission'],145,presubmission,2023-10-31T14:24:04Z,NickleDave
-16,rdata,2023-10-19 11:52:43+00:00,2023-10-20 15:17:15+00:00,['presubmission'],143,presubmission,2023-10-20T15:17:15Z,NickleDave
-17,ncompare,2023-10-13 14:52:42+00:00,2023-10-19 14:31:01+00:00,['presubmission'],142,presubmission,2023-10-19T14:31:01Z,NickleDave
-18,PixAnalyzer,2023-10-11 14:17:34+00:00,2023-10-27 12:06:09+00:00,['presubmission'],141,presubmission,2023-10-27T12:06:06Z,NickleDave
-19,cc_pathplanner,2023-10-09 12:01:51+00:00,2023-10-25 17:11:11+00:00,['presubmission'],140,presubmission,2023-10-25T17:11:11Z,NickleDave
-20,EOmaps,2023-09-21 18:03:49+00:00,2023-09-26 12:59:57+00:00,"['presubmission', 'Submission Requested']",137,presubmission,2023-09-26T15:53:40Z,raphaelquast
-21,pywikipathways,2023-09-13 07:18:05+00:00,2023-09-28 15:33:59+00:00,"['presubmission', 'Submission Requested']",136,presubmission,2023-09-28T15:33:59Z,NickleDave
-22,automata,2023-09-11 00:22:02+00:00,2023-09-18 19:00:28+00:00,"['presubmission', 'Submission Requested']",135,presubmission,2024-01-09T16:17:37Z,lwasser
-23,THzTools,2023-09-08 05:48:33+00:00,2023-09-12 02:20:18+00:00,"['presubmission', 'Submission Requested']",134,presubmission,2023-09-12T01:23:03Z,NickleDave
-24,harmonize-wq,2023-09-01 18:03:57+00:00,2023-09-13 20:42:51+00:00,"['presubmission', 'Submission Requested']",132,presubmission,2023-09-13T20:42:52Z,NickleDave
-25,HaploDynamics,2023-08-29 06:14:36+00:00,2023-09-13 20:41:10+00:00,"['presubmission', '⌛ pending-maintainer-response', 'Submission Requested']",131,presubmission,2023-09-13T20:41:10Z,NickleDave
-26,GemGIS,2023-08-07 10:14:01+00:00,2023-08-08 16:38:17+00:00,['presubmission'],126,presubmission,2023-08-08T16:38:17Z,NickleDave
-27,sciform,2023-06-07 06:19:44+00:00,2023-09-13 20:37:15+00:00,"['presubmission', 'Submission Requested']",114,presubmission,2023-09-13T20:37:15Z,NickleDave
-28,cardsort,2023-04-18 09:21:55+00:00,2023-04-21 13:48:39+00:00,['presubmission'],101,presubmission,2023-04-21T13:48:39Z,NickleDave
-29,plenoptic,2023-04-12 19:17:36+00:00,2023-04-19 17:40:25+00:00,['presubmission'],97,presubmission,2023-04-19T17:40:25Z,billbrod
-30,afscgap,2023-03-17 21:09:19+00:00,2023-03-25 15:11:26+00:00,['presubmission'],91,presubmission,2023-03-25T15:11:26Z,NickleDave
-31,bibat,2023-02-21 15:38:59+00:00,2023-03-01 15:51:53+00:00,['presubmission'],82,presubmission,2023-03-01T15:51:53Z,NickleDave
-32,Hamilton (sf-hamilton on pypi),2023-01-25 06:36:00+00:00,2023-02-02 23:18:16+00:00,['presubmission'],74,presubmission,2023-02-02T23:18:16Z,NickleDave
-33,"__Pynteny: a Python package to perform synteny-aware, profile HMM-based searches in sequence databases__",2022-12-05 11:58:14+00:00,2023-01-03 17:57:22+00:00,['presubmission'],65,presubmission,2023-01-03T17:57:22Z,NickleDave
-34,cookiecutter-cmdstanpy-analysis,2022-09-26 09:55:04+00:00,2022-09-27 16:31:04+00:00,['presubmission'],62,presubmission,2022-09-27T20:40:17Z,teddygroves
-35,tdda,2022-09-14 16:49:04+00:00,2022-11-29 16:21:18+00:00,['presubmission'],58,presubmission,2022-11-29T20:47:04Z,NickleDave
-36,genomepy,2022-09-02 07:15:42+00:00,2022-09-29 05:51:45+00:00,['presubmission'],56,presubmission,2022-09-29T14:12:13Z,lwasser
-37,dianna,2021-11-24 16:51:10+00:00,2022-01-03 15:55:34+00:00,"['presubmission', 'currently-out-of-scope']",48,presubmission,2022-01-03T15:55:34Z,NickleDave
-38,sevivi,2021-11-18 15:57:33+00:00,2021-12-27 14:01:19+00:00,['presubmission'],47,presubmission,2021-12-27T14:01:19Z,NickleDave
-39,qutip,2021-09-01 15:13:17+00:00,2021-12-16 21:32:26+00:00,"['presubmission', 'currently-out-of-scope']",46,presubmission,2021-12-17T18:08:51Z,lwasser
-40,CR-Sparse,2021-07-07 05:15:53+00:00,2021-07-07 13:50:10+00:00,['presubmission'],42,presubmission,2021-07-07T21:45:11Z,lwasser
-41,inteq,2021-06-19 22:04:31+00:00,2021-09-01 18:33:05+00:00,"['presubmission', 'currently-out-of-scope']",40,presubmission,2021-09-01T18:33:05Z,lwasser
-42,PyMedPhys,2021-05-06 07:54:58+00:00,2021-07-07 21:49:09+00:00,['presubmission'],39,presubmission,2021-07-07T23:08:01Z,SimonBiggs
-43,pyDataverse,2021-03-24 23:21:24+00:00,2022-09-01 16:40:09+00:00,"['presubmission', '⌛ pending-maintainer-response']",36,presubmission,2022-09-01T16:40:09Z,lwasser
-44,OpenOmics,2020-12-11 06:39:51+00:00,2021-02-02 19:22:41+00:00,['presubmission'],30,presubmission,2021-02-02T19:22:41Z,NickleDave
-45,Earth Engine Environment (Conda environment),2020-11-02 01:43:58+00:00,2021-01-16 18:18:49+00:00,['presubmission'],28,presubmission,2021-01-16T18:18:49Z,NickleDave
-46,Phenopype,2020-03-26 16:57:45+00:00,2020-05-04 16:52:40+00:00,"['presubmission', 'Submission Requested']",23,presubmission,2020-05-04T16:52:30Z,mluerig
-47,pystiche,2020-03-10 13:12:08+00:00,2020-07-02 13:01:39+00:00,['presubmission'],21,presubmission,2020-07-02T13:01:39Z,pmeier
-48,pyrolite,2019-12-17 02:43:47+00:00,2020-02-28 17:23:15+00:00,"['presubmission', 'Submission Requested']",17,presubmission,2020-02-28T17:23:15Z,lwasser
-49,mf2,2019-11-23 20:57:14+00:00,2019-12-09 11:01:21+00:00,['presubmission'],15,presubmission,2019-12-10T23:53:33Z,lwasser
-50,movingpandas,2019-11-09 15:58:05+00:00,2019-11-14 22:18:30+00:00,['presubmission'],14,presubmission,2019-11-14T22:18:30Z,anitagraser
-51,pyBHL,2019-08-19 18:35:12+00:00,2021-05-27 01:41:39+00:00,['presubmission'],13,presubmission,2021-05-27T14:15:23Z,MikeTrizna
-52,,2019-05-03 15:51:04+00:00,2019-08-19 19:26:55+00:00,"['presubmission', '⌛ pending-maintainer-response']",2,presubmission,2019-08-19T19:26:55Z,lwasser
+0,GALFITools,2024-10-31 23:16:26+00:00,,['presubmission'],216,presubmission,,
+1,FElupe,2024-09-03 08:16:35+00:00,2024-09-15 19:32:40+00:00,['presubmission'],211,presubmission,2024-09-08T19:44:04Z,adtzlr
+2,Solar Data Tools,2024-06-28 23:12:55+00:00,2024-08-19 20:43:06+00:00,['presubmission'],204,presubmission,2024-07-03T21:29:13Z,pluflou
+3,MontePy,2024-06-17 18:07:13+00:00,2024-07-01 21:19:03+00:00,['presubmission'],203,presubmission,2024-07-01T20:42:34Z,MicahGale
+4,Stingray,2024-06-01 19:58:40+00:00,2024-06-22 08:12:21+00:00,['presubmission'],195,presubmission,2024-06-22T08:12:21Z,Batalex
+5,gentropy,2024-05-24 14:41:14+00:00,2024-09-30 16:38:12+00:00,['presubmission'],190,presubmission,2024-09-30T16:38:12Z,cmarmo
+6,GALAssify,2024-05-24 10:37:47+00:00,2024-09-30 09:25:07+00:00,['presubmission'],189,presubmission,2024-09-30T09:25:07Z,cmarmo
+7,property-utils,2024-05-24 10:00:23+00:00,2024-05-28 19:20:05+00:00,['presubmission'],188,presubmission,2024-05-28T19:20:05Z,Batalex
+8,Great Tables,2024-05-23 20:25:47+00:00,2024-06-22 07:36:11+00:00,['presubmission'],184,presubmission,2024-06-22T07:36:11Z,Batalex
+9,pooltool,2024-04-01 21:53:52+00:00,2024-04-20 12:03:09+00:00,['presubmission'],171,presubmission,2024-04-20T12:03:09Z,Batalex
+10,AMS,2024-03-17 16:28:40+00:00,2024-04-24 17:40:15+00:00,['presubmission'],169,presubmission,2024-04-24T17:40:15Z,Batalex
+11,QuadratiK,2024-03-13 19:17:55+00:00,2024-05-13 20:48:12+00:00,['presubmission'],168,presubmission,2024-05-13T20:48:12Z,rmj3197
+12,CyNetDiff,2024-03-10 10:15:26+00:00,2024-04-24 17:41:04+00:00,['presubmission'],165,presubmission,2024-04-24T17:41:04Z,Batalex
+13,xnemogcm,2024-01-04 15:21:56+00:00,2024-01-06 10:32:21+00:00,['presubmission'],154,presubmission,2024-01-06T10:32:22Z,rcaneill
+14,WasteAndMaterialFootprint,2023-12-30 17:23:18+00:00,2024-07-02 18:54:06+00:00,"['presubmission', '⌛ pending-maintainer-response', 'on-hold']",151,presubmission,2024-07-09T05:51:58Z,Stew-McD
+15,SLEPLET,2023-11-08 14:48:41+00:00,2023-11-15 15:07:57+00:00,"['presubmission', 'Submission Requested']",148,presubmission,2023-11-15T15:07:57Z,NickleDave
+16,Fast Dash,2023-10-20 09:13:39+00:00,2023-10-31 14:20:47+00:00,['presubmission'],145,presubmission,2023-10-31T14:24:04Z,NickleDave
+17,rdata,2023-10-19 11:52:43+00:00,2023-10-20 15:17:15+00:00,['presubmission'],143,presubmission,2023-10-20T15:17:15Z,NickleDave
+18,ncompare,2023-10-13 14:52:42+00:00,2023-10-19 14:31:01+00:00,['presubmission'],142,presubmission,2023-10-19T14:31:01Z,NickleDave
+19,PixAnalyzer,2023-10-11 14:17:34+00:00,2023-10-27 12:06:09+00:00,['presubmission'],141,presubmission,2023-10-27T12:06:06Z,NickleDave
+20,cc_pathplanner,2023-10-09 12:01:51+00:00,2023-10-25 17:11:11+00:00,['presubmission'],140,presubmission,2023-10-25T17:11:11Z,NickleDave
+21,EOmaps,2023-09-21 18:03:49+00:00,2023-09-26 12:59:57+00:00,"['presubmission', 'Submission Requested']",137,presubmission,2023-09-26T15:53:40Z,raphaelquast
+22,pywikipathways,2023-09-13 07:18:05+00:00,2023-09-28 15:33:59+00:00,"['presubmission', 'Submission Requested']",136,presubmission,2023-09-28T15:33:59Z,NickleDave
+23,automata,2023-09-11 00:22:02+00:00,2023-09-18 19:00:28+00:00,"['presubmission', 'Submission Requested']",135,presubmission,2024-01-09T16:17:37Z,lwasser
+24,THzTools,2023-09-08 05:48:33+00:00,2023-09-12 02:20:18+00:00,"['presubmission', 'Submission Requested']",134,presubmission,2023-09-12T01:23:03Z,NickleDave
+25,harmonize-wq,2023-09-01 18:03:57+00:00,2023-09-13 20:42:51+00:00,"['presubmission', 'Submission Requested']",132,presubmission,2023-09-13T20:42:52Z,NickleDave
+26,HaploDynamics,2023-08-29 06:14:36+00:00,2023-09-13 20:41:10+00:00,"['presubmission', '⌛ pending-maintainer-response', 'Submission Requested']",131,presubmission,2023-09-13T20:41:10Z,NickleDave
+27,GemGIS,2023-08-07 10:14:01+00:00,2023-08-08 16:38:17+00:00,['presubmission'],126,presubmission,2023-08-08T16:38:17Z,NickleDave
+28,sciform,2023-06-07 06:19:44+00:00,2023-09-13 20:37:15+00:00,"['presubmission', 'Submission Requested']",114,presubmission,2023-09-13T20:37:15Z,NickleDave
+29,cardsort,2023-04-18 09:21:55+00:00,2023-04-21 13:48:39+00:00,['presubmission'],101,presubmission,2023-04-21T13:48:39Z,NickleDave
+30,plenoptic,2023-04-12 19:17:36+00:00,2023-04-19 17:40:25+00:00,['presubmission'],97,presubmission,2023-04-19T17:40:25Z,billbrod
+31,afscgap,2023-03-17 21:09:19+00:00,2023-03-25 15:11:26+00:00,['presubmission'],91,presubmission,2023-03-25T15:11:26Z,NickleDave
+32,bibat,2023-02-21 15:38:59+00:00,2023-03-01 15:51:53+00:00,['presubmission'],82,presubmission,2023-03-01T15:51:53Z,NickleDave
+33,Hamilton (sf-hamilton on pypi),2023-01-25 06:36:00+00:00,2023-02-02 23:18:16+00:00,['presubmission'],74,presubmission,2023-02-02T23:18:16Z,NickleDave
+34,"__Pynteny: a Python package to perform synteny-aware, profile HMM-based searches in sequence databases__",2022-12-05 11:58:14+00:00,2023-01-03 17:57:22+00:00,['presubmission'],65,presubmission,2023-01-03T17:57:22Z,NickleDave
+35,cookiecutter-cmdstanpy-analysis,2022-09-26 09:55:04+00:00,2022-09-27 16:31:04+00:00,['presubmission'],62,presubmission,2022-09-27T20:40:17Z,teddygroves
+36,tdda,2022-09-14 16:49:04+00:00,2022-11-29 16:21:18+00:00,['presubmission'],58,presubmission,2022-11-29T20:47:04Z,NickleDave
+37,genomepy,2022-09-02 07:15:42+00:00,2022-09-29 05:51:45+00:00,['presubmission'],56,presubmission,2022-09-29T14:12:13Z,lwasser
+38,dianna,2021-11-24 16:51:10+00:00,2022-01-03 15:55:34+00:00,"['presubmission', 'currently-out-of-scope']",48,presubmission,2022-01-03T15:55:34Z,NickleDave
+39,sevivi,2021-11-18 15:57:33+00:00,2021-12-27 14:01:19+00:00,['presubmission'],47,presubmission,2021-12-27T14:01:19Z,NickleDave
+40,qutip,2021-09-01 15:13:17+00:00,2021-12-16 21:32:26+00:00,"['presubmission', 'currently-out-of-scope']",46,presubmission,2021-12-17T18:08:51Z,lwasser
+41,CR-Sparse,2021-07-07 05:15:53+00:00,2021-07-07 13:50:10+00:00,['presubmission'],42,presubmission,2021-07-07T21:45:11Z,lwasser
+42,inteq,2021-06-19 22:04:31+00:00,2021-09-01 18:33:05+00:00,"['presubmission', 'currently-out-of-scope']",40,presubmission,2021-09-01T18:33:05Z,lwasser
+43,PyMedPhys,2021-05-06 07:54:58+00:00,2021-07-07 21:49:09+00:00,['presubmission'],39,presubmission,2021-07-07T23:08:01Z,SimonBiggs
+44,pyDataverse,2021-03-24 23:21:24+00:00,2022-09-01 16:40:09+00:00,"['presubmission', '⌛ pending-maintainer-response']",36,presubmission,2022-09-01T16:40:09Z,lwasser
+45,OpenOmics,2020-12-11 06:39:51+00:00,2021-02-02 19:22:41+00:00,['presubmission'],30,presubmission,2021-02-02T19:22:41Z,NickleDave
+46,Earth Engine Environment (Conda environment),2020-11-02 01:43:58+00:00,2021-01-16 18:18:49+00:00,['presubmission'],28,presubmission,2021-01-16T18:18:49Z,NickleDave
+47,Phenopype,2020-03-26 16:57:45+00:00,2020-05-04 16:52:40+00:00,"['presubmission', 'Submission Requested']",23,presubmission,2020-05-04T16:52:30Z,mluerig
+48,pystiche,2020-03-10 13:12:08+00:00,2020-07-02 13:01:39+00:00,['presubmission'],21,presubmission,2020-07-02T13:01:39Z,pmeier
+49,pyrolite,2019-12-17 02:43:47+00:00,2020-02-28 17:23:15+00:00,"['presubmission', 'Submission Requested']",17,presubmission,2020-02-28T17:23:15Z,lwasser
+50,mf2,2019-11-23 20:57:14+00:00,2019-12-09 11:01:21+00:00,['presubmission'],15,presubmission,2019-12-10T23:53:33Z,lwasser
+51,movingpandas,2019-11-09 15:58:05+00:00,2019-11-14 22:18:30+00:00,['presubmission'],14,presubmission,2019-11-14T22:18:30Z,anitagraser
+52,pyBHL,2019-08-19 18:35:12+00:00,2021-05-27 01:41:39+00:00,['presubmission'],13,presubmission,2021-05-27T14:15:23Z,MikeTrizna
+53,,2019-05-03 15:51:04+00:00,2019-08-19 19:26:55+00:00,"['presubmission', '⌛ pending-maintainer-response']",2,presubmission,2019-08-19T19:26:55Z,lwasser
