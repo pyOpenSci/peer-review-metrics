@@ -39,5 +39,6 @@ print("hello")
 ```
 
 ```{code-cell} ipython3
-print("hello")
+a = 1 + 2
+print(a)
 ```

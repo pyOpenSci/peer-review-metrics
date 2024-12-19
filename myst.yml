@@ -4,18 +4,30 @@ project:
   github: https://github.com/pyopensci/peer-review-metrics
   keywords:
     - software peer review
-    - pyOpenSci    
+    - pyOpenSci  
+  exclude:
+    - pyosmetrics_pkg/*
+    - _law_tests/*
+    - pyOpenSci-stats.md
+
 site:
   nav:
-    # top-level nav
-    - title: Current review data
-      url: /current-reviews-data
-    - title: All time review data
-      url: /pyOpenSci-peer-review-stats
+    # top-level nav - these links don't work if you use the path to the file.
+    - title: Peer review data
+      children:
+        - title: Historical data
+          url: /peer-review-metrics/historical-peer-review-stats
+        - title: Peer review data
+          url: /peer-review-metrics/current-reviews-data
+        - title: Review Timelines
+          url: /peer-review-metrics/review-timing
+    - title: Contributor data
+      url: /peer-review-metrics/contributor-pr-issues
     - title: Contributing
-      url: /README
+      url: /peer-review-metrics/README
   template: book-theme
   options:
     logo: images/logo.png
     logo-text: pyOpenSci logo
-    favicon: images/favicon.ico
+    favicon: /peer-review-metrics/images/favicon.ico
+    hide_toc: false

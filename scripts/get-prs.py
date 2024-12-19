@@ -1,7 +1,7 @@
-"""A script that parses all active pyos repos and collects contributor and 
+"""A script that parses all active pyOS repos and collects contributor and 
 activity information in the form of opened issues and pull requests. 
 
-This script returns a .csv file that contains all issue and pr data for items:
+This script returns a `.csv` file that contains all issue and pr data for items:
 
 * not created by a bot 
 * and created in the specific current year.
@@ -18,8 +18,7 @@ on near years eve
     # Run specifically on New Year's Eve at 11:30 PM
     - cron: '30 23 31 12 *'
      
-That way we are sure to capture data for the entirety of 2024 on new years eve!!
-
+That way we are sure to capture data for the entirety of 2024 on new years eve!!xw
 """
 
 import logging
@@ -76,7 +75,9 @@ def get_repo_data(
         if gh_user in contrib_types["bots"]:
             continue  # Skip items created by bots
         elif gh_user in contrib_types["pyos_staff"]:
-            contrib_type = "staff"  # Flag items that are core staff
+            contrib_type = "staff"
+        else:
+            contrib_type = "contributor"
 
         created_at = datetime.strptime(
             item["created_at"], "%Y-%m-%dT%H:%M:%SZ"
@@ -148,11 +149,6 @@ def process_repo(github_api, repo_name, contrib_types, user_location_cache):
         )
         print(f" -- Combining issues and prs for {repo_name}")
         all_contribs_df = pd.concat([issues_df, prs_df], ignore_index=True)
-        # Remove items created before 2024 - this is a hack to account for the
-        # rest
-        all_contribs_df = all_contribs_df[
-            all_contribs_df["item_opened_by"] >= "2024-01-01"
-        ]
         print(f" -- Finished with {repo_name} API calls")
 
         return all_contribs_df
@@ -160,10 +156,35 @@ def process_repo(github_api, repo_name, contrib_types, user_location_cache):
         logging.error(f"An error occurred: {e}")
 
 
+# Set this to True if you want to update the 2018-2023 data
+all_dates = False
+
+
 def main():
-    # Get the current year
-    current_year = datetime.now().year
-    after_date = f"{current_year}-01-01"
+    """This workflow
+    1. gets the current year.
+    2. processes all prs and issues collected during that year
+    3. creates a data frame with the issues:
+       * opened date,
+       * opened by gh handle
+       * whether it was opened by staff or a non staff contributor
+       * what repo it was opened in
+       * whether it's a pr or an issue
+       Here are the df headers
+       title,item_opened_by,current_status,labels,created_by,location,contrib_type,repo,type
+    It then saves a csv file with data for the current year
+    """
+    print(f"I am working here {os.getcwd()}")
+
+    if all_dates:
+
+        after_date = "2018-01-01"
+        current_year = "2018"
+        print(f"Processing all years; start year: {current_year}")
+    else:
+        # Get the current year
+        current_year = datetime.now().year
+        after_date = f"{current_year}-01-01"
 
     github_api = GitHubAPI(
         org="pyopensci", repo="", endpoint_type="", after_date=after_date
@@ -193,10 +214,9 @@ def main():
         "pyosPackage",
         "pyos-sphinx-theme",
     ]
-    all_contribs_final = []  # Create an empty DataFrame
+    all_contribs_final = []
 
-    # Object to reduce user api calls.
-    # The alternative is to retrieve contrib location data at the end
+    # Object to reduce user api calls
     user_location_cache = {}
     for repo_name in repo_names:
         start_time = time.time()
@@ -205,7 +225,8 @@ def main():
             github_api, repo_name, contrib_types, user_location_cache
         )
 
-        print(f"Adding new df data for {repo_name} & saving csv")
+        print(f"Adding data for {repo_name}")
+
         all_contribs_final.append(all_contribs_df)
         end_time = time.time()
 
@@ -217,10 +238,24 @@ def main():
 
     # Write all_contribs_final_df to a single CSV file
     os.makedirs("_data", exist_ok=True)
-    all_contribs_final_df.to_csv(
-        os.path.join("_data", f"{current_year}_all_issues_prs.csv"),
-        index=False,
-    )
+    if all_dates:
+        # Clean data of current year but don't use current_year var because
+        # that is set to 2018 (start year) if we want to get all contribs
+        # back to 2018 when pyOS started
+        # TODO: this is not currently working. It doesn't remove dates
+        # in 2024
+        up_to_year = datetime(datetime.now().year, 1, 1)
+        all_contribs_final_df = all_contribs_final_df[
+            all_contribs_final_df["item_opened_by"] < up_to_year
+        ]
+
+    # Export to csv
+    if all_dates:
+        csv_path = os.path.join("_data", "2018_2023_all_issues_prs.csv")
+    else:
+        csv_path = os.path.join("_data", f"{current_year}_all_issues_prs.csv")
+    all_contribs_final_df.to_csv(csv_path, index=False)
+    print(f"Saved csv here: {csv_path}")
 
 
 if __name__ == "__main__":
