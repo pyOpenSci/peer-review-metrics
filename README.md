@@ -76,7 +76,7 @@ or [`pipx` for global install](https://pipx.pypa.io/stable/):
 
 To build the html version of the dashboard use
 
-`nox -s build`
+`nox -s html`
 
 ### Build a live local server dashboard
 
