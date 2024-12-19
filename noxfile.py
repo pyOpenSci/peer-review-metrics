@@ -10,6 +10,7 @@ build_execute = ["build", "--html", "--execute"]
 @nox.session
 def html(session):
     session.install("-r", "requirements.txt")
+    session.install("-e", "./pyosmetrics_pkg")
     cmd = ["myst"]
     cmd.extend(build_execute + session.posargs)
     session.run(*cmd)
