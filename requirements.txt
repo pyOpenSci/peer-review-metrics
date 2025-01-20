@@ -1,5 +1,6 @@
 mystmd
 nox
+tqdm
 # if you want to use jupyter lab to edit notebooks
 jupyterlab_myst
 # to support efficient pandas string behaviors
