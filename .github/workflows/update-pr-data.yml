@@ -33,6 +33,7 @@ jobs:
           pip install -r requirements.txt
           python scripts/get-prs.py
           python scripts/get-reviews.py
+          python scripts/get-sprint-data.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
