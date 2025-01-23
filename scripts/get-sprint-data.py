@@ -163,6 +163,8 @@ def get_project_items(project_id, access_token):
                       title
                       number
                       url
+                      createdAt
+                      closedAt
                       repository {
                         nameWithOwner
                       }
@@ -181,6 +183,8 @@ def get_project_items(project_id, access_token):
                       title
                       number
                       url
+                      createdAt
+                      closedAt
                       repository {
                         nameWithOwner
                       }
@@ -249,6 +253,8 @@ class Task(BaseModel):
     type: TaskType
     repository: str
     organization: str = "pyopensci"
+    created: str | None = None
+    closed: str | None = None
 
     @property
     def api_url(self):
@@ -288,6 +294,8 @@ class Task(BaseModel):
             "organization": self.organization,
             "state": self.state,
             "number": self.number,
+            "created": self.created,
+            "closed": self.closed,
             "url": self.url,
             "api_url": self.api_url,
         }
@@ -308,6 +316,8 @@ def parse_item(item):
         type=TaskType(item["content"]["__typename"]),
         repository=repo,
         organization=org,
+        created=item["content"]["createdAt"],
+        closed=item["content"]["closedAt"],
     )
 
 
