@@ -1,75 +1,77 @@
 ,package_name,date_opened,date_closed,labels,issue_num,status,last_comment_date,last_comment_user
-0,PIVA,2025-01-04 14:36:12+00:00,,"['0/pre-review-checks', 'New Submission!']",231,pre-review,,
-1,GREOPy,2024-12-21 12:34:09+00:00,,"['0/pre-review-checks', 'New Submission!']",227,pre-review,,
-2,tda-mapper,2024-12-15 09:07:37+00:00,,['0/seeking-editor'],222,seeking editor,2024-12-23T14:29:59Z,lucasimi
-3,GALFITools,2024-12-07 00:28:52+00:00,,['0/pre-review-checks'],220,pre-review,2024-12-15T10:20:09Z,SimonMolinsky
-4,DQMaRC,2024-10-31 11:48:11+00:00,,"['0/pre-review-checks', 'New Submission!']",215,pre-review,2024-11-07T18:44:03Z,SimonMolinsky
-5,GALAssify,2024-09-30 09:12:52+00:00,,['0/seeking-editor'],214,seeking editor,2024-12-02T14:56:00Z,SimonMolinsky
-6,neonutilities,2024-09-25 21:27:31+00:00,,['0/seeking-editor'],213,seeking editor,2024-12-09T19:11:49Z,cklunch
-7,FElupe,2024-09-14 22:37:44+00:00,,['1/editor-assigned'],212,under-review,2024-12-07T16:43:53Z,nicoguaro
-8,Solar Data Tools,2024-08-17 06:30:02+00:00,,['2/seeking-reviewers'],210,under-review,2024-11-15T08:45:32Z,cmarmo
-9,THzTools,2024-08-01 11:54:53+00:00,2024-12-03 02:41:20+00:00,"['6/pyOS-approved', '9/joss-approved']",209,joss-accepted,2024-10-18T06:07:32Z,jsdodge
-10,BlackMarblePy,2024-07-18 14:15:11+00:00,,['3/reviewers-assigned'],207,under-review,2024-12-06T21:52:56Z,yeelauren
-11,MontePy,2024-07-01 21:04:05+00:00,,['3/reviewers-assigned'],205,under-review,2024-10-30T16:32:14Z,kellyrowland
-12,Great Tables,2024-06-14 19:55:59+00:00,,['6/pyOS-approved'],202,pyos-accepted,2025-01-03T17:05:48Z,Batalex
-13,Stingray,2024-06-14 12:59:47+00:00,2024-11-13 00:03:51+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",201,joss-accepted,2024-11-13T00:03:51Z,hamogu
-14,Fluidimage,2024-05-30 12:53:48+00:00,,['3/reviewers-assigned'],194,under-review,2024-12-07T22:52:00Z,cmarmo
-15,astrodata,2024-05-13 23:48:03+00:00,,"['5/awaiting-reviewer-response', 'astropy']",181,under-review,2024-12-30T16:24:29Z,mwcraig
-16,QuadratiK,2024-05-13 21:23:44+00:00,,['6/pyOS-approved'],180,pyos-accepted,2024-12-23T10:31:48Z,rmj3197
-17,PyPartMC,2024-05-03 18:22:59+00:00,,['4/reviews-in-awaiting-changes'],179,under-review,2024-12-20T21:25:30Z,simonom
-18,Dolphot-LC,2024-05-01 02:37:44+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",177,on hold,2024-07-05T19:27:38Z,cmarmo
-19,ANDES,2024-04-22 15:24:10+00:00,,"['0/pre-review-checks', 'on-hold']",176,on hold,2024-07-01T19:36:36Z,cmarmo
-20,AMS,2024-04-22 01:37:56+00:00,,['3/reviewers-assigned'],174,under-review,2024-12-01T15:18:25Z,NimaSarajpoor
-21,pooltool,2024-04-15 21:44:43+00:00,2024-10-01 11:51:34+00:00,"['6/pyOS-approved', '9/joss-approved']",173,joss-accepted,2024-08-07T10:20:16Z,sebastianotronto
-22,CovPlan,2024-03-25 17:06:21+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",170,on hold,2024-05-25T08:18:39Z,Batalex
-23,martini,2024-03-06 17:08:29+00:00,2024-07-01 15:58:14+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",164,joss-accepted,2024-06-04T15:03:59Z,kyleaoman
-24,ZodiPy,2024-02-24 12:28:07+00:00,2024-05-13 17:38:26+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",161,joss-accepted,2024-05-13T17:38:26Z,dhomeier
-25,plot_phylo,2024-02-22 11:55:59+00:00,,['4/reviews-in-awaiting-changes'],160,under-review,2024-11-27T23:50:29Z,ammaraziz
-26,PetroFit,2024-02-16 22:46:47+00:00,,"['5/awaiting-reviewer-response', 'astropy']",159,under-review,2024-12-02T16:18:49Z,dhomeier
-27,harmonize-wq,2024-02-08 19:43:03+00:00,,"['6/pyOS-approved', '9/joss-approved']",157,joss-accepted,2024-07-29T19:08:54Z,Batalex
-28,disdrodb,2024-01-18 17:25:28+00:00,,['1/editor-assigned'],156,under-review,2024-10-02T22:20:51Z,lwasser
-29,xnemogcm,2024-01-06 12:33:45+00:00,2024-04-18 10:12:09+00:00,['6/pyOS-approved'],155,pyos-accepted,2024-03-11T03:58:54Z,paigem
-30,automata,2023-12-31 02:23:34+00:00,2024-08-01 19:14:27+00:00,['6/pyOS-approved'],152,pyos-accepted,2024-06-06T17:34:21Z,eliotwrobson
-31,Plenoptic,2023-11-17 20:39:40+00:00,,"['3/reviewers-assigned', '⌛ pending-maintainer-response']",150,on hold,2024-06-01T20:25:46Z,sneakers-the-rat
-32,SLEPLET,2023-11-16 01:32:15+00:00,2024-06-06 08:29:04+00:00,"['6/pyOS-approved', '9/joss-approved']",149,joss-accepted,2024-04-28T08:59:59Z,SimonMolinsky
-33,sunpy,2023-10-30 18:45:06+00:00,2024-01-27 23:05:39+00:00,['6/pyOS-approved'],147,pyos-accepted,2024-01-20T18:29:15Z,nabobalis
-34,ncompare,2023-10-25 13:12:48+00:00,2024-06-12 15:48:36+00:00,"['6/pyOS-approved', '9/joss-approved']",146,joss-accepted,2024-06-12T15:48:20Z,lwasser
-35,rdata,2023-10-20 08:26:10+00:00,,['6/pyOS-approved'],144,pyos-accepted,2024-04-12T20:55:43Z,isabelizimm
-36,EOmaps,2023-09-26 12:14:47+00:00,2024-03-20 05:56:50+00:00,['6/pyOS-approved'],138,pyos-accepted,2024-02-04T20:07:41Z,banesullivan
-37,sourmash,2023-08-14 21:02:57+00:00,2024-07-22 20:13:57+00:00,"['6/pyOS-approved', '9/joss-approved']",129,joss-accepted,2024-04-06T14:09:30Z,ctb
-38,GemGIS,2023-08-08 07:11:59+00:00,,"['4/reviews-in-awaiting-changes', '⌛ pending-maintainer-response', 'on-hold']",128,on hold,2024-07-20T18:42:08Z,AlexanderJuestel
-39,psychoanalyze,2023-08-04 19:38:38+00:00,2024-10-03 00:03:35+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'on-hold']",125,on hold,2024-10-03T00:42:50Z,schlich
-40,Sciform,2023-07-21 04:41:08+00:00,2024-05-02 16:42:00+00:00,['6/pyOS-approved'],121,pyos-accepted,2023-11-04T03:24:36Z,jagerber48
-41,astartes,2023-07-10 22:12:51+00:00,2023-11-12 21:12:16+00:00,"['6/pyOS-approved', '9/joss-approved']",120,joss-accepted,2023-10-08T15:13:50Z,cmarmo
-42,XGI,2023-06-08 16:15:32+00:00,2023-10-23 07:38:27+00:00,"['6/pyOS-approved', '9/joss-approved']",115,joss-accepted,2023-09-21T09:27:38Z,SimonMolinsky
-43,climate_indices,2023-05-12 19:51:24+00:00,2024-10-03 00:02:02+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response']",111,on hold,2024-10-03T00:02:02Z,lwasser
-44,biocypher,2023-05-04 18:08:32+00:00,2023-11-28 18:03:51+00:00,['6/pyOS-approved'],110,pyos-accepted,2023-08-22T08:49:26Z,arianesasso
-45,cardsort,2023-04-20 11:29:27+00:00,2023-08-23 08:21:12+00:00,['6/pyOS-approved'],102,pyos-accepted,2023-05-30T15:26:18Z,katoss
-46,FawltyDeps,2023-04-02 12:01:54+00:00,2023-04-12 19:16:56+00:00,"['0/pre-review-checks', 'New Submission!', 'currently-out-of-scope']",94,out of scope,2023-04-21T13:53:52Z,NickleDave
-47,afscgap,2023-03-25 00:27:27+00:00,2023-06-28 19:06:00+00:00,"['6/pyOS-approved', '9/joss-approved']",93,joss-accepted,2023-05-04T17:40:34Z,ayushanand18
-48,taxpasta,2023-03-02 16:50:50+00:00,2023-07-12 14:22:46+00:00,"['6/pyOS-approved', '9/joss-approved']",84,joss-accepted,2023-04-18T16:18:13Z,bluegenes
-49,bibat,2023-03-01 14:16:51+00:00,2023-12-13 22:30:02+00:00,['6/pyOS-approved'],83,pyos-accepted,2023-12-13T22:30:02Z,lwasser
-50,Python-graphblas,2023-02-04 23:07:20+00:00,2023-07-27 17:48:29+00:00,['6/pyOS-approved'],81,pyos-accepted,2023-03-28T13:19:05Z,szhorvat
-51,Hamilton (sf-hamilton on pypi),2023-02-01 20:37:10+00:00,2024-10-02 23:59:57+00:00,"['0/pre-review-checks', 'on-hold']",80,on hold,2024-10-02T23:59:57Z,lwasser
-52,xclim,2023-01-16 16:59:20+00:00,2023-05-22 04:04:53+00:00,"['6/pyOS-approved', '9/joss-approved', 'Pangeo']",73,joss-accepted,2023-04-04T14:53:35Z,Zeitsperre
-53,crowsetta,2023-01-03 19:39:16+00:00,2023-04-13 20:26:00+00:00,"['6/pyOS-approved', '9/joss-approved']",68,joss-accepted,2023-03-11T12:28:48Z,YannickJadoul
-54,Pynteny,2022-12-16 22:02:53+00:00,2023-04-12 20:48:15+00:00,"['6/pyOS-approved', '9/joss-approved']",67,joss-accepted,2023-02-27T22:07:58Z,lwasser
-55,PyGMTSAR,2022-09-17 04:31:21+00:00,2022-11-29 16:19:38+00:00,"['0/pre-review-checks', 'currently-out-of-scope']",60,out of scope,2022-10-31T15:36:49Z,NickleDave
-56,hudpy,2022-06-13 05:33:45+00:00,2022-09-01 21:41:41+00:00,"['0/pre-review-checks', 'New Submission!', 'on-hold']",54,on hold,2022-09-01T21:41:41Z,lwasser
-57,HuMPI: Hurricane Maximum Potential Intensity model,2022-04-27 12:14:22+00:00,2022-09-01 18:26:09+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'New Submission!']",52,on hold,2022-09-01T18:26:09Z,lwasser
-58,Ocetrac,2021-11-30 18:52:06+00:00,2022-02-23 18:15:26+00:00,"['0/pre-review-checks', 'New Submission!', 'on-hold']",49,on hold,2024-08-13T01:54:04Z,lwasser
-59,Sevivi,2021-12-30 13:55:10+00:00,2022-09-06 14:18:26+00:00,"['4/reviews-in-awaiting-changes', '⌛ pending-maintainer-response']",50,on hold,2022-09-06T14:18:26Z,lwasser
-60,Jointly,2021-08-31 12:58:45+00:00,2022-01-12 18:45:20+00:00,['6/pyOS-approved'],45,pyos-accepted,2021-12-29T22:23:46Z,xmnlab
-61,PyGMT,2021-07-23 00:37:07+00:00,2023-06-12 22:47:16+00:00,['6/pyOS-approved'],43,pyos-accepted,2022-01-07T16:39:56Z,lwasser
-62,Devicely,2021-04-03 19:25:41+00:00,2022-09-07 15:40:27+00:00,"['6/pyOS-approved', '9/joss-approved']",37,joss-accepted,2021-07-19T16:41:07Z,arianesasso
-63,,2019-03-22 15:49:42+00:00,2022-09-01 16:33:11+00:00,"['4/reviews-in-awaiting-changes', 'topic: data-retrieval', 'incomplete-closed-review', 'on-hold']",1,on hold,2019-07-15T15:42:22Z,lwasser
-64,openomics,2021-01-01 19:54:20+00:00,2021-05-10 17:48:02+00:00,"['6/pyOS-approved', '9/joss-approved']",31,joss-accepted,2021-03-17T13:41:48Z,NickleDave
-65,Physcraper,2020-07-15 22:31:52+00:00,2021-09-18 01:07:07+00:00,['6/pyOS-approved'],26,pyos-accepted,2021-08-06T13:18:12Z,NickleDave
-66,pystiche,2020-07-02 12:57:08+00:00,2020-10-14 16:05:10+00:00,"['6/pyOS-approved', '9/joss-approved']",25,joss-accepted,2020-09-24T06:10:42Z,soumith
-67,phenopype,2020-05-04 16:51:36+00:00,2021-05-17 21:07:45+00:00,['6/pyOS-approved'],24,pyos-accepted,2020-10-15T09:14:50Z,mluerig
-68,pyrolite,2020-02-19 04:54:35+00:00,2020-06-09 13:13:43+00:00,"['6/pyOS-approved', '9/joss-approved']",20,joss-accepted,2020-06-09T18:58:35Z,charlesll
-69,MovingPandas,2020-01-06 17:13:27+00:00,2020-04-08 17:14:16+00:00,['6/pyOS-approved'],18,pyos-accepted,2020-02-08T14:23:15Z,anitagraser
-70,ObsPy,2019-12-12 00:42:45+00:00,2022-09-01 16:38:37+00:00,"['0/pre-review-checks', '3/reviewers-assigned', 'on-hold']",16,on hold,2020-03-04T15:08:56Z,megies
-71,pandera,2019-08-14 22:21:25+00:00,2021-12-16 21:55:55+00:00,['6/pyOS-approved'],12,pyos-accepted,2019-10-10T19:52:41Z,lwasser
-72,Nbless,2019-05-30 18:27:38+00:00,2019-08-06 15:45:11+00:00,"['6/pyOS-approved', 'archived']",7,pyos-accepted,2024-12-17T18:02:51Z,lwasser
-73,earthpy,2019-05-08 15:02:14+00:00,2019-11-13 22:59:32+00:00,"['6/pyOS-approved', '9/joss-approved']",3,joss-accepted,2019-10-16T23:05:43Z,luizirber
+0,pymultifit,2025-01-21 07:30:12+00:00,,"['0/pre-review-checks', 'New Submission!']",233,pre-review,,
+1,BlockingPy,2025-01-09 18:13:33+00:00,,['0/seeking-editor'],232,seeking editor,2025-01-21T08:56:28Z,T-Strojny
+2,PIVA,2025-01-04 14:36:12+00:00,,['0/seeking-editor'],231,seeking editor,2025-01-23T19:08:54Z,coatless
+3,GREOPy,2024-12-21 12:34:09+00:00,,"['0/pre-review-checks', 'New Submission!']",227,pre-review,,
+4,tda-mapper,2024-12-15 09:07:37+00:00,,['0/seeking-editor'],222,seeking editor,2024-12-23T14:29:59Z,lucasimi
+5,GALFITools,2024-12-07 00:28:52+00:00,,['0/pre-review-checks'],220,pre-review,2024-12-15T10:20:09Z,SimonMolinsky
+6,DQMaRC,2024-10-31 11:48:11+00:00,,"['0/pre-review-checks', 'New Submission!']",215,pre-review,2024-11-07T18:44:03Z,SimonMolinsky
+7,GALAssify,2024-09-30 09:12:52+00:00,,['0/seeking-editor'],214,seeking editor,2024-12-02T14:56:00Z,SimonMolinsky
+8,neonutilities,2024-09-25 21:27:31+00:00,,['0/seeking-editor'],213,seeking editor,2024-12-09T19:11:49Z,cklunch
+9,FElupe,2024-09-14 22:37:44+00:00,,['1/editor-assigned'],212,under-review,2025-01-21T13:35:36Z,adtzlr
+10,Solar Data Tools,2024-08-17 06:30:02+00:00,,['2/seeking-reviewers'],210,under-review,2025-01-21T21:29:07Z,pluflou
+11,THzTools,2024-08-01 11:54:53+00:00,2024-12-03 02:41:20+00:00,"['6/pyOS-approved', '9/joss-approved']",209,joss-accepted,2024-10-18T06:07:32Z,jsdodge
+12,BlackMarblePy,2024-07-18 14:15:11+00:00,,['4/reviews-in-awaiting-changes'],207,under-review,2024-12-06T21:52:56Z,yeelauren
+13,MontePy,2024-07-01 21:04:05+00:00,,['3/reviewers-assigned'],205,under-review,2024-10-30T16:32:14Z,kellyrowland
+14,Great Tables,2024-06-14 19:55:59+00:00,,['6/pyOS-approved'],202,pyos-accepted,2025-01-06T17:46:35Z,rich-iannone
+15,Stingray,2024-06-14 12:59:47+00:00,2024-11-13 00:03:51+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",201,joss-accepted,2024-11-13T00:03:51Z,hamogu
+16,Fluidimage,2024-05-30 12:53:48+00:00,,['3/reviewers-assigned'],194,under-review,2025-01-23T23:28:53Z,leahmendelson
+17,astrodata,2024-05-13 23:48:03+00:00,,"['5/awaiting-reviewer-response', 'astropy']",181,under-review,2024-12-30T16:24:29Z,mwcraig
+18,QuadratiK,2024-05-13 21:23:44+00:00,,['6/pyOS-approved'],180,pyos-accepted,2024-12-23T10:31:48Z,rmj3197
+19,PyPartMC,2024-05-03 18:22:59+00:00,,['4/reviews-in-awaiting-changes'],179,under-review,2025-01-11T13:36:52Z,cmarmo
+20,Dolphot-LC,2024-05-01 02:37:44+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",177,on hold,2024-07-05T19:27:38Z,cmarmo
+21,ANDES,2024-04-22 15:24:10+00:00,,"['0/pre-review-checks', 'on-hold']",176,on hold,2024-07-01T19:36:36Z,cmarmo
+22,AMS,2024-04-22 01:37:56+00:00,,['3/reviewers-assigned'],174,under-review,2024-12-01T15:18:25Z,NimaSarajpoor
+23,pooltool,2024-04-15 21:44:43+00:00,2024-10-01 11:51:34+00:00,"['6/pyOS-approved', '9/joss-approved']",173,joss-accepted,2024-08-07T10:20:16Z,sebastianotronto
+24,CovPlan,2024-03-25 17:06:21+00:00,,"['0/pre-review-checks', '⌛ pending-maintainer-response']",170,on hold,2024-05-25T08:18:39Z,Batalex
+25,martini,2024-03-06 17:08:29+00:00,2024-07-01 15:58:14+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",164,joss-accepted,2024-06-04T15:03:59Z,kyleaoman
+26,ZodiPy,2024-02-24 12:28:07+00:00,2024-05-13 17:38:26+00:00,"['6/pyOS-approved', '9/joss-approved', 'astropy']",161,joss-accepted,2024-05-13T17:38:26Z,dhomeier
+27,plot_phylo,2024-02-22 11:55:59+00:00,,['6/pyOS-approved'],160,pyos-accepted,2024-11-27T23:50:29Z,ammaraziz
+28,PetroFit,2024-02-16 22:46:47+00:00,,"['5/awaiting-reviewer-response', 'astropy']",159,under-review,2024-12-02T16:18:49Z,dhomeier
+29,harmonize-wq,2024-02-08 19:43:03+00:00,,"['6/pyOS-approved', '9/joss-approved']",157,joss-accepted,2024-07-29T19:08:54Z,Batalex
+30,disdrodb,2024-01-18 17:25:28+00:00,,['1/editor-assigned'],156,under-review,2024-10-02T22:20:51Z,lwasser
+31,xnemogcm,2024-01-06 12:33:45+00:00,2024-04-18 10:12:09+00:00,['6/pyOS-approved'],155,pyos-accepted,2024-03-11T03:58:54Z,paigem
+32,automata,2023-12-31 02:23:34+00:00,2024-08-01 19:14:27+00:00,['6/pyOS-approved'],152,pyos-accepted,2024-06-06T17:34:21Z,eliotwrobson
+33,Plenoptic,2023-11-17 20:39:40+00:00,,"['3/reviewers-assigned', '⌛ pending-maintainer-response']",150,on hold,2024-06-01T20:25:46Z,sneakers-the-rat
+34,SLEPLET,2023-11-16 01:32:15+00:00,2024-06-06 08:29:04+00:00,"['6/pyOS-approved', '9/joss-approved']",149,joss-accepted,2024-04-28T08:59:59Z,SimonMolinsky
+35,sunpy,2023-10-30 18:45:06+00:00,2024-01-27 23:05:39+00:00,['6/pyOS-approved'],147,pyos-accepted,2024-01-20T18:29:15Z,nabobalis
+36,ncompare,2023-10-25 13:12:48+00:00,2024-06-12 15:48:36+00:00,"['6/pyOS-approved', '9/joss-approved']",146,joss-accepted,2024-06-12T15:48:20Z,lwasser
+37,rdata,2023-10-20 08:26:10+00:00,,['6/pyOS-approved'],144,pyos-accepted,2024-04-12T20:55:43Z,isabelizimm
+38,EOmaps,2023-09-26 12:14:47+00:00,2024-03-20 05:56:50+00:00,['6/pyOS-approved'],138,pyos-accepted,2024-02-04T20:07:41Z,banesullivan
+39,sourmash,2023-08-14 21:02:57+00:00,2024-07-22 20:13:57+00:00,"['6/pyOS-approved', '9/joss-approved']",129,joss-accepted,2024-04-06T14:09:30Z,ctb
+40,GemGIS,2023-08-08 07:11:59+00:00,,"['4/reviews-in-awaiting-changes', '⌛ pending-maintainer-response', 'on-hold']",128,on hold,2024-07-20T18:42:08Z,AlexanderJuestel
+41,psychoanalyze,2023-08-04 19:38:38+00:00,2024-10-03 00:03:35+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'on-hold']",125,on hold,2024-10-03T00:42:50Z,schlich
+42,Sciform,2023-07-21 04:41:08+00:00,2024-05-02 16:42:00+00:00,['6/pyOS-approved'],121,pyos-accepted,2023-11-04T03:24:36Z,jagerber48
+43,astartes,2023-07-10 22:12:51+00:00,2023-11-12 21:12:16+00:00,"['6/pyOS-approved', '9/joss-approved']",120,joss-accepted,2023-10-08T15:13:50Z,cmarmo
+44,XGI,2023-06-08 16:15:32+00:00,2023-10-23 07:38:27+00:00,"['6/pyOS-approved', '9/joss-approved']",115,joss-accepted,2023-09-21T09:27:38Z,SimonMolinsky
+45,climate_indices,2023-05-12 19:51:24+00:00,2024-10-03 00:02:02+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response']",111,on hold,2024-10-03T00:02:02Z,lwasser
+46,biocypher,2023-05-04 18:08:32+00:00,2023-11-28 18:03:51+00:00,['6/pyOS-approved'],110,pyos-accepted,2023-08-22T08:49:26Z,arianesasso
+47,cardsort,2023-04-20 11:29:27+00:00,2023-08-23 08:21:12+00:00,['6/pyOS-approved'],102,pyos-accepted,2023-05-30T15:26:18Z,katoss
+48,FawltyDeps,2023-04-02 12:01:54+00:00,2023-04-12 19:16:56+00:00,"['0/pre-review-checks', 'New Submission!', 'currently-out-of-scope']",94,out of scope,2023-04-21T13:53:52Z,NickleDave
+49,afscgap,2023-03-25 00:27:27+00:00,2023-06-28 19:06:00+00:00,"['6/pyOS-approved', '9/joss-approved']",93,joss-accepted,2023-05-04T17:40:34Z,ayushanand18
+50,taxpasta,2023-03-02 16:50:50+00:00,2023-07-12 14:22:46+00:00,"['6/pyOS-approved', '9/joss-approved']",84,joss-accepted,2023-04-18T16:18:13Z,bluegenes
+51,bibat,2023-03-01 14:16:51+00:00,2023-12-13 22:30:02+00:00,['6/pyOS-approved'],83,pyos-accepted,2023-12-13T22:30:02Z,lwasser
+52,Python-graphblas,2023-02-04 23:07:20+00:00,2023-07-27 17:48:29+00:00,['6/pyOS-approved'],81,pyos-accepted,2023-03-28T13:19:05Z,szhorvat
+53,Hamilton (sf-hamilton on pypi),2023-02-01 20:37:10+00:00,2024-10-02 23:59:57+00:00,"['0/pre-review-checks', 'on-hold']",80,on hold,2024-10-02T23:59:57Z,lwasser
+54,xclim,2023-01-16 16:59:20+00:00,2023-05-22 04:04:53+00:00,"['6/pyOS-approved', '9/joss-approved', 'Pangeo']",73,joss-accepted,2023-04-04T14:53:35Z,Zeitsperre
+55,crowsetta,2023-01-03 19:39:16+00:00,2023-04-13 20:26:00+00:00,"['6/pyOS-approved', '9/joss-approved']",68,joss-accepted,2023-03-11T12:28:48Z,YannickJadoul
+56,Pynteny,2022-12-16 22:02:53+00:00,2023-04-12 20:48:15+00:00,"['6/pyOS-approved', '9/joss-approved']",67,joss-accepted,2023-02-27T22:07:58Z,lwasser
+57,PyGMTSAR,2022-09-17 04:31:21+00:00,2022-11-29 16:19:38+00:00,"['0/pre-review-checks', 'currently-out-of-scope']",60,out of scope,2022-10-31T15:36:49Z,NickleDave
+58,hudpy,2022-06-13 05:33:45+00:00,2022-09-01 21:41:41+00:00,"['0/pre-review-checks', 'New Submission!', 'on-hold']",54,on hold,2022-09-01T21:41:41Z,lwasser
+59,HuMPI: Hurricane Maximum Potential Intensity model,2022-04-27 12:14:22+00:00,2022-09-01 18:26:09+00:00,"['0/pre-review-checks', '⌛ pending-maintainer-response', 'New Submission!']",52,on hold,2022-09-01T18:26:09Z,lwasser
+60,Ocetrac,2021-11-30 18:52:06+00:00,2022-02-23 18:15:26+00:00,"['0/pre-review-checks', 'New Submission!', 'on-hold']",49,on hold,2024-08-13T01:54:04Z,lwasser
+61,Sevivi,2021-12-30 13:55:10+00:00,2022-09-06 14:18:26+00:00,"['4/reviews-in-awaiting-changes', '⌛ pending-maintainer-response']",50,on hold,2022-09-06T14:18:26Z,lwasser
+62,Jointly,2021-08-31 12:58:45+00:00,2022-01-12 18:45:20+00:00,['6/pyOS-approved'],45,pyos-accepted,2021-12-29T22:23:46Z,xmnlab
+63,PyGMT,2021-07-23 00:37:07+00:00,2023-06-12 22:47:16+00:00,['6/pyOS-approved'],43,pyos-accepted,2022-01-07T16:39:56Z,lwasser
+64,Devicely,2021-04-03 19:25:41+00:00,2022-09-07 15:40:27+00:00,"['6/pyOS-approved', '9/joss-approved']",37,joss-accepted,2021-07-19T16:41:07Z,arianesasso
+65,,2019-03-22 15:49:42+00:00,2022-09-01 16:33:11+00:00,"['4/reviews-in-awaiting-changes', 'topic: data-retrieval', 'incomplete-closed-review', 'on-hold']",1,on hold,2019-07-15T15:42:22Z,lwasser
+66,openomics,2021-01-01 19:54:20+00:00,2021-05-10 17:48:02+00:00,"['6/pyOS-approved', '9/joss-approved']",31,joss-accepted,2021-03-17T13:41:48Z,NickleDave
+67,Physcraper,2020-07-15 22:31:52+00:00,2021-09-18 01:07:07+00:00,['6/pyOS-approved'],26,pyos-accepted,2021-08-06T13:18:12Z,NickleDave
+68,pystiche,2020-07-02 12:57:08+00:00,2020-10-14 16:05:10+00:00,"['6/pyOS-approved', '9/joss-approved']",25,joss-accepted,2020-09-24T06:10:42Z,soumith
+69,phenopype,2020-05-04 16:51:36+00:00,2021-05-17 21:07:45+00:00,['6/pyOS-approved'],24,pyos-accepted,2020-10-15T09:14:50Z,mluerig
+70,pyrolite,2020-02-19 04:54:35+00:00,2020-06-09 13:13:43+00:00,"['6/pyOS-approved', '9/joss-approved']",20,joss-accepted,2020-06-09T18:58:35Z,charlesll
+71,MovingPandas,2020-01-06 17:13:27+00:00,2020-04-08 17:14:16+00:00,['6/pyOS-approved'],18,pyos-accepted,2020-02-08T14:23:15Z,anitagraser
+72,ObsPy,2019-12-12 00:42:45+00:00,2022-09-01 16:38:37+00:00,"['0/pre-review-checks', '3/reviewers-assigned', 'on-hold']",16,on hold,2020-03-04T15:08:56Z,megies
+73,pandera,2019-08-14 22:21:25+00:00,2021-12-16 21:55:55+00:00,['6/pyOS-approved'],12,pyos-accepted,2019-10-10T19:52:41Z,lwasser
+74,Nbless,2019-05-30 18:27:38+00:00,2019-08-06 15:45:11+00:00,"['6/pyOS-approved', 'archived']",7,pyos-accepted,2024-12-17T18:02:51Z,lwasser
+75,earthpy,2019-05-08 15:02:14+00:00,2019-11-13 22:59:32+00:00,"['6/pyOS-approved', '9/joss-approved']",3,joss-accepted,2019-10-16T23:05:43Z,luizirber
