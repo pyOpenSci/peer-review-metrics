@@ -67,7 +67,7 @@ def count_edits_by_quarter(df):
         DataFrame containing the number of submissions edited by each editor
         by quarter.
     """
-    n_edits = df.groupby(by=[df["editor"], df["created_at"].dt.to_period("Q")]).count()
+    n_edits = df.groupby(by=[df["editor"], df["Date Opened"].dt.to_period("Q")]).count()
     n_edits.rename(columns=dict(created_at="n_edits"), inplace=True)
     return n_edits
 

@@ -70,10 +70,14 @@ def process_submissions(submission_type, labels):
     submission_table = [
         {
             "package_name": name,
+            "editor": getattr(review.editor, "github_username", None),
+            "eic": getattr(review.eic, "github_username", None),
             "date_opened": review.created_at,
             "date_closed": review.closed_at,
             "labels": review.labels,
             "issue_num": review.issue_link.split("/")[-1],
+            "description": review.package_description,
+            "categories": review.categories,
         }
         for name, review in reviews.items()
     ]
@@ -188,7 +192,6 @@ def get_last_comment_date(issue_num):
 
 def main():
     submission_types = {
-        "presubmission": ["presubmission"],
         "submission": [
             "0/seeking-editor",
             "0/pre-review-checks",
@@ -203,6 +206,7 @@ def main():
             "9/joss-approved",
             "New Submission!",
         ],
+        "presubmission": ["presubmission"],
     }
     issue_map = {
         "New Submission!": "pre-review",
