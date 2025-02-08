@@ -1,0 +1,287 @@
+name,location,date_added,packages_reviewed,packages_eic,packages_editor,editor,maintainer
+lwasser,United States,2019-10-10,0,0,5,False,True
+tracykteal,,2022-11-09,0,0,0,False,False
+kcranston,"Ottawa, ON",2022-11-09,0,0,0,False,False
+kierisi,,2023-11-21,0,0,0,False,False
+willingc,San Diego,2023-03-01,1,0,0,False,False
+npch,"Edinburgh, United Kingdom",2023-02-24,0,0,0,False,False
+erinmr,,2023-06-15,0,0,0,False,False
+choldgraf,California,2019-10-10,1,0,0,False,False
+inessapawson,,2023-03-21,0,0,0,False,False
+pradyunsg,"London, UK",2023-03-01,0,0,0,False,False
+xmnlab,Earth,2019-10-15,2,0,3,False,False
+ocefpaf,"Florianópolis, SC",2019-10-17,1,0,2,True,False
+leouieda,"Liverpool, UK",2023-01-18,0,0,0,False,False
+lheagy,,2019-12-10,0,0,0,False,False
+martinfleis,Prague,2020-04-09,1,0,0,False,False
+yuvipanda,,2023-01-18,0,0,0,False,False
+cmillion,,2023-11-20,0,0,0,False,False
+arianesasso,"Berlin, Germany",2021-08-24,0,0,2,False,True
+nickledave,Charm City,2019-12-10,1,2,3,True,True
+cmarmo,,2023-01-24,1,2,4,True,False
+jlpalomino,,2019-10-25,1,0,1,False,True
+simonmolinsky,,2022-09-16,1,0,2,True,False
+anitagraser,,2020-03-26,0,0,0,False,True
+batalex,,2023-02-04,1,3,5,True,False
+mbjoseph,"Denver, CO",2019-10-17,1,0,0,False,True
+luizirber,"Davis, CA",2019-10-17,0,0,1,False,True
+dynamicwebpaige,"Seattle, WA",2023-02-24,0,0,0,False,False
+carsonfarmer,"Victoria, B.C., Canada",2023-02-24,0,0,0,False,False
+jhamman,"Seattle, WA",2023-02-24,0,0,0,False,False
+kysolvik,,2023-02-24,1,0,0,False,False
+marskar,"Rockville/Bethesda, Maryland",2023-02-24,0,0,0,False,True
+miketrizna,"Washington, DC",2023-02-24,0,0,0,False,False
+cosmicbboy,"Atlanta, GA, US",2019-12-10,0,0,0,False,True
+sgillies,"Fort Collins, Colorado",2019-12-10,1,0,0,False,False
+haozeke,University of Iceland,2019-12-10,1,0,0,False,False
+morganjwilliams,"Perth, WA, Australia",2020-06-08,0,0,0,False,True
+pmeier,Germany,2020-10-14,1,0,0,False,True
+edgarriba,"Barcelona, Spain",2020-10-14,2,0,0,False,False
+dov-vlaanderen,,2021-02-19,0,0,0,False,True
+roel,,2021-03-02,0,0,0,False,True
+stijnvanhoey,,2021-03-02,0,0,0,False,True
+pjhaest,Belgium,2021-03-02,0,0,0,False,True
+jonnytran,,2021-04-30,1,0,0,False,True
+ksielemann,,2021-05-07,1,0,0,False,False
+mluerig,Sweden,2021-05-13,0,0,0,False,True
+snacktavish,,2021-09-16,1,0,1,False,True
+lunasare,"Merced, CA, USA",2021-09-16,0,0,0,False,True
+arthur-e,"Missoula, MT",2022-01-12,1,0,0,False,False
+alexs12,Madrid (Spain),2022-01-12,1,0,0,False,False
+jbusecke,"Brooklyn, New York",2022-09-08,1,0,0,False,False
+npalopoli,"Buenos Aires, Argentina",2023-03-01,0,0,0,False,False
+eriknw,"Austin, TX",2023-03-01,0,0,0,False,True
+tupui,"Graz, Austria",2023-03-01,0,0,0,False,False
+sneakers-the-rat,,2023-03-01,1,0,1,True,False
+radoering,,2023-03-01,0,0,0,False,False
+astrojuanlu,Spain,2023-03-01,0,0,0,False,False
+henryiii,"Princeton, NJ",2023-03-01,0,0,0,False,False
+stefanv,"Berkeley, CA",2023-03-01,0,0,0,False,False
+eli-schwartz,,2023-03-01,0,0,0,False,False
+rgommers,Netherlands,2023-03-01,0,0,0,False,False
+ofek,Knowhere,2023-03-01,0,0,0,False,False
+tomaugspurger,,2023-03-01,0,0,0,False,False
+rabernat,New York City,2023-03-01,0,0,0,False,False
+gawbul,Earth,2023-03-01,1,0,0,False,False
+matthew-brett,"London, UK",2023-03-01,0,0,0,False,False
+reventonc,"Atlanta, GA",2023-03-01,0,0,0,False,False
+sumit-158,India,2023-03-01,0,0,0,False,False
+consideratio,Sweden,2023-03-01,0,0,0,False,False
+arokem,"Seattle, WA",2023-03-01,0,0,0,False,False
+jmason86,Washington DC,2023-03-01,0,0,0,False,False
+aragilar,,2023-04-13,0,0,0,False,False
+frostming,"Shenzhen, China",2023-04-13,0,0,0,False,False
+hugovk,"Helsinki, Finland",2023-04-13,0,0,0,False,False
+kwinkunks,"Bergen, Norway",2023-04-13,0,0,0,False,False
+jezdez,Germany,2023-04-13,0,0,0,False,False
+dhirschfeld,"Brisbane, Australia",2023-04-13,0,0,0,False,False
+benjaminrodenberg,,2023-04-14,0,0,0,False,False
+tlogan2000,Montreal,2023-04-14,0,0,0,False,True
+aulemahal,Montréal,2023-04-14,0,0,0,False,True
+enra64,,2023-04-13,0,0,0,False,True
+agricolab,"Tuebingen, Germany",2023-04-13,1,0,0,False,False
+bpucker,Germany,2023-04-13,1,0,0,False,False
+leomrtns,"Norwich, UK",2023-04-13,1,0,0,False,False
+soumith,"New York, USA",2023-04-13,1,0,0,False,False
+agporto,"Baton Rouge, LA",2023-04-13,1,0,0,False,False
+sdonoughe,,2023-04-13,1,0,0,False,False
+jbencook,"Omaha, NE",2023-04-13,0,0,1,False,False
+rbeucher,"Canberra, Australia",2023-04-13,1,0,0,False,False
+charlesll,France,2023-04-13,1,0,0,False,False
+weiji14,Wellington,2023-04-13,0,0,0,False,True
+rhine3,"Pittsburgh, PA, USA",2023-03-29,1,0,0,False,False
+aguspesce,"British Columbia, Canada",2023-04-12,1,0,0,False,False
+shaupert,PARIS,2023-04-13,1,0,0,False,False
+yannickjadoul,"Nijmegen, the Netherlands",2023-04-13,8,0,0,False,False
+robaina,Atlantic Ocean,2023-04-13,1,0,0,False,True
+zeitsperre,"Montreal, Canada",2023-04-13,0,0,0,False,True
+jmunroe,,2023-04-13,1,0,0,False,False
+c-thoben,,2023-04-13,1,0,0,False,False
+tomalrussell,Oxford / London,2023-04-18,0,0,2,True,False
+ctb,"Davis, CA",2023-04-18,0,0,2,True,True
+mjhajharia,,2023-04-18,0,0,1,True,False
+mccrayjr,"Washington, DC",2023-04-24,0,0,0,False,False
+meerkatters,"Seattle, WA",2023-04-24,0,0,0,False,False
+tiffanyxiao,"New York, New York",2023-04-24,0,0,0,False,False
+austinlg96,,2023-04-24,0,0,0,False,False
+paajake,Ghana,2023-04-24,0,0,0,False,False
+bbulpett,Gotham,2023-04-24,0,0,0,False,False
+ucodery,,2023-05-26,0,0,0,False,False
+forgottenprogramme,"Berlin, Germany",2023-05-26,0,0,0,False,False
+chiinita,"London, UK",2023-05-26,0,0,0,False,False
+dstansby,"London, UK",2023-05-26,0,0,0,False,True
+juanis2112,"Santa Cruz, California",2023-05-26,0,0,0,False,False
+crazy4pi314,"Seattle, WA",2023-05-26,0,0,0,False,False
+sampottinger,,2023-06-01,0,0,0,False,True
+abravalheri,"Bristol, UK",2023-06-14,0,0,0,False,False
+dpprdan,"Hamburg, Germany",2023-06-14,0,0,0,False,False
+cam-gerlach,"Huntsville, AL, United States",2023-06-14,0,0,0,False,False
+teddygroves,,2023-07-12,0,0,0,False,True
+jfy133,"Leipzig, Germany",2023-07-12,0,0,0,False,True
+midnighter,"Copenhagen, Denmark",2023-07-12,1,0,0,False,True
+szhorvat,,2023-07-15,1,0,0,False,False
+yang-ruoxi,,2023-07-15,0,0,0,False,False
+pllim,"Baltimore, MD, USA",2023-07-15,1,0,0,False,False
+namurphy,"Cambridge, Massachusetts, USA",2023-07-15,0,0,0,False,False
+hamogu,"Cambridge, MA, USA",2023-07-15,0,0,2,True,False
+g-patlewicz,,2023-07-15,0,0,0,False,False
+msarahan,"Austin, TX",2023-07-15,0,0,0,False,False
+thomasjpfan,New York City,2023-07-15,0,0,0,False,False
+klmcadams,,2023-07-27,0,0,0,False,False
+rickynilsson,"Los Angeles, CA",2023-07-27,0,0,0,False,False
+oriolabril,Barcelona,2023-07-27,1,0,0,False,False
+alizma,,2023-07-27,1,0,0,False,False
+bluegenes,"San Diego, CA",2023-07-27,1,0,0,False,True
+sofstam,"Stockholm, Sweden",2023-07-27,0,0,0,False,True
+7yl4r,"St. Petersburg, FL",2023-07-27,1,0,0,False,False
+ayushanand18,"New Delhi, India",2023-07-27,1,0,0,False,False
+gizarp,,2023-07-27,0,0,0,False,True
+jim22k,"Austin, TX",2023-07-27,0,0,0,False,True
+sultanorazbayev,Kazakhstan,2023-07-27,0,0,0,False,True
+isabelizimm,"FLorida, USA",2023-08-14,1,6,2,True,False
+eliotwrobson,"Urbana, IL",2023-09-11,1,0,0,False,True
+schlich,"St Louis, MO",2023-09-11,0,0,0,False,False
+khynder,,2023-09-11,1,0,0,False,False
+katoss,"Paris, France",2023-09-11,0,0,0,False,True
+seisman,"Wuhan, China",2023-09-11,0,0,0,False,True
+maxrjones,,2023-09-11,0,0,0,False,True
+michaelgrund,Germany,2023-09-11,0,0,0,False,True
+willschlitzer,New Jersey,2023-09-11,0,0,0,False,True
+nkorinek,"Boulder, CO",2020-09-11,0,0,0,False,True
+joemcglinchy,"Arvada, Colorado, USA",2020-09-11,0,0,0,False,True
+yvonnefroehlich,Karlsruhe (Germany),2023-09-15,0,0,0,False,True
+merwok,,2023-10-22,0,0,0,False,False
+berylkanali,,2023-10-22,1,0,0,False,False
+du-phan,"Paris, France",2023-10-22,1,0,0,False,False
+jacksonburns,MIT,2023-10-22,0,0,0,False,True
+kspieks,,2023-10-22,0,0,0,False,True
+himaghna,"San Francisco, USA",2023-10-22,0,0,0,False,True
+reckony,,2023-10-22,1,0,0,False,False
+nwlandry,"Burlington, VT",2023-10-22,0,0,0,False,True
+leotrs,"Leipzig, Lima, Boston",2023-10-22,0,0,0,False,True
+maximelucas,"Turin, Italy",2023-10-22,0,0,0,False,True
+iaciac,London,2023-10-22,0,0,0,False,True
+lordgrilo,London/Turin,2023-10-22,0,0,0,False,True
+acuschwarze,"Hanover, NH",2023-10-22,0,0,0,False,True
+thomasrobiglio,"Torino, Italy",2023-10-22,0,0,0,False,True
+alpatania,,2023-10-22,0,0,0,False,True
+jhkennedy,"Fairbanks, AK",2023-12-14,1,0,0,False,False
+billbrod,"New York, NY",2023-12-14,0,0,0,False,False
+grst,"Biberach, DE",2023-12-14,0,0,0,False,False
+nutjob4life,,2023-12-14,1,0,0,False,False
+andrew,UK,2023-12-14,0,0,0,False,False
+zethson,Germany,2023-12-14,1,0,0,False,False
+slobentanzer,,2023-12-14,0,0,0,False,True
+mknorps,"Toruń/Gdynia, Poland",2023-12-15,0,0,0,False,False
+yeelauren,,2023-12-21,1,0,0,True,False
+banesullivan,,2023-12-27,0,0,2,True,False
+flying-sheep,München,2023-12-27,0,0,0,False,False
+septaris,Meudon,2024-01-30,1,0,0,False,False
+nabobalis,"Palo Alto, CA, USA",2024-01-30,0,0,0,False,True
+ehsteve,"Washington, DC",2024-01-30,0,0,0,False,True
+dpshelio,London,2024-01-30,0,0,0,False,True
+wafels,,2024-01-30,0,0,0,False,True
+ayshih,,2024-01-30,0,0,0,False,True
+cadair,Holmfirth,2024-01-30,0,0,0,False,True
+danryanirish,,2024-01-30,0,0,0,False,True
+wtbarnes,"Washington, D.C.",2024-01-30,0,0,0,False,True
+conormacbride,"Derry, Northern Ireland",2024-01-30,0,0,0,False,True
+alasdairwilson,,2024-01-30,0,0,0,False,True
+hayesla,"Leiden, Netherlands",2024-01-30,0,0,0,False,True
+vn-ki,"Kerala, India",2024-01-30,0,0,0,False,True
+cmtso,,2024-02-15,1,0,0,False,False
+danielfromearth,,2024-02-15,0,0,0,False,True
+machow,,2024-02-15,1,0,0,False,True
+jagerber48,,2024-02-15,0,0,0,False,True
+jaimergp,,2024-02-25,0,0,0,False,False
+h-vetinari,,2024-02-25,0,0,0,False,False
+rich-iannone,"Toronto, Canada",2024-03-09,1,0,0,False,True
+has2k1,"Kampala, Uganda",2024-03-09,1,0,0,False,False
+vnmabus,"Frankfurt, Germany",2024-11-22,0,0,0,False,True
+dhomeier,,,0,0,1,True,False
+webknjaz,"Mikulov, CZ ↜ Brno, CZ ↜ Brovary/Kyiv, UA",2024-03-20,0,0,0,False,False
+raphaelquast,,2024-03-20,0,0,0,False,True
+calekochenour,"Colorado, United States",2024-05-07,0,0,0,False,False
+miguelalizo,"Seattle, WA",2024-05-07,0,0,0,False,False
+nyeshlur,,2024-05-07,0,0,0,False,False
+tyler-bonnell,"Seattle, WA",2024-05-07,0,0,0,False,False
+ptressel,"Seattle, WA, USA",2024-05-07,0,0,0,False,False
+megies,,2024-05-07,0,0,0,False,False
+lpsinger,"Greenbelt, MD",2024-05-07,1,0,0,False,False
+metinsa,"Oslo, Norway",2024-05-07,0,0,0,False,True
+dncnwtts,Oslo,2024-05-07,0,0,0,False,True
+hermda02,"Oslo, Norway",2024-05-07,0,0,0,False,True
+paigem,"Canberra, Australia",2024-05-07,1,0,0,False,False
+callumrollo,"Gothenburg, Sweden",2024-05-07,1,0,0,False,False
+rcaneill,"Grenoble, France",2024-05-07,1,0,0,False,True
+lilyanderssonlee,Sweden,2024-05-07,1,0,0,False,False
+elais,"Oakland, California",2024-05-07,1,0,0,False,False
+kenseehart,,2024-06-01,0,0,0,False,False
+ryanskeith,USA,2024-06-01,0,0,0,False,False
+pb-413,Pittsburgh PA,2024-06-01,0,0,0,False,False
+sosey,"Baltimore, MD",2024-06-01,0,0,0,False,False
+bsuperbad,,2024-06-01,0,0,0,False,False
+chenghlee,"Austin, TX",2024-06-01,0,0,0,False,False
+vaunty,,2024-06-01,0,0,0,False,False
+flpm,"New York, NY",2024-06-01,0,0,0,False,False
+sn3hay,,2024-06-01,0,0,0,False,False
+bradonzhang,New York,2024-06-01,0,0,0,False,False
+ffy00,Portugal,2024-06-01,0,0,0,False,False
+blink1073,,2024-06-01,0,0,0,False,False
+magsol,"Athens, GA",2024-06-01,1,0,0,False,False
+gnypit,Gdańsk,2024-06-01,1,0,0,False,False
+paddyroddy,London,2024-06-01,0,0,0,False,True
+zackw,"Pittsburgh, PA",2024-07-04,0,0,0,False,False
+stefanor,The Internet,2024-07-04,0,0,0,False,False
+stefmolin,,2024-07-04,0,0,0,False,False
+weepingclown13,,2024-07-04,0,0,0,False,False
+g4brielvs,,2024-07-04,0,0,0,False,False
+taldcroft,"Cambridge, MA",2024-07-04,2,0,0,False,False
+micheledelliveneri,,2024-07-04,1,0,0,False,False
+kyleaoman,,2024-07-04,0,0,0,False,True
+phildong,,2024-07-04,1,0,0,False,False
+irisdyoung,"San Francisco, CA",2024-07-04,1,0,0,False,False
+nimasarajpoor,,2024-07-04,1,0,0,True,False
+caleb531,"Carlsbad, CA",2024-07-04,0,0,0,False,True
+sinna,,2024-07-04,1,0,0,False,False
+seanavers,Canada,2024-07-15,0,0,0,False,False
+ayhanxian,,2024-07-15,0,0,0,False,False
+robpasmue,"Leganés, Madrid",2024-08-01,0,0,0,False,False
+yardasol,,2024-08-01,0,0,0,False,False
+hpodzorski-usgs,,2024-08-01,0,0,0,False,False
+ncclementi,"Arlington, VA",2024-08-01,0,0,0,False,False
+john-drake,"Phoenix, AZ",2024-08-01,0,0,0,False,False
+revathyvenugopal162,"Lyon, France",2024-08-01,0,0,0,False,False
+ehinman,"Madison, WI",2024-08-01,0,0,0,False,False
+tkoyama010,Japan,2024-08-15,0,0,0,False,False
+kozo2,"Tokyo, Japan",2024-08-15,0,0,0,False,False
+jacqui-123,,2024-08-15,1,0,0,False,False
+jbousquin,"Gulf Breeze, FL",2024-08-15,0,0,0,False,True
+melissawm,"Florianópolis, Brazil",2024-09-01,0,0,0,False,False
+russbiggs,,,0,0,0,True,False
+kellyrowland,,,0,0,0,True,False
+shirubana,,,0,0,0,True,False
+sebastianotronto,,2024-09-17,1,0,0,False,False
+ekiefl,,2024-09-17,0,0,0,False,True
+jonkiparsky,,2024-10-01,0,0,0,False,False
+matteobachetti,"Selargius (CA), Italy",2024-10-15,0,0,0,False,True
+dhuppenkothen,"Utrecht, Netherlands",2024-10-15,0,0,0,False,True
+masonng-astro,"Cambridge, MA",2024-11-01,1,0,0,False,False
+frank1010111,"State College, PA",2024-12-13,1,0,0,False,False
+romain-peretti,,2024-12-13,1,0,0,False,False
+jsdodge,,2024-12-13,0,0,0,False,True
+mgullik,,2024-12-13,0,0,0,False,True
+jdswinbank,"Utrecht, NL",2024-12-13,0,0,0,False,True
+matteolucchini1,,2024-12-13,0,0,0,False,True
+acolum,,2024-12-13,1,0,0,False,False
+ab93,Sunnyvale,2024-12-13,1,0,0,False,False
+rmj3197,"Buffalo, New York, USA",2024-12-13,0,0,0,False,True
+giovsaraceno,,2024-12-13,0,0,0,False,True
+santisoler,"British Columbia, Canada",2025-01-01,0,0,0,False,False
+sethmlarson,"Minneapolis, MN",2025-01-01,0,0,0,False,False
+erik-whiting,"Omaha, NE",2025-01-14,0,0,0,False,False
+cjbassin,,2025-01-14,1,0,0,False,False
+glemaitre,Paris-Saclay / France,2025-01-14,1,0,0,False,False
+ammaraziz,,2025-02-01,1,0,0,False,False
+jkanche,San Francisco,2025-02-01,1,0,0,False,False
+katybrown,University of Cambridge,2025-02-01,0,0,0,False,True
