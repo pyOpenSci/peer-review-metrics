@@ -4,6 +4,8 @@ date: "2025-02-13"
 categories: 
   - peer review
 jupyter: python3
+execute:
+  echo: false
 ---
 
 This is a workflow that colates all GitHub issues associated with our reviews. 

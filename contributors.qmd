@@ -1,9 +1,8 @@
 ---
 title: pyOpenSci Contributor Metrics 
-date: "2025-02-13"
-categories: 
-  - peer review
 jupyter: python3
+execute:
+  echo: false
 ---
 
 
@@ -118,14 +117,13 @@ total_contribs = len(contribs_data)
 columns = ["packages_reviewed", "packages_editor", "packages_eic"]
 counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
 
-# Print results
-print(counts)
 ```
 
+*************
 
-* **{eval}`counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
-* **{eval}`counts["packages_editor"]`** People have served as an editor for pyOpenSci
-* **{eval}`counts["packages_eic"]`** People have served as eic for pyOpenSci
+* **`{python} counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
+* **`{python} counts["packages_editor"]`** People have served as an editor for pyOpenSci
+* **`{python} counts["packages_eic"]`** People have served as eic for pyOpenSci
  
 Note: we are updating old reviews with eic information so this number is lower than it should be
 

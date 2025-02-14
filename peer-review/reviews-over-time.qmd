@@ -75,7 +75,7 @@ today = current_date.strftime("%d %B %Y")  # Format: YYYY-MM-DD
 
 ```
 
-*Last updated: **{eval}`today`***
+*Last updated: **`{python} today`***
 
 
 ```{python}
@@ -162,9 +162,9 @@ bar_chart = (
 bar_chart.show()
 ```
 
-We currently have {eval}`open_count` packages in that are actively engaged 
+We currently have `{python} open_count` packages in that are actively engaged 
 our open software peer review process and 
-{eval}`presub_open_count` open Python package peer review pre-submission 
+`{python} presub_open_count` open Python package peer review pre-submission 
 requests.
 
 ## Current review status 
@@ -252,7 +252,7 @@ chart.show()
 
 Here we removed all issues that were help-wanted or issus with our templates that were not related to a software-review submission. As of today we have had 
 
-* pyOpenSci has had **{eval}`total_submissions` total review submissions**
+* pyOpenSci has had **`{python} total_submissions` total review submissions**
 
 
 Below is a summary of total submissions per month since pyOpenSci started it's 
