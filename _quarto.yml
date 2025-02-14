@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _site
+theme: lux
+format:
+  html:
+    code-fold: true
+    theme:
+      light: [lux, https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap]
+      dark: [lux, https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap]
+    css: styles/styles.css
+# Navigation structure
+website:
+  title: "pyOpenSci metrics"
+  site-url: "https://www.pyopensci.org"
+  repo-url: "https://www.github.com/pyopensci/metrics"
+  navbar:
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Peer Review"
+        menu:
+          - text: Current Review Status
+            href: peer-review/current-peer-review.qmd
+          - text: Over Time 
+            href: peer-review/reviews-over-time.qmd
+          - text: Peer review timing
+            href: peer-review/review-timing.qmd
+
+    right:
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub

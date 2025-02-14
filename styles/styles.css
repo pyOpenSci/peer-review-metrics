@@ -1,0 +1,13 @@
+/* Override default font with Poppins */
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Adjust specific font weights if needed */
+h1, h2, h3 {
+    font-weight: 600; /* Bolder for headings */
+}
+
+body, p {
+    font-weight: 400; /* Regular weight for body text */
+}

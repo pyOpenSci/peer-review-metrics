@@ -1,4 +1,4 @@
-name: MyST GitHub Pages Deploy
+name: Deploy Metrics Book
 on:
   workflow_dispatch:
   schedule:
@@ -25,29 +25,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repo
+        uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - uses: actions/setup-node@v4
+      # Download latest version of Python
+      - uses: actions/setup-python@v5
         with:
-          node-version: 22.x
-      - name: Install MyST Markdown
-        run: |
-          # npm install -g mystmd
-          pip install -r requirements.txt
-          pip install pyosmetrics_pkg/
-          pip list
-      - name: Build HTML Assets
+          python-version: '3.11' 
+          cache: 'pip'
+      - name: Install Dependencies
+        run: | 
+            pip install -r requirements.txt
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "release"
+    
+      - name: Render dashboard website
+        uses: quarto-dev/quarto-actions/render@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: myst build --html --execute
-        shell: bash
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: './_build/html'
-  # Only deploy on pyopensci owned repo / when pushed to main branch
+
+  # Only deploy on pyOpenSci owned repo / when pushed to main branch
   deploy:
     needs: build
     if: |

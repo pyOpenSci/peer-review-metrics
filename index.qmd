@@ -1,6 +1,11 @@
 ---
-title: Welcome
+title: Welcome to pyOpenSci Metrics Dashboards
+date: "2025-02-13"
+categories: 
+  - peer review
+jupyter: python3
 ---
+
 # Welcome to pyOpenSci's metrics dashboard
 
 If you are looking to contribute, then you may want to checkout
