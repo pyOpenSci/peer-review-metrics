@@ -1,6 +1,8 @@
 ---
 title: pyOpenSci Current Peer Review
 jupyter: python3
+execute:
+  echo: false
 ---
 
 # Current reviews 
@@ -160,14 +162,14 @@ total_open = len(open_presubmissions)
 
 ## All presubmissions
 
-There are **{eval}`all_presubmissions`** total presubmissions to date, including closed presubmissions.
+There are **`{python} all_presubmissions`** total presubmissions to date, including closed presubmissions.
 
 ## Currently open software presubmission inquiries
 
 * It could be useful to grab the most recent comments on each
 * It would also be useful to grab the gh usernames of all people involved in the discussion and credit them. So for one i see astropy editors + alex being involved.
 
-There are **{eval}`len(open_presubmissions)` presubmission requests** currently open.
+There are **`{python} len(open_presubmissions)` presubmission requests** currently open.
 
 ```{python}
 open_presubmissions
@@ -225,7 +227,7 @@ available_editors
 
 ## Available editors
 
-There are currently **{eval}`len(available_editors)` available editors** and **{eval}`len(all_busy_editors)` editors who are assigned to atleast one software review**.
+There are currently **`{python} len(available_editors)` available editors** and **`{python} len(all_busy_editors)` editors who are assigned to atleast one software review**.
 
 ```{python}
 # TODO: calculate time that they were in review.

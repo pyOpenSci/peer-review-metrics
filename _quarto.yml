@@ -27,8 +27,10 @@ website:
             href: peer-review/reviews-over-time.qmd
           - text: Peer review timing
             href: peer-review/review-timing.qmd
+      - text: "Contributors"
+        href: contributors.qmd
 
     right:
       - icon: github
-        href: https://github.com/
+        href: https://github.com/pyopensci/metrics
         aria-label: GitHub
