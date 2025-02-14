@@ -1,0 +1,306 @@
+---
+title: pyOpenSci Current Peer Review
+jupyter: python3
+---
+
+# Current reviews 
+
+We will need to update the docker contains for this to work. 
+We definitely don't need anything fancy.
+
+
+```{python}
+#| echo: false
+#| 
+import os
+from pathlib import Path
+
+import warnings
+from datetime import datetime, timezone
+
+import altair as alt
+import pandas as pd
+import pytz
+from pyosmeta import ProcessIssues
+from pyosmeta.github_api import GitHubAPI
+
+# Suppress all warnings
+warnings.filterwarnings("ignore")
+# Make tables nicer
+pd.set_option("display.max_colwidth", None)
+today = datetime.now(timezone.utc)
+```
+
+```{python}
+#| echo: false
+data_path = Path.cwd().parents[0] / "_data" / "review_submissions.csv"
+reviews = pd.read_csv(data_path,
+    parse_dates=["date_opened", "date_closed", "last_comment_date"],
+)
+reviews["date_opened"] = reviews["date_opened"]
+reviews["last_comment_date"] = reviews["last_comment_date"]
+reviews = reviews.rename(
+    columns={
+        "package_name": "Name",
+        "date_opened": "Date Opened",
+        "date_closed": "Date Closed",
+        "issue_num": "Issue",
+        "description": "Description",
+        "categories": "Categories",
+        "last_comment_date": "Last Comment",
+        "last_comment_user": "Last User to Comment",
+    }
+)
+
+open_reviews = reviews[reviews["Date Closed"].isna()]
+open_reviews.drop(columns=["Date Closed","Unnamed: 0"], inplace=True)
+total_open = len(open_reviews)
+total_open
+```
+
+More text here
+```{python}
+#| echo: false
+
+open_reviews["Days Open"] = (today - open_reviews["Date Opened"]).dt.days
+open_reviews["Date Opened"] = open_reviews["Date Opened"].dt.date
+open_reviews["Last Comment"] = open_reviews["Last Comment"].dt.date
+
+```
+
+## Current open reviews & total days open
+
+pyOpenSci currently has `{python} total_open` total open submissions.
+
+```{python}
+seeking_editor = open_reviews[
+    open_reviews["labels"].str.contains("0/seeking-editor", na=False)
+].copy()
+seeking_editor.drop(
+    columns=[ "labels", "status"], inplace=True
+)
+seeking_editor.reset_index(drop=True, inplace=True)
+seeking_editor.style.set_properties(
+    **{"text-align": "left", "white-space": "normal"}
+)
+seeking_editor
+```
+
+## Packages that need editors
+
+The packages below need an editor before the review can begin.
+
+```{python}
+seeking_editor = open_reviews[
+    open_reviews["labels"].str.contains("0/seeking-editor", na=False)
+].copy()
+seeking_editor.drop(
+    columns=[ "labels", "status"], inplace=True
+)
+seeking_editor.reset_index(drop=True, inplace=True)
+seeking_editor.style.set_properties(
+    **{"text-align": "left", "white-space": "normal"}
+)
+```
+
+
+## Packages that need reviewers
+
+These are reviews that are paused because we are searching for reviewers. 
+
+
+```{python}
+
+seeking_reviewers = open_reviews[
+    open_reviews["labels"].str.contains("2/seeking-reviewers", na=False)
+].copy()
+seeking_reviewers
+```
+
+
+```{python}
+presub_path = data_path = Path.cwd().parents[0] / "_data" /  "review_presubmissions.csv"
+presubmissions = pd.read_csv(
+    presub_path,
+    parse_dates=["date_opened", "date_closed", "last_comment_date"],
+)
+presubmissions["date_opened"] = presubmissions["date_opened"]
+presubmissions["last_comment_date"] = presubmissions["last_comment_date"]
+presubmissions = presubmissions.rename(
+    columns={
+        "package_name": "Name",
+        "date_opened": "Date Opened",
+        "date_closed": "Date Closed",
+        "issue_num": "Issue",
+        "description": "Description",
+        "categories": "Categories",
+        "last_comment_date": "Last Comment",
+        "last_comment_user": "Last User to Comment",
+    }
+)
+
+all_presubmissions = len(presubmissions)
+```
+
+
+```{python}
+# Get all currently open presubmissions
+open_presubmissions = presubmissions[presubmissions["Date Closed"].isna()]
+today = datetime.now(timezone.utc)
+open_presubmissions["days_open"] = (
+    today - open_presubmissions["Date Opened"]
+).dt.days
+open_presubmissions["Date Opened"] = open_presubmissions["Date Opened"].dt.date
+open_presubmissions["Date Opened"] = open_presubmissions["Last Comment"].dt.date
+open_presubmissions.reset_index(drop=True, inplace=True)
+
+total_open = len(open_presubmissions)
+```
+
+
+## All presubmissions
+
+There are **{eval}`all_presubmissions`** total presubmissions to date, including closed presubmissions.
+
+## Currently open software presubmission inquiries
+
+* It could be useful to grab the most recent comments on each
+* It would also be useful to grab the gh usernames of all people involved in the discussion and credit them. So for one i see astropy editors + alex being involved.
+
+There are **{eval}`len(open_presubmissions)` presubmission requests** currently open.
+
+```{python}
+open_presubmissions
+```
+
+
+## Editorial team status
+
+```{python}
+# Static list of all editors, updated 7/13/2024
+# Let's pull this list from unique people above who are active. 
+# TODO: get this list of current editors dynamically
+all_editors = [
+    "cmarmo",
+    "dhomeier",
+    "ocefpaf",
+    "NikleDave",
+    "SimonMolinsky",
+    "Batalex",
+    "sneakers-the-rat",
+    "tomalrussel",
+    "ctb",
+    "mjhajharia",
+    "hamogu",
+    "isabelizimm",
+    "yeelauren",
+    "banesullivan",
+]
+all_editors_df = pd.DataFrame({"editor": all_editors})
+# Create table of editors who are currently assigned to an open submission
+busy_editors = open_reviews.loc[open_reviews.editor != "TBD", ["editor"]].value_counts().reset_index()
+busy_editors
+```
+
+```{python}
+all_editor_activity = all_editors_df.merge(busy_editors, on="editor", how="outer").fillna(0)
+
+all_editor_activity["count"]= all_editor_activity["count"].astype(int)
+all_editor_activity.sort_values(by="count", inplace=True)
+all_editor_activity = all_editor_activity.reset_index(drop=True)
+```
+
+### Who is currently available? 
+
+Below are editors that currently do not have submissions assigned to them.
+
+```{python}
+# Get counts of available and unavailable editors
+available_editors = all_editor_activity[all_editor_activity["count"] == 0]
+all_busy_editors = all_editor_activity[all_editor_activity["count"] != 0]
+
+num_available_editors = len(available_editors)
+available_editors
+```
+
+## Available editors
+
+There are currently **{eval}`len(available_editors)` available editors** and **{eval}`len(all_busy_editors)` editors who are assigned to atleast one software review**.
+
+```{python}
+# TODO: calculate time that they were in review.
+all_editor_activity
+```
+
+## Editors load
+
+Next, we look at the load of each editor over time to get a sense of their time demands. 
+
+NOTE: The data below represents all editors over time, not just currently active editors
+
+```{python}
+# Get a list of all editors over time that have supported pyOpenSci
+ignore_editors = ["TBD"]
+# ignore lwasser and xmnlab to bring min date to a more recent date
+ignore_editors += ["lwasser", "xmnlab"]
+editors = [
+    editor
+    for editor in pd.unique(reviews.editor)
+    if editor not in ignore_editors
+]
+n_edits = (
+    reviews.groupby([reviews["editor"], reviews["Date Opened"].dt.to_period("Q")])
+    .size()
+    .reset_index(name="n_edits")  # Ensures a DataFrame with column name
+)
+```
+
+```{python}
+
+n_edits_filtered = n_edits[~n_edits["editor"].isin(ignore_editors)]
+n_edits_filtered = n_edits_filtered.rename(columns={"Date Opened": "Date", "n_edits": "count"})
+# Date should be a standard date time
+df = n_edits_filtered.copy()
+df[["Year", "Quarter"]] = df["Date"].astype(str).str.extract(r"(\d{4})Q(\d)").astype(int)
+df["Date"] = pd.to_datetime(df["Year"].astype(str) + "-" + (3 * (df["Quarter"].astype(int) - 1) + 1).astype(str) + "-01")
+df.head()
+```
+
+```{python}
+# This likely should be active edits?
+edits = reviews.rename(columns={"Date Opened": "Date"}).copy()
+```
+
+```{python}
+edits = reviews[["editor", "Name", "Date Opened"]]
+edits = edits.rename(columns={"Date Opened": "Date", "Name":"package_name"})
+edits = edits[edits["editor"] != "TBD"]
+
+```
+
+```{python}
+charts = [
+    alt.Chart(edits.loc[edits.editor == editor])
+    .mark_bar(color="purple")
+    .encode(
+        x=alt.X("yearquarter(Date):T"),
+        y=alt.Y("count(package_name)", title="Number of edits per quarter"),
+        tooltip=["yearquarter(Date)", "count(package_name)"],
+    )
+    .properties(
+        title=alt.TitleParams(
+            text=f"{editor}",
+            fontSize=18,
+            orient="right",
+            angle=0,
+            align="right",
+        ),
+        width=600,
+        height=200,
+    )
+    for editor in editors
+]
+
+full_chart = alt.vconcat(*charts).resolve_scale(x="shared", y="shared")
+full_chart.show()
+```

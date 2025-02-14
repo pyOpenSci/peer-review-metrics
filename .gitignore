@@ -15,3 +15,7 @@ node_modules/*
 # Ignore .env file where contributors will store their GitHub API Tokens. We
 # don't want them to accidentally push them to the repo.
 .env
+
+/.quarto/
+_site/*
+_output/*

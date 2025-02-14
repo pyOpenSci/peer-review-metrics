@@ -1,19 +1,6 @@
-mystmd
-nox
-tqdm
-# if you want to use jupyter lab to edit notebooks
-jupyterlab_myst
-# to support efficient pandas string behaviors
-pyarrow
-git+https://github.com/pyopensci/pyosmeta.git
-# Linting  - we have jupyter plugins installed
-black
-isort
-jupyterlab
-jupyterlab_code_formatter
-jupyterlab-myst
-# To support opening md files as notebooks
-jupytext
-pip
+pyosmeta
 pandas
 altair
+-e ./pyosmetrics_pkg
+jupyter
+pyarrow

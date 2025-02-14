@@ -1,0 +1,163 @@
+---
+title: pyOpenSci Contributor Metrics 
+date: "2025-02-13"
+categories: 
+  - peer review
+jupyter: python3
+---
+
+
+```{python}
+import warnings
+from pathlib import Path
+
+import altair as alt
+import pandas as pd
+
+# This is a local module that stores the plot theme
+from pyosmetrics.plot_theme import load_poppins_font, register_and_enable_poppins_theme
+
+pd.options.mode.chained_assignment = None
+pd.options.future.infer_string = True
+
+# Suppress all warnings
+warnings.filterwarnings("ignore")
+
+# Load the & register Poppins theme
+load_poppins_font()
+register_and_enable_poppins_theme()
+```
+
+
+```{python}
+# Get the current notebook directory
+data_path = Path.cwd() / "_data"  
+all_files = list(data_path.glob("20*"))
+
+dfs = [pd.read_csv(file, parse_dates=["item_opened_by"]) for file in all_files]
+df = pd.concat(dfs, ignore_index=True)
+```
+
+## All contributions to date 
+
+The plot below shows the total contributions to pyOpenSci. To create this plot we:
+
+1. Removed any contributions from bots
+2. Stratified the data to show both staff contributions vs. non-staff contributions. 
+
+### Staff vs. volunteer pull request and issue contributions
+
+Non-staff contributions grow between May and August, covering Q3 and Q4 when we travel to meetings such as SciPy and PyCon and host events. Q4 is typically slower, given the holiday season.  
+
+
+```{python}
+df["quarter"] = df["item_opened_by"].dt.to_period("Q")
+
+# Group by quarter and contrib_type (staff vs non-staff)
+df_quarters = df.groupby(["quarter", "contrib_type"]).size().reset_index(name="count")
+df_quarters["quarter"] = df_quarters["quarter"].astype(str)
+
+# Create a new column for filtered labels
+df_quarters["quarter_label"] = df_quarters["quarter"]
+df_quarters["year"] = df_quarters["quarter"].str[:4]
+df_quarters["qtr"] = df_quarters["quarter"].str[-2:]
+df_quarters.reset_index(inplace=True)
+
+# Function to insert newline before the "Q" character
+def insert_newline(s):
+    return s.replace('Q', ' Q')
+
+# Apply the function to the 'quarter' column
+df_quarters['quarter_label'] = df_quarters['quarter_label'].apply(insert_newline)
+
+
+```
+
+
+```{python}
+# Create the Altair chart
+chart = (
+    alt.Chart(df_quarters)
+    .mark_bar()
+    .encode(
+        alt.X('quarter_label:O')
+            .title('Quarter')
+            .axis(labelAngle=45),
+        alt.Y('count:Q')
+            .stack(True),
+        alt.Color('contrib_type:N')
+            .title("Contributor Type")
+            .scale(range=["#81c0aa", "#735fab"]),
+        alt.Tooltip(["quarter_label", "contrib_type", "count"])
+    )
+    .properties(title="Staff vs. Volunteer Contributor by Quarter")
+    .configure_legend(
+        orient='top',
+        titleAnchor='middle',
+        direction='horizontal',
+        padding=10,
+    )
+    .interactive()
+)
+
+chart
+```
+
+
+```{python}
+# Open the contrib data and count review metrics
+contribs_path = data_path / "review_contribs.csv"
+contribs_data = pd.read_csv(contribs_path, parse_dates=["date_added"])
+contribs_data.head()
+```
+
+
+```{python}
+total_contribs = len(contribs_data)
+# Calculate reviewer types 
+columns = ["packages_reviewed", "packages_editor", "packages_eic"]
+counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
+
+# Print results
+print(counts)
+```
+
+
+* **{eval}`counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
+* **{eval}`counts["packages_editor"]`** People have served as an editor for pyOpenSci
+* **{eval}`counts["packages_eic"]`** People have served as eic for pyOpenSci
+ 
+Note: we are updating old reviews with eic information so this number is lower than it should be
+
+To date, **{eval}`total_contribs`** people have contributed to pyOpenSci
+
+## Contributors over time
+Above we calculate issues and prs to pyOpenSci over time. Here we look at new contributors over time
+
+
+```{python}
+# Group by month and count new contributors
+monthly_counts = contribs_data.resample("M", on="date_added").count()["name"]
+
+# Compute cumulative sum for growth over time
+cumulative_growth = monthly_counts.cumsum().reset_index()
+cumulative_growth.columns = ["date", "cumulative_contributors"]
+
+```
+
+
+```{python}
+
+# Create an Altair line chart
+chart = alt.Chart(cumulative_growth).mark_line(point=True).encode(
+    x=alt.X("date:T", title="Date"),
+    y=alt.Y("cumulative_contributors:Q", title="Total Contributors"),
+    tooltip=["date:T", "cumulative_contributors:Q"]
+).properties(
+    title="Growth of Contributors Over Time",
+    width=700,
+    height=400
+).interactive()
+
+chart
+```

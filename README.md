@@ -49,7 +49,7 @@ rename it to `.env`. You will paste your GitHub token value that you created
 above into this file.
 
 Copy the token string and paste it into the `.env` file next to `GITHUB_TOKEN=`.
-It should look somethign like this
+It should look something like this
 
 `GITHUB_TOKEN=yourtokenvaluehere`
 
