@@ -4,4 +4,5 @@ altair
 -e ./pyosmetrics_pkg
 jupyter
 pyarrow
+itables # interactive tables!
 tqdm

@@ -125,47 +125,7 @@ open_reviews = active_open_reviews[active_open_reviews["date_closed"].isna()]
 open_count = len(open_reviews)
 ```
 
-## Current review status 
 
-Below is an overview of Python package reviews that are currently open in the 
-pyOpenSci peer review process. 
-
-
-```{python}
-# TODO: double check counts
-seeking_editor = open_reviews[
-    open_reviews["labels"].apply(lambda x: "0/seeking-editor" in x)
-]
-seeking_editor_count = len(seeking_editor)
-
-data = pd.DataFrame(
-    {
-        "Category": ["Open Reviews", "Pre-submission Inquiries"],
-        "Count": [open_count, presub_open_count],
-    }
-)
-
-bar_chart = (
-    alt.Chart(data)
-    .mark_bar(color="purple")
-    .encode(
-        x=alt.X("Category:N", title="Category", axis=alt.Axis(labelAngle=0)),
-        y=alt.Y("Count:Q", title="Count", axis=alt.Axis(tickCount=5)),
-        tooltip=["Category", "Count"],
-    )
-    .properties(
-        title=alt.TitleParams(text="pyOpenSci: Current Open Reviews"), width=600
-    )
-    .interactive()
-)
-
-bar_chart.show()
-```
-
-We currently have `{python} open_count` packages in that are actively engaged 
-our open software peer review process and 
-`{python} presub_open_count` open Python package peer review pre-submission 
-requests.
 
 ## Current review status 
 
@@ -254,6 +214,8 @@ Here we removed all issues that were help-wanted or issus with our templates tha
 
 * pyOpenSci has had **`{python} total_submissions` total review submissions**
 
+
+# pyOpenSci Peer Review over time
 
 Below is a summary of total submissions per month since pyOpenSci started it's 
 peer review process in 2019. We halted peer review in the fall 2022 given our 
