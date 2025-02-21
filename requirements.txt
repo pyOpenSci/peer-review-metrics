@@ -4,3 +4,4 @@ altair
 -e ./pyosmetrics_pkg
 jupyter
 pyarrow
+tqdm
