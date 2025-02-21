@@ -1,14 +1,15 @@
-import requests
 import os
+
+import requests
 from dotenv import load_dotenv
 import pandas as pd
+from pathlib import Path
 from functools import cached_property
 from pydantic import BaseModel, HttpUrl
 from enum import Enum
 from tqdm import tqdm
 
 load_dotenv()
-
 
 # GitHub GraphQL endpoint
 graphql_endpoint = "https://api.github.com/graphql"
@@ -44,7 +45,9 @@ def get_ql_query_response(access_token, query):
     # print("Request Body:", {"query": query})
 
     # Make GraphQL query to fetch project board ID
-    response = requests.post(graphql_endpoint, json={"query": query}, headers=headers)
+    response = requests.post(
+        graphql_endpoint, json={"query": query}, headers=headers
+    )
 
     if response.status_code == 200:
         return response.json()
@@ -226,7 +229,9 @@ def get_project_items(project_id, access_token):
             f', after: "{end_cursor}"' if end_cursor else "",
         )
 
-        response = get_ql_query_response(access_token=access_token, query=query)
+        response = get_ql_query_response(
+            access_token=access_token, query=query
+        )
         data = response["data"]["node"]["items"]
         items.extend(data["nodes"])
         has_next_page = data["pageInfo"]["hasNextPage"]
@@ -322,10 +327,15 @@ def parse_item(item):
 
 
 if __name__ == "__main__":
+    print("PROCESSING SPRINT DATA")
+    # pyOS project board - https://github.com/orgs/pyOpenSci/projects/12
     project_pk = 12
     project_id = get_project_id(project_pk, ACCESS_TOKEN)
     project_items = get_project_items(project_id, ACCESS_TOKEN)
 
     df = pd.DataFrame([parse_item(item).json for item in tqdm(project_items)])
-    os.makedirs("_data", exist_ok=True)
-    df.to_csv("_data/sprint_data.csv", index=False)
+    dir_path = Path("_data")
+    file_path = dir_path / "sprint_data.csv"
+
+    dir_path.mkdir(parents=True, exist_ok=True)
+    df.to_csv(file_path, index=False)
