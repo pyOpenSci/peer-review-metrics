@@ -55,7 +55,7 @@ def get_ql_query_response(access_token, query):
         raise Exception(
             f"Query failed to run with a status code {response.status_code}. Response: {response.text}"
         )
-    return response.json()
+    return None
 
 
 def get_project_id(project_number, access_token):
@@ -77,13 +77,16 @@ def get_project_id(project_number, access_token):
 
     data = get_ql_query_response(query=query, access_token=access_token)
 
-    # Extract project board ID
-    try:
-        project_id = data["data"]["organization"]["projectV2"]["id"]
-        return project_id
-    except KeyError:
-        print("Project board not found.")
-        return None
+    if data is not None:
+        # Extract project board ID
+        try:
+            project_id = data["data"]["organization"]["projectV2"]["id"]
+            return project_id
+        except KeyError:
+            print("Project board not found.")
+            return None
+    else:
+        print("your query did not return any data")
 
 
 def get_project_field(project_id, access_token):
