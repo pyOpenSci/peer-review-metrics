@@ -19,7 +19,7 @@ jobs:
           command: nox -s html
 
       - store_artifacts:
-          path: _build/html
+          path: _site/
           destination: html
 
 # Define the workflow
