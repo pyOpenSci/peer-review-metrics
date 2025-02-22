@@ -22,11 +22,11 @@ website:
       - text: "Peer Review"
         menu:
           - text: Current Review Status
-            href: peer-review/current-peer-review.qmd
+            href: peer-review/current-review-status.qmd
           - text: Over Time 
             href: peer-review/reviews-over-time.qmd
-          - text: Peer review timing
-            href: peer-review/review-timing.qmd
+          - text: Peer review trends
+            href: peer-review/review-trends.qmd
       - text: "Contributors"
         href: contributors.qmd
 
