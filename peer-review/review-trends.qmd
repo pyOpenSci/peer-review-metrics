@@ -1,5 +1,5 @@
 ---
-title: pyOpenSci Peer Review Timing
+title: pyOpenSci Peer Review Trends
 date: "2025-02-13"
 categories: 
   - peer review
@@ -8,7 +8,7 @@ execute:
   echo: false
 ---
 
-This is a workflow that colates all GitHub issues associated with our reviews. 
+This is a workflow that collates all GitHub issues associated with our reviews. 
 
 
 ```{python}

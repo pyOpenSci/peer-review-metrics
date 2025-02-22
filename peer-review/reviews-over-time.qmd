@@ -7,24 +7,6 @@ jupyter: python3
 
 
 ```{python}
-# Sometimes the token doesn't get updated properly in jupyter. 
-# If this happens you can do a few things
-# import os
-# from dotenv import load_dotenv
-
-# load_dotenv()
-
-# print(os.getenv("GITHUB_TOKEN"))
-
-# # Print all envt keys to see what token value is stored
-# for key, value in os. environ.items():
-#     print(f"{key}: {value}")
-
-#in bash use: export GITHUB_TOKEN=valuehere
-```
-
-
-```{python}
 import warnings
 from datetime import datetime
 from pathlib import Path
@@ -104,16 +86,13 @@ presub_open_count = len(presub_count)
 
 ```
 
-## Total scientific Python software submissions by status
-
+## Total scientific Python software review submissions
 
 ```{python}
 review_status_ct = reviews["status"].value_counts().reset_index()
 review_status_ct.rename(columns={"labels": "status"}, inplace=True)
-review_status_ct
+
 ```
-
-
 
 
 ```{python}
@@ -125,24 +104,18 @@ open_reviews = active_open_reviews[active_open_reviews["date_closed"].isna()]
 open_count = len(open_reviews)
 ```
 
-
-
-## Current review status 
-
-The plot below shows the status of our current open and closed reviews. 
-
-A few of these numbers are a bit off (or out of sync with our project board)
-But the numbers right now are close!
+The plot below shows the volume of all reviews over time. 
 
 
 ```{python}
+# TODO: fix this plot so there is enough
 chart = (
     alt.Chart(review_status_ct)
     .mark_bar()
     .encode(
         y=alt.Y(
             "status",
-            title="Review Status",
+            title="",
             sort=[
                 "pre-review",
                 "seeking editor",
@@ -157,7 +130,7 @@ chart = (
             "count",
             axis=alt.Axis(tickCount=5),
             title="Count",
-            scale=alt.Scale(domain=[0, 20]),
+            scale=alt.Scale(domain=[0, 30]),
         ),
         tooltip=[
             alt.Tooltip("status:N", title="Status"),
@@ -167,11 +140,10 @@ chart = (
     .properties(title="Count of Packages by Status", width="container")
 )
 
+
 # Display the chart
 chart.show()
 ```
-
-
 
 
 
@@ -179,26 +151,6 @@ chart.show()
 # This calculates status on currently open reviews
 #open_reviews["status"] = open_reviews["labels"].apply(set_review_status)
 status_counts = open_reviews["status"].value_counts().reset_index()
-```
-
-
-```{python}
-chart = (
-    alt.Chart(status_counts)
-    .mark_bar()
-    .encode(
-        x=alt.X("status"),
-        y="count",
-        tooltip=[
-            alt.Tooltip("status:N", title="Status"),
-            alt.Tooltip("count:Q", title="Count"),
-        ],
-    )
-    .properties(title="Review Status for Current Reviews", width="container")
-)
-
-# Display the chart
-chart.show()
 ```
 
 

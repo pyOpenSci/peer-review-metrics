@@ -1,12 +1,29 @@
 ---
 title: Welcome to pyOpenSci Metrics Dashboards
-date: "2025-02-13"
-categories: 
-  - peer review
 jupyter: python3
 ---
 
-# Welcome to pyOpenSci's metrics dashboard
+## Welcome to pyOpenSci's metrics dashboard
 
-If you are looking to contribute, then you may want to checkout
-our README file.
+If you are looking to contribute, checkout our [README file](https://www.github.com//pyopensci/metrics/README.md).
+
+::: {.grid }
+
+::: {.g-col-6 style="border: 1px solid #cccccc; padding: 10px"}
+
+**Peer Review Status and History Data**
+
+* [Peer Review Status Dashboard](/peer-review/current-review-status.html)
+* [Peer Review Over Time](/peer-review/reviews-over-time.html)
+* [Peer Review Trends](/peer-review/review-trends.html)
+
+:::
+
+::: {.g-col-6 style="border: 1px solid #cccccc; padding: 10px"}
+**Contributor Data through Sprints and adhoc**
+
+* [Contributor Data](contributors.html)
+:::
+
+
+:::
