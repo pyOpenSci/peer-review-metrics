@@ -6,3 +6,4 @@ jupyter
 pyarrow
 itables # interactive tables!
 tqdm
+nox
