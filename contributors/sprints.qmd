@@ -1,0 +1,104 @@
+---
+title: Sprint Data | pyOpenSci
+jupyter: python3
+execute:
+  echo: false
+---
+
+
+```{python}
+#| echo: false
+#| 
+import warnings
+from pathlib import Path
+
+import altair as alt
+import pandas as pd
+
+# This is a local module that stores the plot theme
+from pyosmetrics.plot_theme import load_poppins_font, register_and_enable_poppins_theme
+
+pd.options.mode.chained_assignment = None
+pd.options.future.infer_string = True
+
+# Suppress all warnings
+warnings.filterwarnings("ignore")
+
+# Load the & register Poppins theme
+load_poppins_font()
+register_and_enable_poppins_theme()
+```
+
+
+```{python}
+# Get the current notebook directory
+data_path = Path.cwd().parents[0] / "_data" / "sprint_data.csv" 
+
+sprint_df = pd.read_csv(data_path)
+summary_df = sprint_df.groupby(["event", "type"]).size().unstack(fill_value=0)
+
+summary_df = summary_df.rename(columns={"Issue": "Issue Count", "PullRequest": "PR Count"})
+summary_df = summary_df.reset_index()
+summary_df
+# Calculate total contribs by year
+summary_df["year"] = summary_df["event"].str.extract(r'(\d{2,4})').astype(float).astype("Int64")
+summary_df["total"] = summary_df["Issue Count"] + summary_df["PR Count"]
+
+# Total contributions by year
+annual_counts = summary_df.groupby("year")[["total"]].sum().reset_index()
+```
+
+## Total contributions to pyOpenSci by sprint event 
+
+
+```{python}
+summary_df = summary_df.sort_values(by="year")
+summary_df
+
+chart = (
+    alt.Chart(summary_df)
+    .mark_bar()
+    .encode(
+        alt.X('event:N')
+            .title('Event')
+            .axis(labelAngle=0),
+        alt.Y('value:Q')
+            .title('Count'),
+        alt.Color('type:N')
+            .title('Type')
+            .scale(range=["#81c0aa", "#735fab"]),
+        alt.Tooltip(["event", "Issue Count", "PR Count"])
+    )
+    .transform_fold(
+        fold=['Issue Count', 'PR Count'],
+        as_=['type', 'value']
+    )
+    .properties(title="Total Contributions by Event")
+    .interactive()
+)
+
+chart
+```
+
+
+## Total contributions to pyOpenSci during event sprints 2023 vs. 2024
+
+```{python}
+chart = (
+    alt.Chart(annual_counts)
+    .mark_bar()
+    .encode(
+        alt.X('year:O')
+            .title('Year')
+            .axis(labelAngle=0),
+        alt.Y('total:Q')
+            .title('Total Contributions'),
+        alt.Tooltip(["year", "total"])
+    )
+    .properties(title="Total Sprint Contributions by Year")
+    .interactive()
+)
+
+chart
+
+```

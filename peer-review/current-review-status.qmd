@@ -185,6 +185,38 @@ bar_chart.show()
 
 ```
 
+### Active and open reviews
+```{python}
+def categorize_status(status):
+    if status in ["under-review", "seeking editor", "seeking reviewers"]:
+        return "Under Review"
+    elif status == "pre-review":
+        return "Pre-Review"
+    elif status == "accepted-open":
+        return "Accepted Open"
+    return "Other"
+
+review_status_ct["grouped_status"] = review_status_ct["active_status"].apply(categorize_status)
+grouped_status_ct = review_status_ct.groupby("grouped_status", as_index=False)["count"].sum()
+```
+```{python}
+
+bar_chart = (
+    alt.Chart(grouped_status_ct)
+    .mark_bar(color="purple")
+    .encode(
+        x=alt.X("grouped_status:N", 
+        title="Open Reviews", sort="-y",axis=alt.Axis(labelAngle=0)),
+        y=alt.Y("count:Q", title="Count"),
+    tooltip=["grouped_status", "count"]
+    )
+).properties(
+    title="pyOpenSci: Active Review Status", width="container"
+)
+
+
+bar_chart.show()
+```
 
 ### All open reviews 
 
