@@ -7,6 +7,10 @@ on:
     - cron: "0 5 2,16 * 1"
     # Runs at 11pm on December 31st every year
     - cron: "0 23 31 12 *"
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   run-meta:
     if: github.repository_owner == 'pyopensci'
@@ -26,15 +30,16 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y webp
-      - name: Install pyosmeta and run update contribs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          pip install -r requirements.txt
-          python scripts/get-prs.py
-          python scripts/get-reviews.py
-          python scripts/get-sprint-data.py
-          python scripts/get-review-contributors.py 
+      - name: Install pyosmeta
+        run: pip install -r requirements.txt
+      - name: Run get-prs
+        run: python scripts/get-prs.py
+      - name: Run get-reviews
+        run: python scripts/get-reviews.py
+      - name: Run get-sprint-data
+        run: python scripts/get-sprint-data.py
+      - name: get-review-contributors
+        run: python scripts/get-review-contributors.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
