@@ -81,8 +81,8 @@ def get_project_id(project_number, access_token):
     try:
         project_id = data["data"]["organization"]["projectV2"]["id"]
         return project_id
-    except KeyError:
-        print("Project board not found.")
+    except (KeyError, TypeError):
+        print(f"Project board not found for {project_number}")
         return None
 
 
