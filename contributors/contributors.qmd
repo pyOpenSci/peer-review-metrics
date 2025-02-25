@@ -1,5 +1,5 @@
 ---
-title: pyOpenSci Contributor Metrics 
+title: pyOpenSci Contributor Metrics Over Time 
 jupyter: python3
 execute:
   echo: false
@@ -39,12 +39,37 @@ dfs = [pd.read_csv(file, parse_dates=["item_opened_by"]) for file in all_files]
 df = pd.concat(dfs, ignore_index=True)
 ```
 
-## All contributions to date 
 
+```{python}
+# Open the contrib data and count review metrics
+contribs_path = data_path / "review_contribs.csv"
+contribs_data = pd.read_csv(contribs_path, parse_dates=["date_added"])
+```
+
+
+```{python}
+total_contribs = len(contribs_data)
+# Calculate reviewer types 
+columns = ["packages_reviewed", "packages_editor", "packages_eic"]
+counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
+```
+
+
+
+::: {.callout-note} 
+## pyOpenSci Contributors
+To date, **`{python} total_contribs`** people have contributed to pyOpenSci
+
+* **`{python} counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
+* **`{python} counts["packages_editor"]`** People have served as an editor for pyOpenSci
+* **`{python} counts["packages_eic"]`** People have served as eic for pyOpenSci
+:::
+
+<!-- 
 The plot below shows the total contributions to pyOpenSci. To create this plot we:
 
 1. Removed any contributions from bots
-2. Stratified the data to show both staff contributions vs. non-staff contributions. 
+2. Stratified the data to show both staff contributions vs. non-staff contributions.  -->
 
 ### Staff vs. volunteer pull request and issue contributions
 
@@ -104,38 +129,13 @@ chart
 ```
 
 
-```{python}
-# Open the contrib data and count review metrics
-contribs_path = data_path / "review_contribs.csv"
-contribs_data = pd.read_csv(contribs_path, parse_dates=["date_added"])
-contribs_data.head()
-```
-
-
-```{python}
-total_contribs = len(contribs_data)
-# Calculate reviewer types 
-columns = ["packages_reviewed", "packages_editor", "packages_eic"]
-counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
-
-```
-
-
-
-::: {.callout-note}
-
-* **`{python} counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
-* **`{python} counts["packages_editor"]`** People have served as an editor for pyOpenSci
-* **`{python} counts["packages_eic"]`** People have served as eic for pyOpenSci
-:::
 
 
  
 Note: we are updating old reviews with eic information so this number is lower than it should be
 
-To date, **{eval}`total_contribs`** people have contributed to pyOpenSci
 
-## Contributors over time
+## Contribution growth over time
 Above we calculate issues and prs to pyOpenSci over time. Here we look at new contributors over time
 
 
