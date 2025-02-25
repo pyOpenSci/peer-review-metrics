@@ -120,11 +120,16 @@ counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
 
 ```
 
-*************
+
+
+::: {.callout-note}
 
 * **`{python} counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
 * **`{python} counts["packages_editor"]`** People have served as an editor for pyOpenSci
 * **`{python} counts["packages_eic"]`** People have served as eic for pyOpenSci
+:::
+
+
  
 Note: we are updating old reviews with eic information so this number is lower than it should be
 

@@ -60,6 +60,7 @@ today = current_date.strftime("%d %B %Y")  # Format: YYYY-MM-DD
 *Last updated: **`{python} today`***
 
 
+
 ```{python}
 current_dir = Path.cwd()
 parent_dir = current_dir.parents[0]
@@ -68,6 +69,31 @@ file_path = data_dir / "review_submissions.csv"
 reviews = pd.read_csv(file_path, parse_dates=["date_opened", "date_closed"])
 total_submissions = len(reviews)
 ```
+
+```{python}
+# Open the contrib data and count review metrics
+contribs_path = data_dir / "review_contribs.csv"
+contribs_data = pd.read_csv(contribs_path, parse_dates=["date_added"])
+maintainers = contribs_data[contribs_data["maintainer"]]
+total_maintainers = len(maintainers)
+```
+
+```{python}
+total_contribs = len(contribs_data)
+# Calculate reviewer types 
+columns = ["packages_reviewed", "packages_editor", "packages_eic"]
+counts = {col: int((contribs_data[col] > 0).sum()) for col in columns}
+```
+
+::: {.callout-note}
+## Total contributors to peer review
+* **`{python} counts["packages_reviewed"]`** People have served as a reviewer for pyOpenSci
+* **`{python} counts["packages_editor"]`** People have served as an editor for pyOpenSci
+* **`{python} counts["packages_eic"]`** People have served as eic for pyOpenSci
+* pyOpenSci has supported **`{python} total_maintainers`** maintainers
+* pyOpenSci has had **`{python} total_submissions` total software review submissions**
+
+:::
 
 
 ```{python}
@@ -164,8 +190,6 @@ status_counts = open_reviews["status"].value_counts().reset_index()
 
 Here we removed all issues that were help-wanted or issus with our templates that were not related to a software-review submission. As of today we have had 
 
-* pyOpenSci has had **`{python} total_submissions` total review submissions**
-
 
 # pyOpenSci Peer Review over time
 
@@ -175,7 +199,6 @@ executive director had funding to spend full time effort on the organization!
 
 We reopened in the winter of 2023. That is where you see the increase in new 
 submissions begin.
-
 
 
 ```{python}
