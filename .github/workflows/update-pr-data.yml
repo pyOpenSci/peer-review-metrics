@@ -10,7 +10,7 @@ on:
     - cron: "0 23 31 12 *"
 
 env:
-  GITHUB_TOKEN: ${{ secrets.UPDATE_BOARD }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   run-meta:
@@ -38,6 +38,8 @@ jobs:
       - name: Run get-reviews
         run: python scripts/get-reviews.py
       - name: Run get-sprint-data
+        env:
+          GITHUB_TOKEN: ${{ secrets.UPDATE_BOARD }}
         run: python scripts/get-sprint-data.py
       - name: get-review-contributors
         run: python scripts/get-review-contributors.py
