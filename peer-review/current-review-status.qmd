@@ -284,33 +284,18 @@ show(open_presubs_clean)
 ```
 
 
-## Editorial team workload
+## Editorial team workload overview
 
 ```{python}
-# Static list of all editors, updated 7/13/2024
-# Let's pull this list from unique people above who are active. 
-# TODO: get this list of current editors dynamically
-all_editors = [
-    "coatless",
-    "cmarmo",
-    "dhomeier",
-    "ocefpaf",
-    "NikleDave",
-    "SimonMolinsky",
-    "Batalex",
-    "sneakers-the-rat",
-    "tomalrussel",
-    "ctb",
-    "mjhajharia",
-    "hamogu",
-    "isabelizimm",
-    "yeelauren",
-    "banesullivan",
-]
-all_editors_df = pd.DataFrame({"editor": all_editors})
-# Create table of editors who are currently assigned to an open submission
+# get editor team data
+editor_path = Path.cwd().parents[0] / "_data" /  "editorial_team_domains.csv"
+editor_data = pd.read_csv(editor_path)
+editor_data.columns
+editor_data = editor_data[["gh_username","first_name","Domain_areas","Description","technical_areas"]]
+all_editors_df = editor_data[["gh_username"]].rename(columns={"gh_username": "editor"})
+
+# Get busy editors
 busy_editors = open_reviews.loc[open_reviews.editor != "TBD", ["editor"]].value_counts().reset_index()
-show(busy_editors)
 ```
 
 ```{python}
@@ -321,29 +306,46 @@ all_editor_activity.sort_values(by="count", inplace=True)
 all_editor_activity = all_editor_activity.reset_index(drop=True)
 ```
 
-### Who is currently available? 
-
-Below are editors that currently do not have submissions assigned to them.
-
 ```{python}
 # Get counts of available and unavailable editors
 available_editors = all_editor_activity[all_editor_activity["count"] == 0]
 all_busy_editors = all_editor_activity[all_editor_activity["count"] != 0]
 
 num_available_editors = len(available_editors)
-show(available_editors)
+available_editors = available_editors.merge(editor_data, left_on="editor", right_on="gh_username", how="inner")
+available_editors = available_editors.rename(columns={"count": "review count"})
+available_editors = available_editors[["editor", "review count", "Domain_areas", "Description", "technical_areas", "first_name"]]
 ```
-
-## Available editors
 
 There are currently **`{python} len(available_editors)` available editors** and **`{python} len(all_busy_editors)` editors who are assigned to atleast one software review**.
 
+### All pyOpenSci editors 
 ```{python}
-# TODO: calculate time that they were in review.
-all_editor_activity
+show(editor_data)
 ```
 
-## Editors load
+### Busy editors running reviews 
+```{python}
+show(busy_editors)
+```
+
+
+### Editors available for a review
+
+Below are editors that currently do not have submissions assigned to them.
+
+```{python}
+
+show(available_editors)
+```
+
+
+```{python}
+# TODO: calculate time that they were in review.
+#all_editor_activity
+```
+
+## Editor load
 
 Next, we look at the load of each editor over time to get a sense of their time demands. 
 
@@ -356,7 +358,7 @@ The data below represents all editors over time, not just currently active edito
 
 # Get a list of all editors over time that have supported pyOpenSci
 ignore_editors = ["TBD"]
-# ignore lwasser and xmnlab to bring min date to a more recent date
+
 ignore_editors += ["lwasser", "xmnlab"]
 editors = [
     editor
