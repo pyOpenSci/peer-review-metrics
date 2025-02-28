@@ -28,7 +28,7 @@ jobs:
           sudo apt-get install -y webp
       - name: Install pyosmeta and run update contribs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROJECTS_READ }}
         run: |
           pip install -r requirements.txt
           python scripts/get-prs.py
