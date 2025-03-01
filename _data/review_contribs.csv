@@ -2,7 +2,6 @@ name,location,date_added,packages_reviewed,packages_eic,packages_editor,editor,m
 lwasser,United States,2019-10-10,0,0,5,False,True
 tracykteal,,2022-11-09,0,0,0,False,False
 kcranston,"Ottawa, ON",2022-11-09,0,0,0,False,False
-kierisi,,2023-11-21,0,0,0,False,False
 willingc,San Diego,2023-03-01,1,0,0,False,False
 npch,"Edinburgh, United Kingdom",2023-02-24,0,0,0,False,False
 erinmr,,2023-06-15,0,0,0,False,False
@@ -18,13 +17,14 @@ yuvipanda,,2023-01-18,0,0,0,False,False
 cmillion,,2023-11-20,0,0,0,False,False
 arianesasso,"Berlin, Germany",2021-08-24,0,0,2,False,True
 nickledave,Charm City,2019-12-10,1,2,3,True,True
-cmarmo,,2023-01-24,1,2,4,True,False
+cmarmo,,2023-01-24,1,2,5,True,False
 jlpalomino,,2019-10-25,1,0,1,False,True
 simonmolinsky,,2022-09-16,1,0,2,True,False
 anitagraser,,2020-03-26,0,0,0,False,True
-batalex,,2023-02-04,1,3,5,True,False
+batalex,,2023-02-04,1,4,5,True,False
 mbjoseph,"Denver, CO",2019-10-17,1,0,0,False,True
 luizirber,"Davis, CA",2019-10-17,0,0,1,False,True
+kierisi,,2023-11-21,0,0,0,False,False
 dynamicwebpaige,"Seattle, WA",2023-02-24,0,0,0,False,False
 carsonfarmer,"Victoria, B.C., Canada",2023-02-24,0,0,0,False,False
 jhamman,"Seattle, WA",2023-02-24,0,0,0,False,False
@@ -123,7 +123,7 @@ szhorvat,,2023-07-15,1,0,0,False,False
 yang-ruoxi,,2023-07-15,0,0,0,False,False
 pllim,"Baltimore, MD, USA",2023-07-15,1,0,0,False,False
 namurphy,"Cambridge, Massachusetts, USA",2023-07-15,0,0,0,False,False
-hamogu,"Cambridge, MA, USA",2023-07-15,0,0,2,True,False
+hamogu,"Cambridge, MA, USA",2023-07-15,0,0,3,True,False
 g-patlewicz,,2023-07-15,0,0,0,False,False
 msarahan,"Austin, TX",2023-07-15,0,0,0,False,False
 thomasjpfan,New York City,2023-07-15,0,0,0,False,False
@@ -285,3 +285,15 @@ glemaitre,Paris-Saclay / France,2025-01-14,1,0,0,False,False
 ammaraziz,,2025-02-01,1,0,0,False,False
 jkanche,San Francisco,2025-02-01,1,0,0,False,False
 katybrown,University of Cambridge,2025-02-01,0,0,0,False,True
+aaryapatil,"Heidelberg, Germany",2025-02-19,1,0,0,False,False
+mwcraig,"Moorhead, MN",2025-02-19,1,0,0,False,False
+teald,"Riverside, CA",2025-02-19,0,0,0,False,True
+chris-simpson,,2025-02-19,0,0,0,False,True
+jehturner,"La Serena, Chile",2025-02-19,0,0,0,False,True
+simonom,M13 9PL,2025-02-19,1,0,0,False,False
+dbaston,"Vermont, USA",2025-02-19,1,0,0,False,False
+slayoo,"Kraków, Poland",2025-02-19,0,0,0,False,True
+zdaq12,,2025-02-19,0,0,0,False,True
+jcurtis2,"Urbana, Illinois",2025-02-19,0,0,0,False,True
+nriemer,"Urbana, IL",2025-02-19,0,0,0,False,True
+mwest1066,"Urbana, Illinois, USA",2025-02-19,0,0,0,False,True

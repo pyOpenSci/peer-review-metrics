@@ -28,7 +28,11 @@ website:
           - text: Peer review trends
             href: peer-review/review-trends.qmd
       - text: "Contributors"
-        href: contributors.qmd
+        menu:
+          - text: Contributor Data
+            href: contributors/contributors.qmd
+          - text: Sprint Data
+            href: contributors/sprints.qmd
 
     right:
       - icon: github

@@ -22,7 +22,7 @@ If you are looking to contribute, checkout our [README file](https://www.github.
 ::: {.g-col-6 style="border: 1px solid #cccccc; padding: 10px"}
 **Contributor Data through Sprints and adhoc**
 
-* [Contributor Data](contributors.html)
+* [Contributor Data](/contributors/contributors.html)
 :::
 
 
