@@ -407,6 +407,7 @@ Enabled search and added a preface/intro,2019-01-30 17:29:53,closed,,kysolvik,,c
 Added a disclaimer to the intro page,2019-01-25 23:19:49,closed,,kysolvik,,contributor,software-peer-review,pulls
 Added Initial content,2019-01-25 23:08:49,closed,,kysolvik,,contributor,software-peer-review,pulls
 Adding jupyter book,2019-01-15 16:54:50,closed,,choldgraf,California,contributor,software-peer-review,pulls
+Update contributor and review data,2025-03-01 00:24:22,open,,github-actions[bot],,contributor,pyosMeta,issues
 Fix: update deprecated sigstore action,2025-02-19 23:49:26,closed,,lwasser,United States,staff,pyosMeta,issues
 Sigstore signature not working because of deprecated articaft,2025-02-19 23:45:32,closed,,lwasser,United States,staff,pyosMeta,issues
 Update CHANGELOG.md with 1.6 detail,2025-02-18 22:36:28,closed,,willingc,San Diego,contributor,pyosMeta,issues
@@ -432,6 +433,7 @@ pyosmeta missing joss doi and sometimes parsing DOI values differently; we shoul
 pyosmeta doing odd things with the gitub username / name,2024-11-19 22:25:35,closed,help wanted,lwasser,United States,staff,pyosMeta,issues
 Multiple maintainers are not being processed correctly,2024-11-19 22:22:17,closed,help wanted,lwasser,United States,staff,pyosMeta,issues
 "In CONTRIBUTING.md, add more specifics on configuring API token",2024-07-13 18:00:48,closed,"documentation, good first issue, help wanted",ehinman,"Madison, WI",contributor,pyosMeta,issues
+Update contributor and review data,2025-03-01 00:24:22,open,,github-actions[bot],,contributor,pyosMeta,pulls
 Fix: update deprecated sigstore action,2025-02-19 23:49:26,closed,,lwasser,United States,staff,pyosMeta,pulls
 Update CHANGELOG.md with 1.6 detail,2025-02-18 22:36:28,closed,,willingc,San Diego,contributor,pyosMeta,pulls
 Update contributor and review data,2025-02-18 14:57:13,closed,,github-actions[bot],,contributor,pyosMeta,pulls
@@ -561,7 +563,13 @@ Fixed authentication to GitHub API.,2023-04-22 19:59:34,closed,,austinlg96,,cont
 Fix: code cleanup and more bug fixes,2023-04-22 19:02:44,closed,,lwasser,United States,staff,pyosMeta,pulls
 Update: redo of issues API,2023-03-07 19:58:41,closed,,lwasser,United States,staff,pyosMeta,pulls
 Add: parse contributors script to update contribs,2023-03-01 00:06:07,closed,,lwasser,United States,staff,pyosMeta,pulls
-Update contributor and review data,2025-02-27 21:11:15,open,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Fix: astropy landing shoould use labels vs partners,2025-03-03 23:59:15,open,,lwasser,United States,staff,pyopensci.github.io,issues
+Astropy page: let's use labels as a  source of truth for astropy-affiliated packages. (rather than the partners field),2025-03-03 23:49:51,open,bug,lwasser,United States,staff,pyopensci.github.io,issues
+Update contributor and review data,2025-03-03 23:43:58,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Update contributor and review data,2025-03-03 21:11:16,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Update contributor and review data,2025-03-02 21:10:59,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Update contributor and review data,2025-03-01 21:10:47,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
+Update contributor and review data,2025-02-27 21:11:15,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 Update contributor and review data,2025-02-26 21:11:19,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 Update contributor and review data,2025-02-25 21:13:04,closed,,github-actions[bot],,contributor,pyopensci.github.io,issues
 BUG: broken link,2025-02-25 02:17:22,closed,bug,jsdodge,,contributor,pyopensci.github.io,issues
@@ -592,7 +600,12 @@ BUG:  review issue link is not rendering on our packages cards,2024-11-21 00:23:
 fix: force create joss cross ref badge,2024-11-21 00:02:28,closed,,lwasser,United States,staff,pyopensci.github.io,issues
 Use actual DOI if available,2024-11-20 16:02:58,closed,,pllim,"Baltimore, MD, USA",contributor,pyopensci.github.io,issues
 Create archive process and then Archive nbless,2024-01-17 00:26:27,closed,feature:content,lwasser,United States,staff,pyopensci.github.io,issues
-Update contributor and review data,2025-02-27 21:11:15,open,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Fix: astropy landing shoould use labels vs partners,2025-03-03 23:59:15,open,,lwasser,United States,staff,pyopensci.github.io,pulls
+Update contributor and review data,2025-03-03 23:43:58,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2025-03-03 21:11:16,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2025-03-02 21:10:59,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2025-03-01 21:10:47,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
+Update contributor and review data,2025-02-27 21:11:15,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
 Update contributor and review data,2025-02-26 21:11:19,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
 Update contributor and review data,2025-02-25 21:13:04,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
 Update contributor and review data,2025-02-24 21:12:24,closed,,github-actions[bot],,contributor,pyopensci.github.io,pulls
@@ -1186,6 +1199,11 @@ add submit issue / PR as default,2019-06-20 21:08:22,closed,,lwasser,United Stat
 [WIP] Updating the issue template to be more specific about readme requirements and usability items ,2019-06-20 20:57:26,closed,,lwasser,United States,staff,software-submission,pulls
 Avoid tagging a user account.,2019-06-03 12:29:45,closed,,ocefpaf,"Florianópolis, SC",contributor,software-submission,pulls
 adding link to templates to the issue submission,2019-05-30 20:25:27,closed,,lwasser,United States,staff,software-submission,pulls
+fix: new nicer plots for reporting,2025-03-04 01:05:00,open,,lwasser,United States,staff,peer-review-metrics,issues
+Update contributor and review data,2025-03-02 05:09:33,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
+Add editor domains to dashboard,2025-02-28 23:24:56,closed,,lwasser,United States,staff,peer-review-metrics,issues
+ENH: figure out a way to pull editor domain expertise from our data,2025-02-28 20:59:01,open,,lwasser,United States,staff,peer-review-metrics,issues
+Update contributor and review data,2025-02-28 19:24:21,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 Test: will this allow things to update?  ,2025-02-28 19:11:17,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Small update to contrib - metrics at top and fix an inline var,2025-02-25 20:21:07,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Move metrics to review page,2025-02-25 17:50:57,closed,,lwasser,United States,staff,peer-review-metrics,issues
@@ -1196,7 +1214,7 @@ Add nox to requirements to fix circleci build,2025-02-22 00:47:09,closed,,willin
 fix: cleanup of plots,2025-02-22 00:21:39,closed,,lwasser,United States,staff,peer-review-metrics,issues
 Debug get-sprint-data.py,2025-02-21 21:40:30,open,,willingc,San Diego,contributor,peer-review-metrics,issues
 "Bug: in our peer review data, the date of the last comment is not accurate.",2025-02-21 20:41:07,open,,lwasser,United States,staff,peer-review-metrics,issues
-Bug: ci build is broken,2025-02-21 19:50:17,open,,lwasser,United States,staff,peer-review-metrics,issues
+Bug: ci build is fixed but we should still clean it up as suggested in this issue 👀 ,2025-02-21 19:50:17,open,,lwasser,United States,staff,peer-review-metrics,issues
 feat: update peer review current status page,2025-02-21 19:47:42,closed,,lwasser,United States,staff,peer-review-metrics,issues
 fix: add contrib link and cleanup pages,2025-02-14 02:59:37,closed,,lwasser,United States,staff,peer-review-metrics,issues
 feat: migrate to quarto,2025-02-14 02:28:28,closed,,lwasser,United States,staff,peer-review-metrics,issues
@@ -1208,6 +1226,10 @@ Update contributor and review data,2025-01-06 19:27:40,closed,,github-actions[bo
 Update contributor and review data,2024-12-23 05:08:53,closed,,github-actions[bot],,contributor,peer-review-metrics,issues
 Update nox instructions and install pyosmetrics in html session,2024-12-19 19:47:01,closed,,santisoler,"British Columbia, Canada",contributor,peer-review-metrics,issues
 Add: editor plot to our dashboard,2024-07-14 16:20:23,closed,help wanted,lwasser,United States,staff,peer-review-metrics,issues
+fix: new nicer plots for reporting,2025-03-04 01:05:00,open,,lwasser,United States,staff,peer-review-metrics,pulls
+Update contributor and review data,2025-03-02 05:09:33,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
+Add editor domains to dashboard,2025-02-28 23:24:56,closed,,lwasser,United States,staff,peer-review-metrics,pulls
+Update contributor and review data,2025-02-28 19:24:21,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 Test: will this allow things to update?  ,2025-02-28 19:11:17,closed,,lwasser,United States,staff,peer-review-metrics,pulls
 Small update to contrib - metrics at top and fix an inline var,2025-02-25 20:21:07,closed,,lwasser,United States,staff,peer-review-metrics,pulls
 Move metrics to review page,2025-02-25 17:50:57,closed,,lwasser,United States,staff,peer-review-metrics,pulls
