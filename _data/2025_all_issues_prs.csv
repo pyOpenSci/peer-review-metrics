@@ -1228,6 +1228,7 @@ Update nox instructions and install pyosmetrics in html session,2024-12-19 19:47
 Add: editor plot to our dashboard,2024-07-14 16:20:23,closed,help wanted,lwasser,United States,staff,peer-review-metrics,issues
 fix: new nicer plots for reporting,2025-03-04 01:05:00,open,,lwasser,United States,staff,peer-review-metrics,pulls
 Update contributor and review data,2025-03-02 05:09:33,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
+Update contributor and review data,2025-03-02 05:09:33,open,,github-actions[bot],,contributor,peer-review-metrics,pulls
 Add editor domains to dashboard,2025-02-28 23:24:56,closed,,lwasser,United States,staff,peer-review-metrics,pulls
 Update contributor and review data,2025-02-28 19:24:21,closed,,github-actions[bot],,contributor,peer-review-metrics,pulls
 Test: will this allow things to update?  ,2025-02-28 19:11:17,closed,,lwasser,United States,staff,peer-review-metrics,pulls

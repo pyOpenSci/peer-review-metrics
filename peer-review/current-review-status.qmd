@@ -218,6 +218,27 @@ bar_chart = (
 bar_chart.show()
 ```
 
+
+
+```{python}
+only_active = grouped_status_ct[grouped_status_ct != "Accepted Open"].dropna()
+
+bar_chart = (
+    alt.Chart(only_active)
+    .mark_bar(color="purple")
+    .encode(
+        x=alt.X("grouped_status:N", 
+        title="Open Reviews", sort="-y",axis=alt.Axis(labelAngle=0)),
+        y=alt.Y("count:Q", title="Count"),
+    tooltip=["grouped_status", "count"]
+    )
+).properties(
+    title="pyOpenSci: Active Review Status", width="container"
+)
+
+
+bar_chart.show()
+```
 ### All open reviews 
 
 pyOpenSci currently has **`{python} total_open`** open

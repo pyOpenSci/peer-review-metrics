@@ -24,7 +24,7 @@ def poppins_theme():
     return {
         "config": {
             "title": {
-                "fontSize": 20,
+                "fontSize": 26,
                 "font": "Poppins",
                 "anchor": "start",
                 "color": "black",
@@ -34,8 +34,8 @@ def poppins_theme():
                 "dx": 10,
             },
             "axis": {
-                "labelFontSize": 12,
-                "titleFontSize": 14,
+                "labelFontSize": 14,
+                "titleFontSize": 16,
                 "titleFont": "Poppins",
                 "labelFont": "Poppins",
                 "labelFontSize": 14,
