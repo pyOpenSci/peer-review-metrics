@@ -13,14 +13,20 @@ jobs:
           command: |
             pip install --upgrade pip
             pip install -r requirements.txt
-            pip list
-      - run:
-          name: Build website HTML
-          command: nox -s html
+            pip install quarto-cli
 
-      - store_artifacts:
-          path: _site/
-          destination: html
+              - run:
+                  name: Build website HTML
+                  command: nox -s html
+
+              - run:
+                  name: Print directory structure
+                  command: tree _site/
+
+              - store_artifacts:
+                  path: _site/
+                  destination: html
+
 
 # Define the workflow
 workflows:
