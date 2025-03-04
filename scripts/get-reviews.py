@@ -1,5 +1,6 @@
 """
-    
+A script that parses ALL pyOpenSci reviews including presubmissions, 
+closed submissions, etc. This allows us to compile activity stats over time.  
 # TODO it would be helpful to have pyosmeta return 
 # * unique issue/pr identifier
 # * who opened the issue (gh username of that person)
@@ -58,13 +59,18 @@ def process_submissions(submission_type, labels):
 
     Returns
     -------
-    `pandas.DataFrame`
+    pandas.DataFrame
         A DataFrame containing the processed submissions with the following columns:
         - package_name (str): The name of the package.
+        - editor (str): The GitHub username of the editor.
+        - eic (str): The GitHub username of the editor-in-chief.
         - date_opened (datetime): The date the review was opened.
         - date_closed (datetime): The date the review was closed.
+        - date_accepted (datetime): The date the review was accepted.
         - labels (list): The labels assigned to the review.
         - issue_num (str): The issue number associated with the review.
+        - description (str): The description of the package.
+        - categories (list): The categories assigned to the package.
     """
     reviews = get_reviews("pyopensci", "software-submission", labels)
     submission_table = [
@@ -138,10 +144,9 @@ def set_review_status(labels, issue_map):
     return issue_map.get(highest_label)
 
 
-def get_last_comment_date(issue_num):
-    """Get the last comment date and user for a given pyOS review issue.
-
-    This function hits the GH API for each issue.
+def get_last_comment(issue_num):
+    """Get the last comment date and user for a given pyOS review issue using
+    GitHub GraphQL API.
 
     Parameters
     ----------
@@ -163,31 +168,66 @@ def get_last_comment_date(issue_num):
     repo_owner = "pyOpenSci"
     repo_name = "software-submission"
 
-    comments_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/issues/{issue_num}/comments"
+    query = """
+    query($repo_owner: String!, $repo_name: String!, $issue_num: Int!) {
+    repository(owner: $repo_owner, name: $repo_name) {
+        issue(number: $issue_num) {
+        comments(last: 1) {
+            nodes {
+            createdAt
+            author {
+                login
+            }
+            }
+        }
+        }
+    }
+    }
+    """
 
-    # Headers for the API request (recommended to avoid rate limits)
-    headers = {
-        "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "pyOS (mailto:pyopensci@pyopensci.org)",
-        "Authorization": f"token {gh_token}",
+    variables = {
+        "repo_owner": repo_owner,
+        "repo_name": repo_name,
+        "issue_num": int(issue_num),
     }
 
-    response = requests.get(comments_url, headers=headers)
-    comments = response.json()
+    headers = {
+        "Authorization": f"Bearer {gh_token}",
+        "Content-Type": "application/json",
+    }
+
+    response = requests.post(
+        "https://api.github.com/graphql",
+        json={"query": query, "variables": variables},
+        headers=headers,
+    )
+
+    if response.status_code == 200:
+        data = response.json()
+        # Check to make sure issue data exist, keep going if missing
+        issue_data = data.get("data", {}).get("repository", {}).get("issue")
+        if issue_data:
+            comments = issue_data.get("comments", {}).get("nodes", [])
+        else:
+            print(f"Missing issue data for issue {issue_num}")
+            comments = []
+    else:
+        print(f"Error: Received status code {response.status_code}")
+        print(f"Response content: {response.content}")
+        comments = []
 
     if comments:
-        last_comment = comments[-1]
+        last_comment = comments[0]
         comment_series = pd.Series(
-            [last_comment["created_at"], last_comment["user"]["login"]],
+            [last_comment["createdAt"], last_comment["author"]["login"]],
             index=["last_comment_date", "last_comment_user"],
         )
-
     else:
-        print("No comments found on the issue.")
         comment_series = pd.Series(
             [None, None],
             index=["last_comment_date", "last_comment_user"],
         )
+
     return comment_series
 
 
@@ -226,9 +266,9 @@ def main():
         df = process_submissions(submission_type, labels)
         df["status"] = df["labels"].apply(set_review_status, args=(issue_map,))
         # Get issue url - this takes time as it's hitting the api for each issue
-        # There may be a better way
+        # Now use graphql which is much more efficient
         df[["last_comment_date", "last_comment_user"]] = df["issue_num"].apply(
-            get_last_comment_date
+            get_last_comment
         )
 
         # Save csv file
