@@ -74,6 +74,7 @@ def process_submissions(submission_type, labels):
             "eic": getattr(review.eic, "github_username", None),
             "date_opened": review.created_at,
             "date_closed": review.closed_at,
+            "date_accepted": review.date_accepted,
             "labels": review.labels,
             "issue_num": review.issue_link.split("/")[-1],
             "description": review.package_description,

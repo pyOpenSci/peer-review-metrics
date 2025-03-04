@@ -60,7 +60,6 @@ today = current_date.strftime("%d %B %Y")  # Format: YYYY-MM-DD
 *Last updated: **`{python} today`***
 
 
-
 ```{python}
 current_dir = Path.cwd()
 parent_dir = current_dir.parents[0]
@@ -112,6 +111,8 @@ presub_open_count = len(presub_count)
 
 ```
 
+<div style="margin-bottom: 70px;"></div>
+
 ## Total scientific Python software review submissions
 
 ```{python}
@@ -132,15 +133,26 @@ open_count = len(open_reviews)
 
 The plot below shows the volume of all reviews over time. 
 
+```{python}
+
+review_status_ct["status"] = review_status_ct["status"].replace({
+    "seeking editor": "seeking-editor",
+    "on hold": "on-hold",
+    "out of scope": "out of-scope"
+})
+
+
+```
 
 ```{python}
-# TODO: fix this plot so there is enough
+# TODO: fix this plot so there is enough space for the labels on the left hand side
 chart = (
     alt.Chart(review_status_ct)
     .mark_bar()
-    .encode(
-        y=alt.Y(
-            "status",
+    .transform_calculate(status_wrapped="split(datum.status, '-')"
+    ).encode(
+        x=alt.X(
+            "status_wrapped:N",
             title="",
             sort=[
                 "pre-review",
@@ -151,8 +163,9 @@ chart = (
                 "on-hold",
                 "out-of-scope",
             ],
+        axis=alt.Axis(),
         ),
-        x=alt.X(
+        y=alt.Y(
             "count",
             axis=alt.Axis(tickCount=5),
             title="Count",
@@ -163,11 +176,119 @@ chart = (
             alt.Tooltip("count:Q", title="Count"),
         ],
     )
-    .properties(title="Count of Packages by Status", width="container")
+    .properties(title="Count of Packages by Status", width="container", height=500)
 )
 
 
 # Display the chart
+chart.show()
+```
+
+<div style="margin-bottom: 100px;"></div>
+
+
+### Accepted packages over time
+
+
+```{python}
+accepted_reviews = reviews[reviews["date_accepted"] != "missing"]
+accepted_reviews_clean = accepted_reviews[["package_name", "date_accepted"]]
+accepted_reviews_clean["date_accepted"] = pd.to_datetime(accepted_reviews_clean["date_accepted"], errors='coerce')
+accepted_reviews_clean["year_quarter"] = accepted_reviews_clean["date_accepted"].dt.to_period("Q")
+quarterly_accepted_counts = accepted_reviews_clean.groupby("year_quarter").size().reset_index(name="count")
+quarterly_accepted_counts["year_quarter"] = quarterly_accepted_counts["year_quarter"].astype(str)
+
+```
+
+```{python}
+axis_labels = """datum.label == '2019Q1' ? '2019 Q1' : 
+                datum.label == '2020Q1' ? '2020 Q1' : 
+                datum.label == '2021Q1' ? '2021 Q1' : 
+                datum.label == '2022Q1' ? '2022 Q1' :
+                datum.label == '2023Q1' ? '2023 Q1' :
+                datum.label == '2024Q1' ? '2024 Q1' :
+                '' """
+chart = (
+    alt.Chart(quarterly_accepted_counts)
+    .mark_bar(color="purple")
+    .encode(
+        x=alt.X(
+            "year_quarter:O",
+            title="Year-Quarter",
+            axis=alt.Axis(
+                labelAngle=0,
+                labelExpr=axis_labels,
+            ),
+        ),
+        y=alt.Y(
+            "count:Q",
+            title="Number of Accepted Packages per Quarter",
+            axis=alt.Axis(tickCount=4, tickMinStep=4),
+            scale=alt.Scale(domain=[0, 8]),
+        ),
+        tooltip=[
+            alt.Tooltip("year_quarter:O", title="Quarter"),
+            alt.Tooltip("count:Q", title="Number of Issues"),
+        ],
+    )
+    .properties(
+        title="Number of Submissions by Quarter per Year",
+        width="container",
+        height=400,
+    )
+)
+
+chart.show()
+```
+
+
+```{python}
+# semi-annual Values
+# TODO: why is year a .0 value?? & why is obspy there?
+accepted_reviews_clean["half_year"] = accepted_reviews_clean["date_accepted"].dt.month.map(lambda m: "H1" if m <= 6 else "H2")
+accepted_reviews_clean["year"] = accepted_reviews_clean["date_accepted"].dt.year
+accepted_reviews_clean = accepted_reviews_clean.sort_values(by="date_accepted")
+summary = accepted_reviews_clean.groupby(["year", "half_year"]).size().reset_index(name="count")
+```
+
+### Number of packages accepted by year
+
+```{python}
+total_accepted_2023_2024 = accepted_reviews_clean.groupby(["year"]).size().reset_index(name="count")
+total_accepted_2023_2024["year"] = total_accepted_2023_2024["year"].astype(int)
+
+```
+
+```{python}
+chart = (
+    alt.Chart(total_accepted_2023_2024)
+    .mark_bar(color="purple", size=80)
+    .encode(
+        x=alt.X(
+            "year:O",
+            title="Year",
+            axis=alt.Axis(
+                labelAngle=0,  # Ensure labels are horizontal
+                labelFontSize=16,  # Adjust font size if needed
+            ),
+        ),
+        y=alt.Y(
+            "count:Q",
+            title="Accepted Packages",
+            scale=alt.Scale(domain=[0, 20]),
+            axis=alt.Axis(tickCount=5, titlePadding=10), 
+        ),
+        tooltip=[
+            alt.Tooltip("year:O", title="Year"),
+            alt.Tooltip("count:Q", title="Total Packages"),
+        ],
+    )
+    .properties(
+        title="Number of Packages Accepted by Year",
+        width="container",
+    )
+)
+
 chart.show()
 ```
 
@@ -188,7 +309,7 @@ status_counts = open_reviews["status"].value_counts().reset_index()
 
 # Total Presubmissions
 
-Here we removed all issues that were help-wanted or issus with our templates that were not related to a software-review submission. As of today we have had 
+Here we removed all issues that were help-wanted or issus with our templates that were not related to a software-review submission. As of today we have had **`{python} total_presubmissions`** software review presubmission inquiries submitted to pyOpenSci.
 
 
 # pyOpenSci Peer Review over time
